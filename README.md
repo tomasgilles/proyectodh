@@ -1,2 +1,0 @@
-# proyectodh
-proyecto DH
