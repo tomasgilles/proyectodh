@@ -4,13 +4,48 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="main">
-      <div class="foto-estadio col-md-10 text-center">
-        <img src="fotos/estadio.jpg" class="img-fluid" alt="Stadium">
+
+    <!-- NAVBAR -->
+    <h1>NAVBAR</h1>
+    
+    <div class="container-fluid"> <!-- GENERAL -->
+
+       <div class="first container-fluid">  <!-- FOTO ESTADIO + GIF ANIMADO-->
+        <div class="foto-estadio">
+          <h1>foto estadio</h1>
+          <img src="fotos/estadio.jpg" alt="" class="img-responsive w-100">
+        </div>
+        <div class="gif-animado"> <!-- gif animado -->
+          <h1>gif animado</h1>
+          <img src="fotos/botines/botines-nike.jpg" alt="">
+        </div>
       </div>
+
+      <div class="text-center container-fluid"> <!-- SLIDER con destacados -->
+        <br><br> <h1>SLIDER con destacados</h1> <br><br>
+      </div>
+
+      <div class="promo container-fluid"> <!-- PROMO KIT BARCELONA -->
+        <section class="parrafo float-left col-6">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+
+        <section class="imagen-parrafo float-left col-5">
+          <img src="fotos/promo-barcelona.jpg" alt="" class="img-fluid">
+        </section>
+      </div>
+
+      <div class="text-center container-fluid"> <!-- SLIDER con ofertas -->
+        <br><br> <h1>SLIDER con ofertas</h1> <br><br>
+      </div>
+
     </div>
+
+    <!-- FOOTER -->
+    <h1>FOOTER</h1>
+
   </body>
 </html>
