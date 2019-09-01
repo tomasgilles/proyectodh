@@ -10,8 +10,8 @@
 
     <!-- NAVBAR -->
     <h1>NAVBAR</h1>
-    
-    <div class="container-fluid"> <!-- GENERAL -->
+
+    <div class="container-fluid main"> <!-- GENERAL -->
 
        <div class="first container-fluid">  <!-- FOTO ESTADIO + GIF ANIMADO-->
         <div class="foto-estadio">
@@ -25,7 +25,7 @@
       </div>
 
       <div class="text-center container-fluid"> <!-- SLIDER con destacados -->
-        <br><br> <h1>SLIDER con destacados</h1> <br><br>
+        <br><br> <h1>SLIDER con destacados</h1> <br>
       </div>
 
       <div class="promo container-fluid"> <!-- PROMO KIT BARCELONA -->
