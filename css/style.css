@@ -13,21 +13,11 @@
   transform: translate(-50%, -50%);
 }
 
-.gif-animado h1 {
-  position: relative;
-  top: 60px;
-  left: 10px;
-}
-
 .parrafo p {
   position: relative;
   top: 160px;
 }
 
-.carousel-control-next {
-  right: 380px;
-}
-
-.carousel-control-prev {
-  left: 380px;
+.fotos-camisetas, .fotos-camisetas img {
+  height: 350px;
 }
