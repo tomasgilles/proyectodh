@@ -8,7 +8,7 @@
   <body>
 
     <!-- PRIMER SLIDER CON BOTIINES NUEVOS -->
-    <div id="MagicCarousel1" class="carousel slide w-25" data-ride="carousel">
+    <div id="MagicCarousel1" class="carousel slide w-50 mx-auto p-0" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
           <img class="d-block w-100" src="fotos/botines/botines-nike.jpg" alt="Primer slide">

@@ -14,11 +14,13 @@
     <div class="container-fluid main"> <!-- GENERAL -->
 
        <div class="first container-fluid">  <!-- FOTO ESTADIO + GIF ANIMADO-->
+
         <div class="foto-estadio">
           <h1>foto estadio</h1>
           <img src="fotos/estadio.jpg" alt="" class="img-responsive w-100 h-25">
         </div>
-        <div class="gif-animado"> <!-- gif animado -->
+
+        <div class="gif-animado col-md-6"> <!-- gif animado -->
           <h1 class="text-center text-white">gif animado</h1>
           <div id="MagicCarousel1" class="carousel slide w-50 mx-auto p-0" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
@@ -45,6 +47,7 @@
             </div>
           </div>
         </div>
+
       </div>
 
       <div class="text-center container-fluid"> <!-- SLIDER con Camisetas destacados -->
