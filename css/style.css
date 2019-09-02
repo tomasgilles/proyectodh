@@ -47,12 +47,12 @@
   background-color: #BBE3F3;
   margin-bottom: 20px;
 }
-h1{
+#registerh1{
   color: #000000;
   justify-content: center;
   padding: 20px;
 }
-h2{
+#registerh2{
   flex: center;
 }
 .cuerpo{

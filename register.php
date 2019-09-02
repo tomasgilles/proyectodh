@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="techo">
-      <h1>Mi Cuenta</h1>
+      <h1 id="registerh1">Mi Cuenta</h1>
     </div>
     <div class="cuerpo">
       <div class="cuerpo2">
@@ -18,7 +18,7 @@
             <a class="nav-item nav-link active show" href="#registro">Registro</a>
         </div>
         <div class="registro" id="registro">
-          <h2>Registro</h2>
+          <h2 id="registerh2">Registro</h2>
           <form>
             <div class="form-group">
               <label for="formGroupExampleInput"></label>
