@@ -20,6 +20,10 @@
   background-color: rgba(0,0,0,0.8);
 }
 
+.gif-animado : hover {
+  display: block;
+}
+
 .parrafo p {
   position: relative;
   top: 160px;
