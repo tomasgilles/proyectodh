@@ -7,7 +7,6 @@
 
 /* INDEX */
 
-
 .first {
   position: relative;
 }
@@ -18,10 +17,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0,0,0,0.8);
-}
-
-.gif-animado : hover {
-  display: block;
 }
 
 .parrafo p {
@@ -38,11 +33,49 @@
   background-color: rgba(76, 160, 255,0.5);
 }
 
+/* BORDES PARA CAMISETAS XS */
+@media (max-width: 574px) {
+  .fotos-camisetas {
+    border-bottom: solid black 1px;
+  }
+
+  .fotos-camisetas:last-child{
+    border-bottom: none;
+  }
+
+  .fotos-camisetas img {
+    padding-bottom: 10px;
+    padding-top: 5px;
+  }
+}
+
+/* BORDES PARA CAMISETAS SM Y MD */
+@media (max-width: 992px) and (min-width: 575px) {
+  .fotos-camisetas:nth-child(even) {
+    border-right: solid black 1px;
+  }
+}
+
+/* BORDER PARA CAMISETAS LG */
+@media (min-width: 993px) {
+  .fotos-camisetas {
+    border-right: black solid 1px;
+  }
+
+  .fotos-camisetas:last-child{
+    border-right: none;
+  }
+}
+
 .promo {
   overflow: hidden;
   background-color: rgba(94, 173, 243, 0.1);
 }
 
+.ofertas {
+  overflow: hidden;
+  background-color: rgba(60,62,64,1);
+}
 
 
 /* LOGIN Y REGISTSER */

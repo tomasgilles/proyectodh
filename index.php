@@ -5,7 +5,6 @@
     <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -18,51 +17,33 @@
        <div class="first container-fluid px-0">  <!-- FOTO ESTADIO + GIF ANIMADO-->
 
         <div class="foto-estadio">
-          <h1>foto estadio</h1>
           <img src="fotos/estadio.jpg" alt="" class="img-responsive w-100">
         </div>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <div class="gif-animado col-md-6"> <!-- gif animado -->
-          <h1 class="text-center text-white">gif animado</h1>
-          <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/RMxFLWc8WXOidgLqPj" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/RMxFLWc8WXOidgLqPj"></a></p>
-=======
-        <div class="gif-animado col-md-8 h-50"> <!-- gif animado -->
-          <div class="">
-            <img class="img-fluid" src="fotos/botines/gif/gif.gif" alt="Gif con botines">
-
-            </iframe>
-          </div><p>
-            <a href="register.php"></a>
-          </p>
->>>>>>> e5cd73fa09aa7b985d6be9f5c29aa1920830de96
-=======
         <div class="gif-animado col-md-8 h-50 w-50"> <!-- gif animado -->
-            <img class="mx-auto d-block h-100 py-3" src="fotos/botines/gif/gif.gif" alt="Gif con botines">
->>>>>>> 2477104ea0ce2d9e4cfde376214a72bd073f9e24
+            <img class="mx-auto d-block h-100 py-3 img-fluid" src="fotos/botines/gif/gif.gif" alt="Gif con botines">
         </div>
 
       </div>
 
       <div class="destacados text-center container-fluid mt-3 p-4"> <!-- SLIDER con Camisetas destacados -->
         <h1>NEW ARRIVALS</h1>
-        <div class="mt-1 fotos-camisetas col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-md-3 float-left border-right border-dark">
+        <div class="mt-1 fotos-camisetas col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-sm-3 mb-md-3 float-left">
           <img class="w-100" src="fotos/camisetas/camiseta-river.jpg" alt="">
         </div>
-        <div class="mt-1 fotos-camisetas col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-md-3 float-left border-right border-dark">
+        <div class="mt-1 fotos-camisetas col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-sm-3 mb-md-3 float-left">
           <img class="w-100" src="fotos/camisetas/camiseta-boca.jpg" alt="">
         </div>
-        <div class="mt-1 fotos-camisetas col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-md-3 float-left border-right border-dark">
+        <div class="mt-1 fotos-camisetas col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-sm-3 mb-md-3 float-left">
           <img class="w-100" src="fotos/camisetas/camiseta-mancity.jpg" alt="">
         </div>
-        <div class="mt-1 fotos-camisetas col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-md-3 float-left">
+        <div class="mt-1 fotos-camisetas col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-sm-3 mb-md-3 float-left">
           <img class="w-100" src="fotos/camisetas/camiseta-atleticom.jpg" alt="">
         </div>
       </div>
 
       <div class="promo container-fluid mt-3"> <!-- PROMO KIT BARCELONA -->
-        <h1 class="text-center">PROMO KIT BARCELONA</h1>
+        <h1 class="text-center pt-2">PROMO KIT BARCELONA</h1>
         <section class="parrafo float-left col-6">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
@@ -72,8 +53,20 @@
         </section>
       </div>
 
-      <div class="ofertas text-center container-fluid mt-0"> <!-- SLIDER con ofertas -->
-        <h1>SLIDER con ofertas</h1>
+      <div class="ofertas text-center container-fluid mt-3"> <!-- SLIDER con ofertas -->
+        <h1 class="text-light py-2">OFERTAS DE ACCESORIOS</h1>
+        <div class="mt-1 fotos-accesorios col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-sm-3 mb-md-3 float-left">
+          <img class="w-100 rounded" src="fotos/accesorios/conos.jpg" alt="">
+        </div>
+        <div class="mt-1 fotos-accesorios col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-sm-3 mb-md-3 float-left">
+          <img class="w-100 rounded" src="fotos/accesorios/guantes.jpg" alt="">
+        </div>
+        <div class="mt-1 fotos-accesorios col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-sm-3 mb-md-3 float-left">
+          <img class="w-100 rounded" src="fotos/accesorios/silbato.jpg" alt="">
+        </div>
+        <div class="mt-1 fotos-accesorios col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-sm-3 mb-md-3 float-left">
+          <img class="w-100 rounded" src="fotos/accesorios/inflador.jpg" alt="">
+        </div>
       </div>
 
     </div>
