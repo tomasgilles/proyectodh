@@ -22,14 +22,8 @@
           <img src="fotos/estadio.jpg" alt="" class="img-responsive w-100">
         </div>
 
-        <div class="gif-animado col-md-8 h-50"> <!-- gif animado -->
-          <div class="">
-            <img class="img-fluid" src="fotos/botines/gif/gif.gif" alt="Gif con botines">
-
-            </iframe>
-          </div><p>
-            <a href="register.php"></a>
-          </p>
+        <div class="gif-animado col-md-8 h-50 w-50"> <!-- gif animado -->
+            <img class="mx-auto d-block h-100 py-3" src="fotos/botines/gif/gif.gif" alt="Gif con botines">
         </div>
 
       </div>
