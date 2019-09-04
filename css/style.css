@@ -17,7 +17,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: black;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.gif-animado : hover {
+  display: block;
 }
 
 .parrafo p {
@@ -29,8 +33,15 @@
   height: 350px;
 }
 
+.destacados {
+  overflow: hidden;
+  background-color: rgba(76, 160, 255,0.5);
+}
 
-
+.promo {
+  overflow: hidden;
+  background-color: rgba(94, 173, 243, 0.1);
+}
 
 
 
