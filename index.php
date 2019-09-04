@@ -23,6 +23,7 @@
         </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         <div class="gif-animado col-md-6"> <!-- gif animado -->
           <h1 class="text-center text-white">gif animado</h1>
           <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/RMxFLWc8WXOidgLqPj" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/RMxFLWc8WXOidgLqPj"></a></p>
@@ -36,6 +37,10 @@
             <a href="register.php"></a>
           </p>
 >>>>>>> e5cd73fa09aa7b985d6be9f5c29aa1920830de96
+=======
+        <div class="gif-animado col-md-8 h-50 w-50"> <!-- gif animado -->
+            <img class="mx-auto d-block h-100 py-3" src="fotos/botines/gif/gif.gif" alt="Gif con botines">
+>>>>>>> 2477104ea0ce2d9e4cfde376214a72bd073f9e24
         </div>
 
       </div>
