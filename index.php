@@ -24,7 +24,7 @@
 
         <div class="gif-animado col-md-8 h-50"> <!-- gif animado -->
           <div class="">
-            <iframe src="https://giphy.com/embed/jPM6J4te3D3WJuGmvq" width="100%" height="100%"  frameBorder="0" class="giphy-embed" allowFullScreen>
+            <img class="img-fluid" src="fotos/botines/gif/gif.gif" alt="Gif con botines">
 
             </iframe>
           </div><p>
