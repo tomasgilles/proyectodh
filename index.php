@@ -22,30 +22,7 @@
 
         <div class="gif-animado col-md-6"> <!-- gif animado -->
           <h1 class="text-center text-white">gif animado</h1>
-          <div id="MagicCarousel1" class="carousel slide w-50 mx-auto p-0" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="fotos/botines/botines-nike.jpg" alt="Primer slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="fotos/botines/botines-adidas.jpg" alt="Segundo slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="fotos/botines/botines-puma.jpg" alt="Tercero slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="fotos/botines/botines-under-armour.jpg" alt="Cuarto slide">
-              </div>
-              <a class="carousel-control-prev" href="#MagicCarousel1" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon bg-dark"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#MagicCarousel1" role="button" data-slide="next">
-                <span class="carousel-control-next-icon bg-dark"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
+          <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/RMxFLWc8WXOidgLqPj" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/RMxFLWc8WXOidgLqPj"></a></p>
         </div>
 
       </div>
