@@ -55,6 +55,9 @@
     border-right: solid black 1px;
   }
 }
+#formnavbar{
+  margin-right: 8px;
+}
 
 /* BORDER PARA CAMISETAS LG */
 @media (min-width: 993px) {
