@@ -120,3 +120,9 @@
   font-weight: bold;
   width: 30%;
 }
+
+
+/* Estilo footer  */
+.iconos-footer a i {
+  color: white;
+}
