@@ -12,11 +12,6 @@
     </div>
     <div class="cuerpo">
       <div class="cuerpo2">
-        <div class="navbar">
-          <nav class="nav nav-pills nav-fill">
-            <a class="nav-item nav-link active show" href="#login">Login</a>
-            <a class="nav-item nav-link active show" href="#registro">Registro</a>
-        </div>
         <div class="registro" id="registro">
           <h2 id="registerh2">Registro</h2>
           <form method="post" action="register.php">
@@ -40,6 +35,13 @@
               <label for="formGroupExampleInput2"></label>
               <input type="password" name = "pass2" class="form-control" id="formGroupExampleInput5" placeholder="Confirm password*" required>
             </div>
+            <?php
+              $errores = [];
+              include ("funciones.php");
+              if($_POST) {
+                $errores = validarRegistro($_POST);
+              }
+            ?>
             <button type="submit" class="btn btn-outline-primary btn-lg btn-block">Crear Cuenta</button>
           </form>
         </div>
