@@ -24,7 +24,8 @@
       </div>
 
       <div class="destacados text-center container-fluid mt-3 p-4"> <!-- SLIDER con Camisetas destacados -->
-        <h1>NEW ARRIVALS</h1>
+        <h1 class="mb-1">NEW ARRIVALS</h1>
+        <hr class="mt-0 border border-dark"style="width:200px">
         <div class="mt-1 fotos-camisetas col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-sm-3 mb-md-3 float-left">
           <img class="w-100" src="fotos/camisetas/camiseta-river.jpg" alt="">
         </div>
@@ -41,6 +42,7 @@
 
       <div class="promo container-fluid mt-3"> <!-- PROMO KIT BARCELONA -->
         <h1 class="text-center pt-2">PROMO KIT BARCELONA</h1>
+        <hr class="mt-0 border border-dark"style="width:300px">
         <section class="parrafo float-left col-6">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
@@ -51,7 +53,8 @@
       </div>
 
       <div class="ofertas text-center container-fluid mt-3"> <!-- SLIDER con ofertas -->
-        <h1 class="text-light py-2">OFERTAS DE ACCESORIOS</h1>
+        <h1 class="text-light pt-2">OFERTAS DE ACCESORIOS</h1>
+        <hr class="mt-0 border border-white"style="width:250px">
         <div class="mt-1 fotos-accesorios col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-sm-3 mb-md-3 float-left">
           <img class="w-100 rounded" src="fotos/accesorios/conos.jpg" alt="">
         </div>
