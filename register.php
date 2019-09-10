@@ -1,3 +1,20 @@
+<?php
+$errores=[];
+include ("funciones.php");
+
+if ($_POST) {
+  $errores=validarRegistro($_POST);
+}
+
+// if (!$errores) {
+//   // crear usuario
+//   $usuario = armarUsuario();
+//   // Guardar Usuario
+//   guardarUsuario($usuario);
+// }
+?>
+
+
 <html lang="en" dir="ltr">
   <head>
     <?php require_once("configuraciones.php"); ?>
@@ -13,13 +30,20 @@
         <div class="registro" id="registro">
           <h2 id="registerh2">Registro</h2>
           <form method="post" action="register.php">
+            <?php if ($errores) : ?>
+              <ul class="alert-danger">
+                <?php foreach ($errores as $error) : ?>
+                  <li> <?= $error ?> </li>
+                <?php endforeach ?>
+              </ul>
+            <?php endif ?>
             <div class="form-group">
               <label for="formGroupExampleInput"></label>
-              <input type="text" name="name" class="form-control" id="formGroupExampleInput" placeholder="Nombre*" required>
+              <input type="text" name="nombre" class="form-control" id="formGroupExampleInput" placeholder="Nombre*" required>
             </div>
             <div class="form-group">
               <label for="formGroupExampleInput2"></label>
-              <input type="text" name="name" class="form-control" id="formGroupExampleInput2" placeholder="Apellido*" required>
+              <input type="text" name="apellido" class="form-control" id="formGroupExampleInput2" placeholder="Apellido*" required>
             </div>
             <div class="form-group">
               <label for="formGroupExampleInput2"></label>
@@ -33,14 +57,6 @@
               <label for="formGroupExampleInput2"></label>
               <input type="password" name="pass2" class="form-control" id="formGroupExampleInput5" placeholder="Confirm password*" required>
             </div>
-            <?php
-              $errores = [];
-              include ("funciones.php");
-              if($_POST) {
-                $errores = validarRegistro($_POST);
-                return $errores;
-              }
-            ?>
             <button type="submit" class="btn btn-outline-primary btn-lg btn-block">Crear Cuenta</button>
           </form>
         </div>

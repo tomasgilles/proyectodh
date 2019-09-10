@@ -123,10 +123,13 @@
   font-weight: bold;
   width: 30%;
 }
-.dropdown-menu {
-  left: auto;
-  right: 5%;
-  width: 165%;
+
+@media (min-width: 1024px) {
+  .dropdown-menu {
+    left: auto;
+    right: 5%;
+    width: 165%;
+  }
 }
 
 
