@@ -15,29 +15,30 @@
           <form method="post" action="register.php">
             <div class="form-group">
               <label for="formGroupExampleInput"></label>
-              <input type="text" name ="name" class="form-control" id="formGroupExampleInput" placeholder="Nombre*" required>
+              <input type="text" name="name" class="form-control" id="formGroupExampleInput" placeholder="Nombre*" required>
             </div>
             <div class="form-group">
               <label for="formGroupExampleInput2"></label>
-              <input type="text" name ="name" class="form-control" id="formGroupExampleInput2" placeholder="Apellido*" required>
+              <input type="text" name="name" class="form-control" id="formGroupExampleInput2" placeholder="Apellido*" required>
             </div>
             <div class="form-group">
               <label for="formGroupExampleInput2"></label>
-              <input type="email" name ="email" class="form-control" id="formGroupExampleInput3" placeholder="Email*" required>
+              <input type="email" name="email" class="form-control" id="formGroupExampleInput3" placeholder="Email*" required>
             </div>
             <div class="form-group">
               <label for="formGroupExampleInput2"></label>
-              <input type="password" name = "pass" class="form-control" id="formGroupExampleInput4" placeholder= "Password*" required>
+              <input type="password" name="pass" class="form-control" id="formGroupExampleInput4" placeholder= "Password*" required>
             </div>
             <div class="form-group">
               <label for="formGroupExampleInput2"></label>
-              <input type="password" name = "pass2" class="form-control" id="formGroupExampleInput5" placeholder="Confirm password*" required>
+              <input type="password" name="pass2" class="form-control" id="formGroupExampleInput5" placeholder="Confirm password*" required>
             </div>
             <?php
               $errores = [];
               include ("funciones.php");
               if($_POST) {
                 $errores = validarRegistro($_POST);
+                return $errores;
               }
             ?>
             <button type="submit" class="btn btn-outline-primary btn-lg btn-block">Crear Cuenta</button>

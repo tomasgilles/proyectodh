@@ -123,6 +123,11 @@
   font-weight: bold;
   width: 30%;
 }
+.dropdown-menu {
+  left: auto;
+  right: 5%;
+  width: 165%;
+}
 
 
 /* Estilo footer  */
