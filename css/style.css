@@ -116,9 +116,6 @@
   padding-right: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 5px;
   font-size: 17px;
   font-weight: bold;
   width: 30%;
@@ -126,9 +123,10 @@
 
 @media (min-width: 1024px) {
   .dropdown-menu {
+    position: absolute;
+    width: 160%;
+    width: max-content;
     left: auto;
-    right: 5%;
-    width: 165%;
   }
 }
 

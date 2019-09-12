@@ -13,7 +13,14 @@
           <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Botines</a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Botines
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Nike</a>
+            <a class="dropdown-item" href="#">Adidas</a>
+            <a class="dropdown-item" href="#">Puma</a>
+          </div>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -22,7 +29,18 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Remeras</a>
             <a class="dropdown-item" href="#">Camperas</a>
+            <a class="dropdown-item" href="#">Shorts</a>
+            <a class="dropdown-item" href="#">Medias</a>
           </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Accesorios
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Pelotas</a>
+              <a class="dropdown-item" href="#">Otros</a>
+            </div>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0" id="formnavbar">
