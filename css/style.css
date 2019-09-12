@@ -124,13 +124,19 @@
 @media (min-width: 1024px) {
   .dropdown-menu {
     position: absolute;
-    width: 160%;
+    width: 150%;
     width: max-content;
     left: auto;
   }
 }
-
-
+#logindropdown{
+  right: 5px;
+}
+#micarrito{
+  width: 40px;
+  height: 24px;
+  padding-top: 3px
+}
 /* Estilo footer  */
 .iconos-footer a i {
   color: white;
