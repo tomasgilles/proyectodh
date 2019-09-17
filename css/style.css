@@ -111,11 +111,8 @@
 .nav{
   margin: auto;
 }
-.nav-item{
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.nav-item2{
+
   font-size: 17px;
   font-weight: bold;
   width: 30%;
