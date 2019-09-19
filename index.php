@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title></title>
     <?php require_once("configuraciones.php"); ?>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
@@ -23,22 +25,48 @@
 
       </div>
 
-      <div class="destacados text-center container-fluid mt-3 p-4"> <!-- SLIDER con Camisetas destacados -->
-        <h1 class="mb-1">NEW ARRIVALS</h1>
-        <hr class="mt-0 border border-dark"style="width:200px">
-        <div class="mt-1 fotos-camisetas col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-sm-3 mb-md-3 float-left">
-          <img class="w-100" src="fotos/camisetas/camiseta-river.jpg" alt="">
-        </div>
-        <div class="mt-1 fotos-camisetas col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-sm-3 mb-md-3 float-left">
-          <img class="w-100" src="fotos/camisetas/camiseta-boca.jpg" alt="">
-        </div>
-        <div class="mt-1 fotos-camisetas col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-sm-3 mb-md-3 float-left">
-          <img class="w-100" src="fotos/camisetas/camiseta-mancity.jpg" alt="">
-        </div>
-        <div class="mt-1 fotos-camisetas col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-sm-3 mb-md-3 float-left">
-          <img class="w-100" src="fotos/camisetas/camiseta-atleticom.jpg" alt="">
+      <div class="carousel">
+      <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="fotos/botines/adidas-nemeziz1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="h5-carousel" id="nemeziz">Botines Adidas New Generation Nemeziz</h5>
+                <a type="button" class="button-h5 btn btn-outline-dark" href="#">Comprar Ahora</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="fotos/botines/adidas-adizero1.jpg" class="d-block w-100" alt="...">
+              <div id="carousel-adizero"class="carousel-caption d-none d-md-block">
+                <h5 class="h5-carousel" id="adizero">Botines Adidas Adizero</h5>
+                <a type="button" class="button-h5 btn btn-outline-dark" href="#">Comprar Ahora</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="fotos/botines/nike-mercurial1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="h5-carousel" id="mercurial">Nuevos Botines Nike Mercurial</h5>
+                <a type="button" class="button-h5 btn btn-outline-dark" href="#">Comprar Ahora</a>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
+    </div>
 
       <div class="promo container-fluid mt-3"> <!-- PROMO KIT BARCELONA -->
         <h1 class="text-center pt-2">PROMO KIT BARCELONA</h1>

@@ -2,18 +2,18 @@
 <section class="container-fluid">
   <div class="">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.php"><img src="fotos/logo1.png" />
-
-</a>
+    <a class="navbar-brand" href="#">Logo</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-
-        <li class="nav-item2 ">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Botines
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -21,8 +21,8 @@
             <a class="dropdown-item" href="#">Adidas</a>
             <a class="dropdown-item" href="#">Puma</a>
           </div>
-          </li>
-        <li class="nav-item2 ">
+        </li>
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Vestimenta
           </a>
@@ -33,7 +33,7 @@
             <a class="dropdown-item" href="#">Medias</a>
           </div>
           </li>
-          <li class="nav-item2">
+          <li class="nav-item">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Accesorios
             </a>
@@ -48,7 +48,7 @@
         </form>
         <div class="dropdown">
           <button class="btn btn-primary dropdown-toggle" type="button" id="loginFromButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Ingresar
+            Login
           </button>
           <form class="dropdown-menu dropdown-menu p-4" aria-labelledby="loginFromButton" id=logindropdown>
             <div class="form-group">
@@ -65,9 +65,9 @@
                 Remember me
               </label>
             </div>
-            <button type="submit" class="btn btn-primary">Logueate</button>
+            <button type="submit" class="btn btn-primary">Sign in</button>
           </form>
-          <a class="btn btn-primary" href="register.php" role="button">Registro</a>
+          <a class="btn btn-primary" href="register.php" role="button">Register</a>
           <a class="btn btn-primary" href="register.php" role="button"><i id= "micarrito" class="fas fa-shopping-cart"></i></i></a>
         </div>
     </div>
