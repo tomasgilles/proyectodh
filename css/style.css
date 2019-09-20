@@ -152,6 +152,31 @@
   padding-top: 3px
 }
 /* Estilo footer  */
+/* Carousel abajo  */
 .iconos-footer a i {
   color: white;
+}
+#controls{
+  margin: auto;
+    width: 100px;
+}
+.card{
+  border: none;
+}
+.card-text{
+  font-size: 20px;
+  font-style: bold;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 17px;
+}
+.card-body{
+  width: fit-content;
+  margin: auto;
+  padding: 0px;
+  position: relative;
+}
+.comprar-ahora{
+  position: absolute;
+  left: 28px;
 }
