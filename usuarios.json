@@ -1,3 +1,25 @@
-{"usuarios": [
-  
-  ]}
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nombre": "Marcos",
+            "apellido": "Letemendia",
+            "email": "marcos.letemendia@gmail.com",
+            "contrasenia": "$2y$10$Q.bkP99Pv2TgoOi\/tJXV2e\/uLsboHoA2PKI3HEsoIONydqQSoxyc6"
+        },
+        {
+            "id": 2,
+            "nombre": "Tomas",
+            "apellido": "Gilles",
+            "email": "tomasgilles@gmail.com",
+            "contrasenia": "$2y$10$qcorXZMhw3eYSinxlUtczuX4jx\/1wnL.9Kwjquluu\/fYWxL0WMXvO"
+        },
+        {
+            "id": 3,
+            "nombre": "Julieta",
+            "apellido": "Tiscornia",
+            "email": "julietatiscorniaa@gmail.com",
+            "contrasenia": "$2y$10$.OUikbceXoT3\/CCzpHfQQOuHLG8fnk9KFxlWEOH7NtW2Fwjj76aVi"
+        }
+    ]
+}

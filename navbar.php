@@ -1,3 +1,19 @@
+<?php
+$errores =[];
+
+if ($_POST) {
+  $errores = validarLogin($_POST);
+
+  if (!$errores) {
+    loguearUsuario();
+    header("Location: index.php");
+    exit;
+  }
+}
+
+?>
+
+
 
 <section class="container-fluid">
   <div class="">
@@ -65,6 +81,13 @@
                 Remember me
               </label>
             </div>
+            <?php if ($errores) : ?>
+              <ul class="alert-danger">
+                <?php foreach($errores as $error) :?>
+                  <li> <?= $error ?> </li>
+                <?php endforeach ?>
+              </ul>
+            <?php endif ?>
             <button type="submit" class="btn btn-primary">Sign in</button>
           </form>
           <a class="btn btn-primary" href="register.php" role="button">Register</a>

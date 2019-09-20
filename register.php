@@ -1,17 +1,22 @@
 <?php
 $errores=[];
 include ("funciones.php");
+$errores=[];
+$nombreOk="";
+$emailOk="";
 
 if ($_POST) {
   $errores=validarRegistro($_POST);
-}
 
-// if (!$errores) {
-//   // crear usuario
-//   $usuario = armarUsuario();
-//   // Guardar Usuario
-//   guardarUsuario($usuario);
-// }
+  if (!$errores) {
+    $usuario = armarUsuario();
+
+    guardarUsuario($usuario);
+
+    header("Location: index.php");
+    exit;
+  }
+}
 ?>
 
 

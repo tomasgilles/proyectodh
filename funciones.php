@@ -6,7 +6,7 @@ function validarRegistro($datos){
   $errores=[];
   $datosFinales=[];
   foreach($datos as $key => $value){
-    while ($key != ("pass" && "pass2")){
+    if ($key == "nombre" || "apellido" || "email"){
       $datosFinales[$key] = trim($value);
     }
   }
@@ -30,15 +30,25 @@ function validarRegistro($datos){
  return $errores;
 }
 
+function nextId(){
+  $json = file_get_contents("usuarios.json");
+  $array = json_decode($json, true);
+
+  $lastUser = array_pop($array["usuarios"]);
+  $nextId = $lastUser["id"] + 1;
+
+  return $nextId;
+}
 
 
 // CREAR usuario
 function armarUsuario(){
   return [
+    "id" => nextId(),
     "nombre" => trim($_POST["nombre"]),
     "apellido" => trim($_POST["apellido"]),
     "email" => trim($_POST["email"]),
-    "contraseña" => password_hash($_POST["pass"],PASSWORD_DEFAULT)
+    "contrasenia" => password_hash($_POST["pass"],PASSWORD_DEFAULT)
   ];
 }
 
@@ -47,13 +57,51 @@ function guardarUsuario($user){
   $json = file_get_contents("usuarios.json");
   $array = json_decode($json, true);
   $array["usuarios"][]=$user;
-  $json_final = json_encode($array);
+  $json_final = json_encode($array, JSON_PRETTY_PRINT);
   file_put_contents("usuarios.json", $json_final);
 }
 
 
+// LOGIN
+
+function validarLogin($datos){
+  $errores=[];
+
+  // Email
+  if(strlen($datos["email"])==0) {
+    $errores["email"]= "Por favor ingrese su email";
+  } else if (!buscarUsuarioPorMail($datos["email"])) {
+    $errores["email"]= "El usuario no existe. Por favor regístrese.";
+  }
+
+  // Contraseña
+  if (strlen($datos["password"])==0) {
+    $errores["password"]= "Por favor ingrese su contraseña";
+  } else {
+    $usuario = buscarUsuarioPorMail($datos["email"]);
+    if (!password_verify($datos["password"], $usuario["contrasenia"])) {
+      $errores["password"] = "La contraseña ingresada es incorrecta";
+    }
+  }
+  return $errores;
+}
 
 
+function buscarUsuarioPorMail($email){
+  $json = file_get_contents("usuarios.josn");
+  $array = json_decode($json, true);
 
+  foreach ($array["usuarios"] as $usuario) {
+    if ($usuario["email"] == $email) {
+      return $usuario;
+    }
+  }
+  return null;
+}
+
+
+function loguearUsuario(){
+  $_SESSION["email"] = $_POST["email"];
+}
 
 ?>
