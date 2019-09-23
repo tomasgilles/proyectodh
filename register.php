@@ -30,7 +30,7 @@ if ($_POST) {
     <title></title>
   </head>
   <body>
-    <?php include("navbar.php") ?>
+    <?php include("navbarParaRegistro.php") ?>
     <div class="techo">
       <h1 id="registerh1">Mi Cuenta</h1>
     </div>

@@ -1,20 +1,4 @@
-<?php
-$errores =[];
 
-if ($_POST) {
-  $errores = validarLogin($_POST);
-
-  if (!$errores) {
-    loguearUsuario();
-    header("Location: register.php");
-    exit;
-  }
-}
-
-?>
-
-
-<?php var_dump($_SESSION); ?>
 <section class="container-fluid">
   <div class="">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -63,33 +47,6 @@ if ($_POST) {
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         </form>
         <div class="dropdown">
-          <button class="btn btn-primary dropdown-toggle" type="button" id="loginFromButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Login
-          </button>
-          <form class="dropdown-menu dropdown-menu p-4" aria-labelledby="loginFromButton" id=logindropdown>
-            <div class="form-group">
-              <label for="exampleDropdownFormEmail2">Email address</label>
-              <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
-            </div>
-            <div class="form-group">
-              <label for="exampleDropdownFormPassword2">Password</label>
-              <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
-            </div>
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="dropdownCheck2">
-              <label class="form-check-label" for="dropdownCheck2">
-                Remember me
-              </label>
-            </div>
-            <?php if ($errores) : ?>
-              <ul class="alert-danger">
-                <?php foreach($errores as $error) :?>
-                  <li> <?= $error ?> </li>
-                <?php endforeach ?>
-              </ul>
-            <?php endif ?>
-            <button type="submit" class="btn btn-primary">Sign in</button>
-          </form>
           <a class="btn btn-primary" href="register.php" role="button">Register</a>
           <a class="btn btn-primary" href="register.php" role="button"><i id= "micarrito" class="fas fa-shopping-cart"></i></i></a>
         </div>
