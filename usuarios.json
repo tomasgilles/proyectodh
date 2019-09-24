@@ -20,6 +20,20 @@
             "apellido": "Tiscornia",
             "email": "julietatiscorniaa@gmail.com",
             "contrasenia": "$2y$10$.OUikbceXoT3\/CCzpHfQQOuHLG8fnk9KFxlWEOH7NtW2Fwjj76aVi"
+        },
+        {
+            "id": 4,
+            "nombre": "Tobi",
+            "apellido": "Sonne",
+            "email": "tobi@gmail.com",
+            "contrasenia": "$2y$10$RBm773Am7lt1l8XzQaXB\/.mdxTCAMrF7XWbnBJeNKVBsTe8lfkCt2"
+        },
+        {
+            "id": 5,
+            "nombre": "Ignacio",
+            "apellido": "Bago",
+            "email": "ignacio@gmail.com",
+            "contrasenia": "$2y$10$EV.jzHmfc.EVCytLjoZj2uyDKRcSos3zbZGiVQiX72dMU4h\/0AP16"
         }
     ]
 }
