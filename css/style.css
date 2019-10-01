@@ -150,17 +150,21 @@
     left: auto;
   }
 }
+
 #logindropdown{
   right: 5px;
-}
-.form{
-  margin-right: 5px;
 }
 
 #micarrito{
   width: 30px;
   height: 24px;
   padding-top: 3px
+}
+.loginlabel, .form-check-label{
+ font-size: 16px;
+}
+.form-group{
+    margin-bottom: 28px;
 }
 /* Estilo footer  */
 /* Carousel abajo  */
@@ -190,4 +194,10 @@
 .comprar-ahora{
   position: absolute;
   left: 28px;
+}
+@media (max-width: 764px){
+.card, .mb-2{
+  width: 65%;
+  margin: auto;
+}
 }

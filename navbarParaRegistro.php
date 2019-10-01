@@ -40,11 +40,12 @@
             </div>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0" id="formnavbar" class= "form">
-          <input class="form-control mr-sm-2" type="search" placeholder="Busqueda" aria-label="Search">
-          <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
-
-        </form>
+        <!-- Search form -->
+<div class="col-auto mr-1">
+<div  class="md-form mt-0" >
+  <input class="form-control" type="text" placeholder="Busqueda" aria-label="Search">
+</div>
+</div>
         <div class="dropdown">
           <a class="btn btn-primary" href="register.php" role="button">Registrate</a>
           <a class="btn btn-primary" href="register.php" role="button"><i id= "micarrito" class="fas fa-shopping-cart"></i></i></a>
