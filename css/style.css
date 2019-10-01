@@ -199,5 +199,14 @@
 .card, .mb-2{
   width: 65%;
   margin: auto;
+  }
 }
+/* Promo Kit Barcelona */
+@media (max-width: 425px){
+  .text-center, .pt-2{
+    font-size: 120%;
+  }
+}
+.mt-0, .border, .border-dark{
+  width: 65%;
 }
