@@ -44,8 +44,12 @@
           <button class="btn btn-primary" type="submit"><i  class="fas fa-search"></i></button>
         </form>
         <div class="dropdown">
-          <a class="btn btn-primary" href="login.php" role="button">Login</a>
-          <a class="btn btn-primary" href="register.php" role="button">Registrate</a>
+          <?php if ( usuarioLogueado() ): ?>
+            <a class="btn btn-danger" href="logout.php" role="button">Logout</a>
+          <?php else: ?>
+            <a class="btn btn-primary" href="login.php" role="button">Login</a>
+            <a class="btn btn-primary" href="register.php" role="button">Registrate</a>
+          <?php endif; ?>
           <a class="btn btn-primary" href="register.php" role="button"><i id= "micarrito" class="fas fa-shopping-cart"></i></i></a>
         </div>
     </div>

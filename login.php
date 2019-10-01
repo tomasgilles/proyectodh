@@ -3,8 +3,6 @@
 require_once ("funciones.php");
 
 $errores=[];
-var_dump($_POST);
-
 if ($_POST) {
   $errores = validarLogin($_POST);
 
@@ -13,9 +11,6 @@ if ($_POST) {
     header("Location: index.php");
   }
 }
-
-var_dump($errores);
-
 ?>
 
 <html lang="en" dir="ltr">
@@ -33,12 +28,17 @@ var_dump($errores);
         <div class="login" id="login">
           <h2 id="loginh2">Login</h2>
           <form method="post" action="login.php">
+            <?php if ($errores) : ?>
+              <ul class="alert-danger">
+                <?php foreach ($errores as $error) : ?>
+                  <li> <?= $error ?> </li>
+                <?php endforeach ?>
+              </ul>
+            <?php endif ?>
             <div class="form-group">
-                <label class="loginlabel" for="exampleDropdownFormEmail1">Email address</label>
                 <input type="email" name="email" class="form-control" id="formGroupExampleInput3" placeholder="Email*" value="" required>
             </div>
             <div class="form-group">
-              <label class="loginlabel" for="exampleDropdownFormPassword1">Password</label>
               <input type="password" name="pass" class="form-control" id="formGroupExampleInput4" placeholder= "Password*" required>
             </div>
             <div class="form-group">
