@@ -14,13 +14,21 @@
           <h2 id="loginh2">Login</h2>
           <form method="post" action="register.php">
             <div class="form-group">
-              <label for="formGroupExampleInput2"></label>
+                <label class="loginlabel" for="exampleDropdownFormEmail1">Email address</label>
                 <input type="email" name="email" class="form-control" id="formGroupExampleInput3" placeholder="Email*" value="" required>
             </div>
             <div class="form-group">
-              <label for="formGroupExampleInput2"></label>
+              <label class="loginlabel" for="exampleDropdownFormPassword1">Password</label>
               <input type="password" name="pass" class="form-control" id="formGroupExampleInput4" placeholder= "Password*" required>
             </div>
+            <div class="form-group">
+                 <div class="form-check">
+                   <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                   <label class="form-check-label" for="dropdownCheck">
+                     Remember me
+                   </label>
+                 </div>
+               </div>
             <button type="submit" class="btn btn-outline-primary btn-lg btn-block">Login</button>
           </form>
         </div>

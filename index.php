@@ -115,7 +115,7 @@
                         <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-juventus1.jpg"
                           alt="Card image cap">
                         <div class="card-body">
-                          <h4 class="card-title">Camiesta Juventus</h4>
+                          <h4 class="card-title">Camiseta Juventus</h4>
                           <p class="card-text">$Precio</p>
                           <a class="btn btn-primary">Comprar ahora</a>
                         </div>
@@ -147,7 +147,7 @@
                         <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-argentina1.jpg"
                           alt="Card image cap">
                         <div class="card-body">
-                          <h4 class="card-title">Camiesta Argentina</h4>
+                          <h4 class="card-title">Camiseta Argentina</h4>
                           <p class="card-text">$Precio</p>
                           <a class="btn btn-primary">Comprar ahora</a>
                         </div>
