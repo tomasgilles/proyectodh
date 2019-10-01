@@ -76,12 +76,12 @@ function validarLogin($datos){
   }
 
   // Contraseña
-  if (strlen($datos["password"])==0) {
-    $errores["password"]= "Por favor ingrese su contraseña";
+  if (strlen($datos["pass"])==0) {
+    $errores["pass"]= "Por favor ingrese su contraseña";
   } else {
     $usuario = buscarUsuarioPorMail($datos["email"]);
-    if (!password_verify($datos["password"], $usuario["contrasenia"])) {
-      $errores["password"] = "La contraseña ingresada es incorrecta";
+    if (!password_verify($datos["pass"], $usuario["contrasenia"])) {
+      $errores["pass"] = "La contraseña ingresada es incorrecta";
     }
   }
   return $errores;
@@ -89,7 +89,7 @@ function validarLogin($datos){
 
 
 function buscarUsuarioPorMail($email){
-  $json = file_get_contents("usuarios.josn");
+  $json = file_get_contents("usuarios.json");
   $array = json_decode($json, true);
 
   foreach ($array["usuarios"] as $usuario) {

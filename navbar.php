@@ -1,20 +1,3 @@
-<?php
-$errores =[];
-
-if ($_POST) {
-  $errores = validarLogin($_POST);
-
-  if (!$errores) {
-    loguearUsuario();
-    header("Location: register.php");
-    exit;
-  }
-}
-
-?>
-
-
-
 <section class="container-fluid">
   <div class="">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -59,6 +42,7 @@ if ($_POST) {
         <form class="form-inline my-2 my-lg-0" id="formnavbar" class= "form">
           <input class="form-control mr-sm-2" type="search" placeholder="Busqueda" aria-label="Search">
           <button class="btn btn-primary" type="submit"><i  class="fas fa-search"></i></button>
+        </form>
         <div class="dropdown">
           <a class="btn btn-primary" href="login.php" role="button">Login</a>
           <a class="btn btn-primary" href="register.php" role="button">Registrate</a>

@@ -1,10 +1,30 @@
+<?php
+
+require_once ("funciones.php");
+
+$errores=[];
+var_dump($_POST);
+
+if ($_POST) {
+  $errores = validarLogin($_POST);
+
+  if (!$errores) {
+    loguearUsuario();
+    header("Location: index.php");
+  }
+}
+
+var_dump($errores);
+
+?>
+
 <html lang="en" dir="ltr">
   <head>
     <?php require_once("configuraciones.php"); ?>
     <title></title>
   </head>
   <body>
-    <?php include("navbarParaRegistro.php") ?>
+    <?php require_once("navbar.php") ?>
     <div class="techo">
       <h1 id="registerh1">Mi Cuenta</h1>
     </div>
@@ -12,7 +32,7 @@
       <div class="cuerpo2">
         <div class="login" id="login">
           <h2 id="loginh2">Login</h2>
-          <form method="post" action="register.php">
+          <form method="post" action="login.php">
             <div class="form-group">
               <label for="formGroupExampleInput2"></label>
                 <input type="email" name="email" class="form-control" id="formGroupExampleInput3" placeholder="Email*" value="" required>
