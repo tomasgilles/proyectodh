@@ -77,7 +77,7 @@ var_dump($_SESSION);
 
       <div class="promo container-fluid mt-3"> <!-- PROMO KIT BARCELONA -->
         <h1 class="text-center pt-2">PROMO KIT BARCELONA</h1>
-        <hr class="mt-0 border border-dark"style="width:300px">
+        <hr class="mt-0 border border-dark">
         <section class="parrafo float-left col-6">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
