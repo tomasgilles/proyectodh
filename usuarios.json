@@ -34,6 +34,13 @@
             "apellido": "Bago",
             "email": "ignacio@gmail.com",
             "contrasenia": "$2y$10$EV.jzHmfc.EVCytLjoZj2uyDKRcSos3zbZGiVQiX72dMU4h\/0AP16"
+        },
+        {
+            "id": 6,
+            "nombre": "Pamela",
+            "apellido": "DelPino",
+            "email": "delpino.h@hotmail.com",
+            "contrasenia": "$2y$10$mMf6xytnttmb02Rci2Hl4O38IlBPQUeIOtOz2jEBRwDhwJ1Csa29."
         }
     ]
 }

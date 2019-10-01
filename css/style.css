@@ -153,8 +153,12 @@
 #logindropdown{
   right: 5px;
 }
+.form{
+  margin-right: 5px;
+}
+
 #micarrito{
-  width: 40px;
+  width: 30px;
   height: 24px;
   padding-top: 3px
 }

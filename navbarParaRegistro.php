@@ -2,7 +2,7 @@
 <section class="container-fluid">
   <div class="">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.php">Logo</a>
+    <a class="navbar-brand" href="index.php"><img src="fotos/logo.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -40,11 +40,13 @@
             </div>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0" id="formnavbar">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <form class="form-inline my-2 my-lg-0" id="formnavbar" class= "form">
+          <input class="form-control mr-sm-2" type="search" placeholder="Busqueda" aria-label="Search">
+          <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+
         </form>
         <div class="dropdown">
-          <a class="btn btn-primary" href="register.php" role="button">Register</a>
+          <a class="btn btn-primary" href="register.php" role="button">Registrate</a>
           <a class="btn btn-primary" href="register.php" role="button"><i id= "micarrito" class="fas fa-shopping-cart"></i></i></a>
         </div>
     </div>
