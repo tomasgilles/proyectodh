@@ -11,7 +11,6 @@ var_dump($_SESSION);
     <title></title>
     <?php require_once("configuraciones.php"); ?>
     <?php require_once("funciones.php") ?>
-    <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
@@ -77,14 +76,13 @@ var_dump($_SESSION);
 
       <div class="promo container-fluid mt-3"> <!-- PROMO KIT BARCELONA -->
         <h1 class="text-center pt-2">PROMO KIT BARCELONA</h1>
-        <hr class="mt-0 border border-dark">
-        <section class="parrafo float-left col-6">
+        <hr id="borderpromo"class="mt-0 border border-dark">
+        <div class="parrafopromo">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </section>
-
-        <section class="imagen-parrafo float-left col-6">
+        </div>
+        <div class="imagen-parrafo">
           <img src="fotos/promo-barcelona.jpg" alt="" class="img-fluid">
-        </section>
+        </div>
       </div>
       <div class="container my-4">
 
@@ -104,17 +102,6 @@ var_dump($_SESSION);
                 <div class="carousel-item active">
 
                   <div class="row">
-                    <div class="col-md-4">
-                      <div class="card mb-2">
-                        <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-barca1.jpg"
-                          alt="Card image cap">
-                        <div class="card-body">
-                          <h4 class="card-title">Camiseta Barcelona</h4>
-                          <p class="card-text">$Precio</p>
-                          <a class="btn btn-primary">Comprar ahora</a>
-                        </div>
-                      </div>
-                    </div>
 
                     <div class="col-md-4 clearfix d-none d-md-block">
                       <div class="card mb-2">
@@ -122,6 +109,18 @@ var_dump($_SESSION);
                           alt="Card image cap">
                         <div class="card-body">
                           <h4 class="card-title">Camiseta Juventus</h4>
+                          <p class="card-text">$Precio</p>
+                          <a class="btn btn-primary">Comprar ahora</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4">
+                      <div class="card mb-2">
+                        <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-barca1.jpg"
+                          alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Camiseta Barcelona</h4>
                           <p class="card-text">$Precio</p>
                           <a class="btn btn-primary">Comprar ahora</a>
                         </div>
