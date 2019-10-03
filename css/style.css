@@ -87,10 +87,6 @@
   }
 }
 
-.promo {
-  overflow: hidden;
-  background-color: rgba(94, 173, 243, 0.1);
-}
 
 .ofertas {
   overflow: hidden;
@@ -207,6 +203,37 @@
     font-size: 120%;
   }
 }
-.mt-0, .border, .border-dark{
-  width: 65%;
+.promo {
+  overflow: hidden;
+  background-color: rgba(94, 173, 243, 0.1);
+}
+#borderpromo{
+  width: 70%;
+}
+@media (min-width: 770px){
+.parrafopromo{
+  float:left;
+  margin: 0;
+  width:50%;
+}
+div.imagen-parrafo{
+  float:left;
+  margin: 0;
+  width: 50%;
+  font-size: 24px;
+}
+}
+@media (max-width: 770px, min-width:427px){
+  div.imagen-parrafo{
+    width: 55%;
+    margin: auto;
+    font-size: 20px;
+  }
+}
+@media (max-width: 425px, min-width:320px){
+  div.imagen-parrafo{
+    width: 100%;
+    margin: auto;
+    font-size: 12px;
+  }
 }
