@@ -44,13 +44,13 @@
         <?php endif; ?>
         <form class="form-inline my-2 my-lg-0" id="formnavbar" class= "form">
           <input class="form-control mr-sm-2" type="search" placeholder="Busqueda" aria-label="Search">
-          <button class="btn btn-primary" type="submit"><i  class="fas fa-search"></i></button>
+          <button id= "btnbusqueda" class="btn btn-primary" type="submit"><i  class="fas fa-search"></i></button>
         </form>
         <div class="dropdown">
           <?php if ( usuarioLogueado() ): ?>
             <a class="btn btn-danger" href="logout.php" role="button">Logout</a>
           <?php else: ?>
-            <a class="btn btn-primary" href="login.php" role="button">Login</a>
+            <a id= "btnlogin" class="btn btn-info" href="login.php" role="button">Login</a>
             <a class="btn btn-primary" href="register.php" role="button">Registrate</a>
           <?php endif; ?>
           <a class="btn btn-primary" href="register.php" role="button"><i id= "micarrito" class="fas fa-shopping-cart"></i></i></a>
