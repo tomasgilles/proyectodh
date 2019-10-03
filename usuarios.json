@@ -44,17 +44,10 @@
         },
         {
             "id": 7,
-            "nombre": "ale",
-            "apellido": "vivone",
+            "nombre": "Ale",
+            "apellido": "Vivone",
             "email": "ale@dh.com",
-            "contrasenia": "$2y$10$PNeWFNsA1keQ5pI5PKdNPuS\/Stb2qt1YjPzcvK4M\/z0wdDvz14S.i"
-        },
-        {
-            "id": 8,
-            "nombre": "jon",
-            "apellido": "snow",
-            "email": "asd@sdf",
-            "contrasenia": "$2y$10$ZGiinwakfwHJP3e4dKSO.O9MCZg2ASY16J6jzrm7TVuMZv27fzrii"
+            "contrasenia": "$2y$10$gdI4APavCDxT2\/TdK77vkeeojUJeIvN5cObTqZvn6oNCTbDh4fPRa"
         }
     ]
 }

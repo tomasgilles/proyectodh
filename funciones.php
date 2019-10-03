@@ -20,6 +20,10 @@ function validarRegistro($datos){
     $errores["apellido"]="Ingrese caracteres alfabeticos";
   }
 
+  if (buscarUsuarioPorMail($datosFinales["email"])) {
+    $errores["email"] = "Ya existe un usuario con este email. Por favor elija otro.";
+  }
+
   if (strlen($datosFinales["pass"])<4) {
     $errores["pass"]="La contraseña debe tener por lo menos 4 caracteres";
   }
@@ -103,6 +107,10 @@ function buscarUsuarioPorMail($email){
 
 function loguearUsuario(){
   $_SESSION["email"] = $_POST["email"];
+
+  // if (isset($_POST["rememberMe"])) {
+  //   setcookie("email", $email, time()+60*60);
+  // }
 }
 
 function usuarioLogueado(){

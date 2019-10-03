@@ -1,9 +1,11 @@
 <?php
 
 require_once ("funciones.php");
+$emailOk = "";
 
 $errores=[];
 if ($_POST) {
+  $emailOk = trim($_POST["email"]);
   $errores = validarLogin($_POST);
 
   if (!$errores) {
@@ -28,22 +30,36 @@ if ($_POST) {
         <div class="login" id="login">
           <h2 id="loginh2">Login</h2>
           <form method="post" action="login.php">
-            <?php if ($errores) : ?>
+            <?php if (isset($errores["email"]) && isset($errores["pass"])) : ?>
               <ul class="alert-danger">
-                <?php foreach ($errores as $error) : ?>
-                  <li> <?= $error ?> </li>
-                <?php endforeach ?>
+                  <li> <?= $errores["email"] ?> </li>
               </ul>
+            <?php else: ?>
+              <?php if(isset($errores["email"])): ?>
+                <ul class="alert-danger">
+                    <li> <?= $errores["email"] ?> </li>
+                </ul>
+              <?php endif ?>
+              <?php if (isset($errores["pass"])): ?>
+                <ul class="alert-danger">
+                    <li> <?= $errores["pass"] ?> </li>
+                </ul>
+              <?php endif ?>
             <?php endif ?>
+
             <div class="form-group">
+              <?php if(isset($errores["email"])): ?>
                 <input type="email" name="email" class="form-control" id="formGroupExampleInput3" placeholder="Email*" value="" required>
+              <?php else: ?>
+                <input type="email" name="email" class="form-control" id="formGroupExampleInput3" placeholder="Email*" value="<?= $emailOk ?>" required>
+              <?php endif ?>
             </div>
             <div class="form-group">
               <input type="password" name="pass" class="form-control" id="formGroupExampleInput4" placeholder= "Password*" required>
             </div>
             <div class="form-group">
                  <div class="form-check">
-                   <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                   <input type="checkbox" name="rememberMe" class="form-check-input" id="dropdownCheck">
                    <label class="form-check-label" for="dropdownCheck">
                      Remember me
                    </label>

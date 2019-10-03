@@ -17,6 +17,8 @@ if ($_POST) {
 
     guardarUsuario($usuario);
 
+    loguearUsuario();
+
     header("Location: index.php");
     exit;
   }
