@@ -103,6 +103,10 @@ function buscarUsuarioPorMail($email){
 
 function loguearUsuario(){
   $_SESSION["email"] = $_POST["email"];
+
+  // if (isset($_POST["rememberMe"])) {
+  //   setcookie("email", $email, time()+60*60);
+  // }
 }
 
 function usuarioLogueado(){
