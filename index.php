@@ -75,132 +75,133 @@ var_dump($_SESSION);
       </div>
     </div>
 
-      <div class="promo container-fluid mt-3"> <!-- PROMO KIT BARCELONA -->
-        <h1 class="text-center pt-2">PROMO KIT BARCELONA</h1>
-        <hr id="borderpromo"class="mt-0 border border-dark">
-        <div class="parrafopromo">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="imagen-parrafo">
-          <img src="fotos/promo-barcelona.jpg" alt="" class="img-fluid">
-        </div>
-      </div>
-      <div class="container my-4">
+    <div class="promo container-fluid mt-3"> <!-- PROMO KIT BARCELONA -->
+    <h1 class="text-center pt-2">PROMO KIT BARCELONA</h1>
+    <hr id="borderpromo"class="mt-0 border border-dark">
+    <div class="parrafopromo" style="margin: auto;
+    width:100%;">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="imagenpromo"class="imagen-parrafo" style="width: 70%;
+margin: auto; float: none;">
+      <img src="fotos/promo-barcelona.jpg" alt="" class="img-fluid">
+  </div>
+  <div class="container my-4">
 
-            <hr class="my-4">
+        <hr class="my-4">
 
-            <!--Carousel Wrapper-->
-            <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+        <!--Carousel Wrapper-->
+        <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
 
-              <!--Controls-->
+          <!--Controls-->
 
-              <!--/.Controls-->
+          <!--/.Controls-->
 
-              <!--Slides-->
-              <div class="carousel-inner" role="listbox">
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
 
-                <!--First slide-->
-                <div class="carousel-item active">
+            <!--First slide-->
+            <div class="carousel-item active">
 
-                  <div class="row">
+              <div class="row">
 
-                    <div class="col-md-4 clearfix d-none d-md-block">
-                      <div class="card mb-2">
-                        <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-juventus1.jpg"
-                          alt="Card image cap">
-                        <div class="card-body">
-                          <h4 class="card-title">Camiseta Juventus</h4>
-                          <p class="card-text">$Precio</p>
-                          <a id="juventus" class="btn btn-primary">Comprar ahora</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-4">
-                      <div class="card mb-2">
-                        <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-barca1.jpg"
-                          alt="Card image cap">
-                        <div class="card-body">
-                          <h4 class="card-title">Camiseta Barcelona</h4>
-                          <p class="card-text">$Precio</p>
-                          <a id="barcelona" class="btn btn-primary">Comprar ahora</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-4 clearfix d-none d-md-block">
-                      <div class="card mb-2">
-                        <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-real1.jpg"
-                          alt="Card image cap">
-                        <div class="card-body">
-                          <h4 class="card-title">Camiseta Real Madrid</h4>
-                          <p class="card-text">$Precio</p>
-                          <a id="realmadrid" class="btn btn-primary">Comprar ahora</a>
-                        </div>
-                      </div>
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-juventus1.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title" style="height: 54px;" >Camiseta Juventus</h4>
+                      <p class="card-text">$Precio</p>
+                      <a id="juventus" style="margin-left: 15%" class="btn btn-primary">Comprar ahora</a>
                     </div>
                   </div>
-
                 </div>
-                <!--/.First slide-->
 
-                <!--Second slide-->
-                <div class="carousel-item">
-
-                  <div class="row">
-                    <div class="col-md-4">
-                      <div class="card mb-2">
-                        <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-argentina1.jpg"
-                          alt="Card image cap">
-                        <div class="card-body">
-                          <h4 class="card-title">Camiseta Argentina</h4>
-                          <p class="card-text">$Precio</p>
-                          <a id="argentina" class="btn btn-primary">Comprar ahora</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-4 clearfix d-none d-md-block">
-                      <div class="card mb-2">
-                        <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-ajax1.jpg"
-                          alt="Card image cap">
-                        <div class="card-body">
-                          <h4 class="card-title">Camiseta Ajax</h4>
-                          <p class="card-text">$Precio</p>
-                          <a id="ajax" class="btn btn-primary">Comprar ahora</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-md-4 clearfix d-none d-md-block">
-                      <div class="card mb-2">
-                        <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-napoli1.jpg"
-                          alt="Card image cap">
-                        <div class="card-body">
-                          <h4 class="card-title">Camiseta Napoli</h4>
-                          <p class="card-text">$Precio</p>
-                          <a id="napoli" class="btn btn-primary">Comprar ahora</a>
-                        </div>
-                      </div>
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-barca1.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title" style="height: 54px;" >Camiseta Barcelona</h4>
+                      <p class="card-text">$Precio</p>
+                      <a id="barcelona" style="margin-left: 15%" class="btn btn-primary">Comprar ahora</a>
                     </div>
                   </div>
-
                 </div>
-                <!--/.Second slide-->
 
-              </div>
-              <div class="controls-bottom">
-                <div id="controls" class="controls">
-                  <a type="button" class="btn-floating btn-lg btn-dark" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
-                  <a type="button" class="btn-floating btn-lg btn-dark" href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-real1.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title" style="height: 54px;" >Camiseta Real Madrid</h4>
+                      <p class="card-text">$Precio</p>
+                      <a id="realmadrid" style="margin-left: 21%" class="btn btn-primary">Comprar ahora</a>
+                    </div>
+                  </div>
                 </div>
               </div>
+
             </div>
-            <!--/.Carousel Wrapper-->
+            <!--/.First slide-->
+
+            <!--Second slide-->
+            <div class="carousel-item">
+
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-argentina1.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title" style="height: 54px;" >Camiseta Argentina</h4>
+                      <p class="card-text">$Precio</p>
+                      <a id="argentina" style="margin-left: 15%" class="btn btn-primary">Comprar ahora</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-ajax1.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title" style="height: 54px;">Camiseta Ajax</h4>
+                      <p class="card-text">$Precio</p>
+                      <a id="ajax" style="margin-left: 6%" class="btn btn-primary">Comprar ahora</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-napoli1.jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title" style="height: 54px;" >Camiseta Napoli</h4>
+                      <p class="card-text">$Precio</p>
+                      <a id="napoli" style="margin-left: 12%" class="btn btn-primary">Comprar ahora</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!--/.Second slide-->
 
           </div>
+          <div class="controls-bottom">
+            <div id="controls" class="controls">
+              <a type="button" class="btn-floating btn-lg btn-dark" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+              <a type="button" class="btn-floating btn-lg btn-dark" href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <!--/.Carousel Wrapper-->
 
-    </div>
+      </div>
+
+</div>
 
     <!-- FOOTER -->
     <?php require_once("footer.php"); ?>

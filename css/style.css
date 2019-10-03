@@ -223,27 +223,6 @@
   margin: auto;
   }
 }
-#barcelona{
-  margin-left: 15%;
-}
-#juventus{
-  margin-left: 15%;
-}
-#realmadrid{
-  margin-left: 21%;
-}
-#ajax{
-  margin-left: 6%;
-}
-#argentina{
-  margin-left: 15%;
-}
-#napoli{
-  margin-left: 12%;
-}
-.card-title{
-  height: 54px;
-}
 @media (min-width:320px, max-width:325px){
   #barcelona{
     margin-left: 9%;
@@ -267,28 +246,22 @@
 }
 @media (min-width: 770px){
 .parrafopromo{
-  float:left;
-  margin: 0;
-  width:50%;
-}
-div.imagen-parrafo{
-  float:left;
-  margin: 0;
-  width: 50%;
-  font-size: 24px;
+  margin: auto;
+  width:100%;
 }
 }
-@media (max-width: 770px, min-width:427px){
-  div.imagen-parrafo{
-    width: 55%;
-    margin: auto;
-    font-size: 20px;
-  }
+@media (min-width:768px){
+   .vermas{
+   margin-left: 40%;
+   margin-top: -57%;
+ }
 }
-@media (max-width: 425px, min-width:320px){
-  div.imagen-parrafo{
-    width: 100%;
-    margin: auto;
-    font-size: 12px;
+@media (min-width:320px) and (max-width:425px){
+  .vermas{
+    margin-left: 29%;
+    margin-top: -56%;
+    padding: 3px 9px;
+    font-size: 14px;
+    font-weight: bolder;
   }
 }
