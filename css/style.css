@@ -10,6 +10,20 @@
 .first {
   position: relative;
 }
+@media (max-width: 375px) and (min-width: 320px) {
+  .first{
+    position: relative;
+    left: -109px;
+    width: 165%;
+  }
+}
+@media (max-width: 425px) and (min-width: 390px) {
+  .first{
+    position: relative;
+    left: -127px;
+    width: 167%;
+  }
+  }
 
 .gif-animado {
   position: absolute;
@@ -195,6 +209,35 @@
 .card, .mb-2{
   width: 65%;
   margin: auto;
+  }
+}
+#barcelona{
+  margin-left: 15%;
+}
+#juventus{
+  margin-left: 15%;
+}
+#realmadrid{
+  margin-left: 21%;
+}
+#ajax{
+  margin-left: 6%;
+}
+#argentina{
+  margin-left: 15%;
+}
+#napoli{
+  margin-left: 12%;
+}
+.card-title{
+  height: 54px;
+}
+@media (min-width:320px, max-width:325px){
+  #barcelona{
+    margin-left: 9%;
+  }
+  #argentina{
+    margin-left: 9%;
   }
 }
 /* Promo Kit Barcelona */

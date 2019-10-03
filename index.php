@@ -110,7 +110,7 @@ var_dump($_SESSION);
                         <div class="card-body">
                           <h4 class="card-title">Camiseta Juventus</h4>
                           <p class="card-text">$Precio</p>
-                          <a class="btn btn-primary">Comprar ahora</a>
+                          <a id="juventus" class="btn btn-primary">Comprar ahora</a>
                         </div>
                       </div>
                     </div>
@@ -122,7 +122,7 @@ var_dump($_SESSION);
                         <div class="card-body">
                           <h4 class="card-title">Camiseta Barcelona</h4>
                           <p class="card-text">$Precio</p>
-                          <a class="btn btn-primary">Comprar ahora</a>
+                          <a id="barcelona" class="btn btn-primary">Comprar ahora</a>
                         </div>
                       </div>
                     </div>
@@ -134,7 +134,7 @@ var_dump($_SESSION);
                         <div class="card-body">
                           <h4 class="card-title">Camiseta Real Madrid</h4>
                           <p class="card-text">$Precio</p>
-                          <a class="btn btn-primary">Comprar ahora</a>
+                          <a id="realmadrid" class="btn btn-primary">Comprar ahora</a>
                         </div>
                       </div>
                     </div>
@@ -154,7 +154,7 @@ var_dump($_SESSION);
                         <div class="card-body">
                           <h4 class="card-title">Camiseta Argentina</h4>
                           <p class="card-text">$Precio</p>
-                          <a class="btn btn-primary">Comprar ahora</a>
+                          <a id="argentina" class="btn btn-primary">Comprar ahora</a>
                         </div>
                       </div>
                     </div>
@@ -166,7 +166,7 @@ var_dump($_SESSION);
                         <div class="card-body">
                           <h4 class="card-title">Camiseta Ajax</h4>
                           <p class="card-text">$Precio</p>
-                          <a class="btn btn-primary">Comprar ahora</a>
+                          <a id="ajax" class="btn btn-primary">Comprar ahora</a>
                         </div>
                       </div>
                     </div>
@@ -178,7 +178,7 @@ var_dump($_SESSION);
                         <div class="card-body">
                           <h4 class="card-title">Camiseta Napoli</h4>
                           <p class="card-text">$Precio</p>
-                          <a class="btn btn-primary">Comprar ahora</a>
+                          <a id="napoli" class="btn btn-primary">Comprar ahora</a>
                         </div>
                       </div>
                     </div>
