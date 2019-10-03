@@ -39,6 +39,9 @@
             </div>
           </li>
         </ul>
+        <?php if(usuarioLogueado()): ?>
+          <div class="mr-5 font-weight-bold"> <?= "Hola " . $_SESSION["email"] ?> </div>
+        <?php endif; ?>
         <form class="form-inline my-2 my-lg-0" id="formnavbar" class= "form">
           <input class="form-control mr-sm-2" type="search" placeholder="Busqueda" aria-label="Search">
           <button class="btn btn-primary" type="submit"><i  class="fas fa-search"></i></button>
