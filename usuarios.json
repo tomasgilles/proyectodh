@@ -12,42 +12,7 @@
             "nombre": "Tomas",
             "apellido": "Gilles",
             "email": "tomasgilles@gmail.com",
-            "contrasenia": "$2y$10$qcorXZMhw3eYSinxlUtczuX4jx\/1wnL.9Kwjquluu\/fYWxL0WMXvO"
-        },
-        {
-            "id": 3,
-            "nombre": "Julieta",
-            "apellido": "Tiscornia",
-            "email": "julietatiscorniaa@gmail.com",
-            "contrasenia": "$2y$10$.OUikbceXoT3\/CCzpHfQQOuHLG8fnk9KFxlWEOH7NtW2Fwjj76aVi"
-        },
-        {
-            "id": 4,
-            "nombre": "Tobi",
-            "apellido": "Sonne",
-            "email": "tobi@gmail.com",
-            "contrasenia": "$2y$10$RBm773Am7lt1l8XzQaXB\/.mdxTCAMrF7XWbnBJeNKVBsTe8lfkCt2"
-        },
-        {
-            "id": 5,
-            "nombre": "Ignacio",
-            "apellido": "Bago",
-            "email": "ignacio@gmail.com",
-            "contrasenia": "$2y$10$EV.jzHmfc.EVCytLjoZj2uyDKRcSos3zbZGiVQiX72dMU4h\/0AP16"
-        },
-        {
-            "id": 6,
-            "nombre": "Pamela",
-            "apellido": "DelPino",
-            "email": "delpino.h@hotmail.com",
-            "contrasenia": "$2y$10$mMf6xytnttmb02Rci2Hl4O38IlBPQUeIOtOz2jEBRwDhwJ1Csa29."
-        },
-        {
-            "id": 7,
-            "nombre": "Ale",
-            "apellido": "Vivone",
-            "email": "ale@dh.com",
-            "contrasenia": "$2y$10$gdI4APavCDxT2\/TdK77vkeeojUJeIvN5cObTqZvn6oNCTbDh4fPRa"
+            "contrasenia": "$2y$10$PaDwS\/y\/GpWAMqUQY4Zf\/..XgU\/\/dXtlyt.l5bLyZtfR6\/XxfY4RS"
         }
     ]
 }

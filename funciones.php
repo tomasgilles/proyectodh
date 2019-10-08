@@ -104,6 +104,18 @@ function buscarUsuarioPorMail($email){
   return null;
 }
 
+function darmeNombreBuscandoPorMail($email){
+  $json = file_get_contents("usuarios.json");
+  $array = json_decode($json, true);
+
+  foreach ($array["usuarios"] as $usuario) {
+    if ($usuario["email"] == $email) {
+      return $usuario["nombre"] . " " . $usuario["apellido"];
+    }
+  }
+  return NULL;
+}
+
 
 function loguearUsuario(){
   $_SESSION["email"] = $_POST["email"];

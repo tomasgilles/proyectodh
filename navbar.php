@@ -40,7 +40,7 @@
           </li>
         </ul>
         <?php if(usuarioLogueado()): ?>
-          <div class="mr-5 font-weight-bold"> <?= "Hola " . $_SESSION["email"] ?> </div>
+          <div class="mr-5 font-weight-bold"> <?= "Hola " . darmeNombreBuscandoPorMail($_SESSION["email"]) ?> </div>
         <?php endif; ?>
         <form class="form-inline my-2 my-lg-0" id="formnavbar" class= "form">
           <input class="form-control mr-sm-2" type="search" placeholder="Busqueda" aria-label="Search">
@@ -50,7 +50,7 @@
           <?php if ( usuarioLogueado() ): ?>
             <a class="btn btn-danger" href="logout.php" role="button">Logout</a>
           <?php else: ?>
-            <a id= "btnlogin" class="btn btn-info" href="login.php" role="button">Login</a>
+            <a id= "btnlogin" class="btn btn-primary" href="login.php" role="button">Login</a>
             <a class="btn btn-primary" href="register.php" role="button">Registrate</a>
           <?php endif; ?>
           <a class="btn btn-primary" href="register.php" role="button"><i id= "micarrito" class="fas fa-shopping-cart"></i></i></a>
