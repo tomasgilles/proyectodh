@@ -86,6 +86,7 @@ var_dump($_SESSION);
 margin: auto; float: none;">
       <img src="fotos/promo-barcelona.jpg" alt="" class="img-fluid">
   </div>
+</div>
   <div class="container my-4">
 
         <hr class="my-4">
@@ -201,7 +202,6 @@ margin: auto; float: none;">
 
       </div>
 
-</div>
 
     <!-- FOOTER -->
     <?php require_once("footer.php"); ?>
