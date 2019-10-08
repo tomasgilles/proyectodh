@@ -75,17 +75,17 @@ require_once "funciones.php";
     </div>
 
     <div class="promo container-fluid mt-3"> <!-- PROMO KIT BARCELONA -->
-    <h1 class="text-center pt-2">PROMO KIT BARCELONA</h1>
-    <hr id="borderpromo"class="mt-0 border border-dark">
-    <div class="parrafopromo" style="margin: auto;
-    width:100%;">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div id="imagenpromo"class="imagen-parrafo" style="width: 70%;
-margin: auto; float: none;">
+      <h1 class="text-center pt-2">PROMO KIT BARCELONA</h1>
+      <hr id="borderpromo"class="mt-0 border border-dark">
+      <div class="parrafopromo" style="margin: auto;
+        width:100%;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div id="imagenpromo"class="imagen-parrafo" style="width: 70%;
+      margin: auto; float: none;">
       <img src="fotos/promo-barcelona.jpg" alt="" class="img-fluid">
-  </div>
-</div>
+      </div>
+    </div>
   <div class="container my-4">
 
         <hr class="my-4">
