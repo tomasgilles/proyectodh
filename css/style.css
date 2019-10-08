@@ -182,6 +182,54 @@
 
 /* Carousel abajo  */
 
+#juventus {
+  margin-left: 15%;
+}
+
+#juventus:hover {
+  color: white;
+}
+
+#barcelona {
+  margin-left: 15%;
+}
+
+#barcelona:hover {
+  color: white;
+}
+
+#realmadrid {
+  margin-left: 21%;
+}
+
+#realmadrid:hover {
+  color: white;
+}
+
+#argentina {
+   margin-left: 15%;
+}
+
+#argentina:hover {
+  color: white;
+}
+
+#ajax {
+  margin-left: 6%;
+}
+
+#ajax:hover {
+  color: white;
+}
+
+#napoli {
+   margin-left: 12%;
+}
+
+#napoli:hover {
+  color: white;
+}
+
 .iconos-footer a i {
   color: white;
 }

@@ -13,6 +13,13 @@
             "apellido": "Gilles",
             "email": "tomasgilles@gmail.com",
             "contrasenia": "$2y$10$PaDwS\/y\/GpWAMqUQY4Zf\/..XgU\/\/dXtlyt.l5bLyZtfR6\/XxfY4RS"
+        },
+        {
+            "id": 3,
+            "nombre": "Teo",
+            "apellido": "VonK",
+            "email": "teo@gmail.com",
+            "contrasenia": "$2y$10$Z6hBrZ1..NBeJ1sMxXtFGevEnS7onE9VjMsyVDx6ljB2g2NdaGv6y"
         }
     ]
 }
