@@ -124,7 +124,7 @@ margin: auto; float: none;">
                     <div class="card-body">
                       <h4 class="card-title" style="height: 54px;" >Camiseta Barcelona</h4>
                       <p class="card-text">$Precio</p>
-                      <a id="barcelona" style="margin-left: 15%" class="btn btn-primary">Comprar ahora</a>
+                      <a id="barcelona" style="margin-left: 15%" class="btn btn-outline-dark">Comprar ahora</a>
                     </div>
                   </div>
                 </div>
@@ -136,7 +136,7 @@ margin: auto; float: none;">
                     <div class="card-body">
                       <h4 class="card-title" style="height: 54px;" >Camiseta Real Madrid</h4>
                       <p class="card-text">$Precio</p>
-                      <a id="realmadrid" style="margin-left: 21%" class="btn btn-primary">Comprar ahora</a>
+                      <a id="realmadrid" style="margin-left: 21%" class="btn btn-outline-dark">Comprar ahora</a>
                     </div>
                   </div>
                 </div>
@@ -156,7 +156,7 @@ margin: auto; float: none;">
                     <div class="card-body">
                       <h4 class="card-title" style="height: 54px;" >Camiseta Argentina</h4>
                       <p class="card-text">$Precio</p>
-                      <a id="argentina" style="margin-left: 15%" class="btn btn-primary">Comprar ahora</a>
+                      <a id="argentina" style="margin-left: 15%" class="btn btn-outline-dark">Comprar ahora</a>
                     </div>
                   </div>
                 </div>
@@ -168,7 +168,7 @@ margin: auto; float: none;">
                     <div class="card-body">
                       <h4 class="card-title" style="height: 54px;">Camiseta Ajax</h4>
                       <p class="card-text">$Precio</p>
-                      <a id="ajax" style="margin-left: 6%" class="btn btn-primary">Comprar ahora</a>
+                      <a id="ajax" style="margin-left: 6%" class="btn btn-outline-dark">Comprar ahora</a>
                     </div>
                   </div>
                 </div>
@@ -180,7 +180,7 @@ margin: auto; float: none;">
                     <div class="card-body">
                       <h4 class="card-title" style="height: 54px;" >Camiseta Napoli</h4>
                       <p class="card-text">$Precio</p>
-                      <a id="napoli" style="margin-left: 12%" class="btn btn-primary">Comprar ahora</a>
+                      <a id="napoli" style="margin-left: 12%" class="btn btn-outline-dark">Comprar ahora</a>
                     </div>
                   </div>
                 </div>
