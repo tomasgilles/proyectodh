@@ -176,8 +176,12 @@
 .form-group{
     margin-bottom: 28px;
 }
+
 /* Estilo footer  */
+
+
 /* Carousel abajo  */
+
 .iconos-footer a i {
   color: white;
 }
@@ -206,16 +210,16 @@
   left: 28px;
 }
 
-#btnlogin{
+/* #btnlogin{
   padding-right: 1em;
   padding-left: 1em;
-}
-#btnbusqueda{
+} */
+/* #btnbusqueda{
   padding-top: 0.6em;
   padding-bottom: 0.6em;
   padding-right: 1em;
   padding-left: 1em;
-}
+} */
 
 @media (max-width: 764px){
 .card, .mb-2{
@@ -245,10 +249,10 @@
   width: 70%;
 }
 @media (min-width: 770px){
-.parrafopromo{
-  margin: auto;
-  width:100%;
-}
+  .parrafopromo{
+    margin: auto;
+    width:100%;
+  }
 }
 @media (min-width:768px){
    .vermas{

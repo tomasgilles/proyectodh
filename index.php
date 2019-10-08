@@ -1,7 +1,6 @@
 <?php
 require_once "funciones.php";
 
-var_dump($_SESSION);
 // var_dump($_COOKIE);
 
 ?>
@@ -112,7 +111,7 @@ margin: auto; float: none;">
                     <div class="card-body">
                       <h4 class="card-title" style="height: 54px;" >Camiseta Juventus</h4>
                       <p class="card-text">$Precio</p>
-                      <a id="juventus" style="margin-left: 15%" class="btn btn-primary">Comprar ahora</a>
+                      <a id="juventus" style="margin-left: 15%" class="btn btn-outline-dark">Comprar ahora</a>
                     </div>
                   </div>
                 </div>
