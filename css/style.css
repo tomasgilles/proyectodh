@@ -181,33 +181,62 @@
 
 
 /* Carousel abajo  */
-
-#juventus {
-  margin-left: 15%;
+@media (min-width:320px) and (max-width:370px){
+  #barcelona {
+    margin-left: none;
+  }
 }
-
-#juventus:hover {
-  color: white;
+@media (min-width:376px) and (max-width:767px){
+#argentina {
+  margin-left: 15%;
 }
 
 #barcelona {
   margin-left: 15%;
 }
 
-#barcelona:hover {
-  color: white;
-}
-
 #realmadrid {
   margin-left: 21%;
 }
+}
+@media (min-width:768px) and (max-width:1020px){
+  #argentina {
+    margin-left: none;
+  }
 
-#realmadrid:hover {
+  #barcelona {
+    margin-left: none;
+  }
+
+  #realmadrid {
+    margin-left: none;
+  }
+}
+@media (min-width:1024px){
+  #argentina {
+    margin-left: 15%;
+  }
+
+  #barcelona {
+    margin-left: 15%;
+  }
+
+  #realmadrid {
+    margin-left: 21%;
+  }
+}
+@media (min-width: 380px){
+#juventus{
+  margin-left: 15%;
+}
+#juventus:hover {
   color: white;
 }
-
-#argentina {
-   margin-left: 15%;
+#barcelona:hover {
+  color: white;
+}
+#realmadrid:hover {
+  color: white;
 }
 
 #argentina:hover {
@@ -228,6 +257,7 @@
 
 #napoli:hover {
   color: white;
+}
 }
 
 .iconos-footer a i {
@@ -275,12 +305,41 @@
   margin: auto;
   }
 }
-@media (min-width:320px, max-width:325px){
+@media (min-width: 320px) and (max-width: 375px){
+  .card-title{
+  margin: 0 auto;
+  width: 108px;
+  }
+  .card-text{
+    margin-top: 10px;
+  }
   #barcelona{
-    margin-left: 9%;
+    margin-left: none;
   }
   #argentina{
-    margin-left: 9%;
+    margin-left: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 980px){
+  .correccion{
+  margin: 0 auto;
+  width: 108px;
+  }
+  #realmadridcorreccion{
+    margin: 0 auto;
+    width: 132px;
+  }
+  .correccion2{
+    margin-top: 12px;
+  }
+  #barcelona{
+    margin-left: none;
+  }
+  #argentina{
+    margin-left: none;
+  }
+  #realmadrid{
+    margin-left: none;
   }
 }
 /* Promo Kit Barcelona */
@@ -316,4 +375,46 @@
     font-size: 14px;
     font-weight: bolder;
   }
+}
+/* Botines.php */
+#botinestitulo{
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 55px;
+}
+#h3nav{
+  width: fit-content;
+  float: left;
+  height: 56px;
+  margin: 0;
+  padding-top: 10px;
+}
+.list-group, .list-group-horizontal-sm{
+  font-size: 130%;
+}
+.list-group-item{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border: none;
+}
+.botines{
+  float: left;
+  overflow: hidden;
+  margin-bottom: 3%;
+}
+.breadcrumb-item{
+  text-decoration: none;
+  color: black;
+}
+a.list-link{
+  text-decoration: none;
+  color: grey;
+}
+.list-link:hover{
+  text-decoration: none;
+  color: black;
+}
+.mt-5, .container-fluid{
+  overflow: hidden;
 }

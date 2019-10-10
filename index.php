@@ -122,8 +122,8 @@ require_once "funciones.php";
                     <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-barca1.jpg"
                       alt="Card image cap">
                     <div class="card-body">
-                      <h4 class="card-title" style="height: 54px;" >Camiseta Barcelona</h4>
-                      <p class="card-text">$Precio</p>
+                      <h4 class="card-title correccion" style="height: 54px;" >Camiseta Barcelona</h4>
+                      <p class="card-text correccion2">$Precio</p>
                       <a id="barcelona" class="btn btn-outline-dark">Comprar ahora</a>
                     </div>
                   </div>
@@ -134,8 +134,8 @@ require_once "funciones.php";
                     <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-real1.jpg"
                       alt="Card image cap">
                     <div class="card-body">
-                      <h4 class="card-title" style="height: 54px;" >Camiseta Real Madrid</h4>
-                      <p class="card-text">$Precio</p>
+                      <h4 id="realmadridcorreccion"class="card-title" style="height: 54px;" >Camiseta Real Madrid</h4>
+                      <p class="card-text correccion2">$Precio</p>
                       <a id="realmadrid" class="btn btn-outline-dark">Comprar ahora</a>
                     </div>
                   </div>
@@ -154,8 +154,8 @@ require_once "funciones.php";
                     <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-argentina1.jpg"
                       alt="Card image cap">
                     <div class="card-body">
-                      <h4 class="card-title" style="height: 54px;" >Camiseta Argentina</h4>
-                      <p class="card-text">$Precio</p>
+                      <h4 class="card-title correccion" style="height: 54px;" >Camiseta Argentina</h4>
+                      <p class="card-text correccion2">$Precio</p>
                       <a id="argentina" class="btn btn-outline-dark">Comprar ahora</a>
                     </div>
                   </div>
