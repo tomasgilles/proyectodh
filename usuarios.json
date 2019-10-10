@@ -16,10 +16,17 @@
         },
         {
             "id": 3,
-            "nombre": "Teo",
-            "apellido": "VonK",
-            "email": "teo@gmail.com",
-            "contrasenia": "$2y$10$Z6hBrZ1..NBeJ1sMxXtFGevEnS7onE9VjMsyVDx6ljB2g2NdaGv6y"
+            "nombre": "Pamela",
+            "apellido": "DelPino",
+            "email": "pame@gmail.com",
+            "contrasenia": "$2y$10$4lY5tER8Xek\/6WZthpLQpuB6RrJCFxltlU4gXbWRCA94zzlbcp51u"
+        },
+        {
+            "id": 4,
+            "nombre": "Tobi",
+            "apellido": "Sonne",
+            "email": "tobi@gmail.com",
+            "contrasenia": "$2y$10$.yCXUzObmhJIx1D.Np823Ota7OdJdZj7hwOO0a3PgHsokMaN4h6WW"
         }
     ]
 }

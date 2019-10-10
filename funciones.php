@@ -58,13 +58,13 @@ function armarUsuario(){
 }
 
 // GUARDAR USUARIO
-function guardarUsuario($user){
-  $json = file_get_contents("usuarios.json");
-  $array = json_decode($json, true);
-  $array["usuarios"][]=$user;
-  $json_final = json_encode($array, JSON_PRETTY_PRINT);
-  file_put_contents("usuarios.json", $json_final);
-}
+// function guardarUsuario($user){
+//   $json = file_get_contents("usuarios.json");
+//   $array = json_decode($json, true);
+//   $array["usuarios"][]=$user;
+//   $json_final = json_encode($array, JSON_PRETTY_PRINT);
+//   file_put_contents("usuarios.json", $json_final);
+// }
 
 
 // LOGIN
@@ -103,19 +103,6 @@ function buscarUsuarioPorMail($email){
   }
   return null;
 }
-
-function darmeNombreBuscandoPorMail($email){
-  $json = file_get_contents("usuarios.json");
-  $array = json_decode($json, true);
-
-  foreach ($array["usuarios"] as $usuario) {
-    if ($usuario["email"] == $email) {
-      return $usuario["nombre"] . " " . $usuario["apellido"];
-    }
-  }
-  return NULL;
-}
-
 
 function loguearUsuario(){
   $_SESSION["email"] = $_POST["email"];

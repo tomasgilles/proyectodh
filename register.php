@@ -5,6 +5,14 @@ $nombreOk="";
 $apellidoOk="";
 $emailOk="";
 
+
+include("clases/dbjson.php");
+$file = "usuarios.json";
+$json = new DbJson($file);
+
+include ("clases/usuario.php");
+
+
 if ($_POST) {
   $nombreOk=trim($_POST["nombre"]);
   $apellidoOk=trim($_POST["apellido"]);
@@ -15,7 +23,7 @@ if ($_POST) {
   if (!$errores) {
     $usuario = armarUsuario();
 
-    guardarUsuario($usuario);
+    $json->guardarUsuario($usuario, $file);
 
     loguearUsuario();
 

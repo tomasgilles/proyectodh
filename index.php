@@ -3,6 +3,15 @@ require_once "funciones.php";
 
 // var_dump($_COOKIE);
 
+// include "clases/dbjson.php";
+// $file = "usuarios.json";
+// $json = new DbJson($file);
+//
+// if (usuarioLogueado()) {
+//   $usuario = $json->buscarUsuarioPorMail($_SESSION["email"]);
+// }
+// var_dump($usuario);
+
 ?>
 
 <!DOCTYPE html>
