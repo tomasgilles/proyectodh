@@ -43,7 +43,7 @@
           <?php $usuario = $json->buscarUsuarioPorMail($_SESSION["email"]); ?>
           <?php //$nombre = $usuario["nombre"]; ?>
           <?php //$apellido = $usuario["apellido"]; ?>
-          <div class="mr-5 font-weight-bold"> <?= "Bienvenido, " . $usuario->getNombre();?> </div>
+          <div class="mr-5 font-weight-bold"> <?= "Hola, " . $usuario->getNombre();?> </div>
         <?php endif; ?>
         <form class="form-inline my-2 my-lg-0" id="formnavbar" class= "form">
           <input class="form-control mr-sm-2" type="search" placeholder="Busqueda" aria-label="Search">
