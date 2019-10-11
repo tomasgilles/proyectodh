@@ -1,31 +1,31 @@
 <?php
-include ("funciones.php");
+// require_once "funciones.php";
+require_once "init.php";
+
+if ($auth->usuarioLogueado()) {
+  header("Location:index.php");
+  exit;
+}
+
 $errores=[];
 $nombreOk="";
 $apellidoOk="";
 $emailOk="";
-
-
-include("clases/dbjson.php");
-$file = "usuarios.json";
-$json = new DbJson($file);
-
-include ("clases/usuario.php");
-
 
 if ($_POST) {
   $nombreOk=trim($_POST["nombre"]);
   $apellidoOk=trim($_POST["apellido"]);
   $emailOk=trim($_POST["email"]);
 
-  $errores=validarRegistro($_POST);
+  $errores = Validator :: validarRegistro($_POST);
 
   if (!$errores) {
-    $usuario = armarUsuario();
+    // $usuario = armarUsuario();
+    $usuario = new Usuario($_POST);
 
     $json->guardarUsuario($usuario, $file);
 
-    loguearUsuario();
+    $auth->loguearUsuario();
 
     header("Location: index.php");
     exit;
@@ -98,7 +98,7 @@ if ($_POST) {
     </div>
     <br>
     <br>
-    <?php include "footer.php"; ?>
+    <?php require_once "footer.php"; ?>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

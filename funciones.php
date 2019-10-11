@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 
 
 // VALIDAR
@@ -7,7 +7,7 @@ function validarRegistro($datos){
   $errores=[];
   $datosFinales=[];
   foreach($datos as $key => $value){
-    if ($key == "nombre" || "apellido" || "email"){
+    if ($key == "nombre" || $key == "apellido" || $key == "email"){
       $datosFinales[$key] = trim($value);
     }
   }
@@ -24,38 +24,38 @@ function validarRegistro($datos){
     $errores["email"] = "Ya existe un usuario con este email. Por favor elija otro.";
   }
 
-  if (strlen($datosFinales["pass"])<4) {
+  if (strlen($datos["pass"])<4) {
     $errores["pass"]="La contraseña debe tener por lo menos 4 caracteres";
   }
 
-  if ($datosFinales["pass"]!=$datosFinales["pass2"]) {
+  if ($datos["pass"]!=$datos["pass2"]) {
     $errores["pass2"]="Las contraseñas no coinciden";
   }
 
  return $errores;
 }
 
-function nextId(){
-  $json = file_get_contents("usuarios.json");
-  $array = json_decode($json, true);
-
-  $lastUser = array_pop($array["usuarios"]);
-  $nextId = $lastUser["id"] + 1;
-
-  return $nextId;
-}
+// function nextId(){
+//   $json = file_get_contents("usuarios.json");
+//   $array = json_decode($json, true);
+//
+//   $lastUser = array_pop($array["usuarios"]);
+//   $nextId = $lastUser["id"] + 1;
+//
+//   return $nextId;
+// }
 
 
 // CREAR usuario
-function armarUsuario(){
-  return [
-    "id" => nextId(),
-    "nombre" => trim($_POST["nombre"]),
-    "apellido" => trim($_POST["apellido"]),
-    "email" => trim($_POST["email"]),
-    "contrasenia" => password_hash($_POST["pass"],PASSWORD_DEFAULT)
-  ];
-}
+// function armarUsuario(){
+//   return [
+//     "id" => nextId(),
+//     "nombre" => trim($_POST["nombre"]),
+//     "apellido" => trim($_POST["apellido"]),
+//     "email" => trim($_POST["email"]),
+//     "contrasenia" => password_hash($_POST["pass"],PASSWORD_DEFAULT)
+//   ];
+// }
 
 // GUARDAR USUARIO
 // function guardarUsuario($user){

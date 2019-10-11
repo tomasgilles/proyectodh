@@ -39,24 +39,24 @@
             </div>
           </li>
         </ul>
-        <?php if(usuarioLogueado()): ?>
-          <?php $usuario = buscarUsuarioPorMail($_SESSION["email"]); ?>
-          <?php $nombre = $usuario["nombre"]; ?>
-          <?php $apellido = $usuario["apellido"]; ?>
-          <div class="mr-5 font-weight-bold"> <?= "¡Hola " . $nombre . "!"?> </div>
+        <?php if($auth->usuarioLogueado()): ?>
+          <?php $usuario = $json->buscarUsuarioPorMail($_SESSION["email"]); ?>
+          <?php //$nombre = $usuario["nombre"]; ?>
+          <?php //$apellido = $usuario["apellido"]; ?>
+          <div class="mr-5 font-weight-bold"> <?= "Bienvenido, " . $usuario->getNombre();?> </div>
         <?php endif; ?>
         <form class="form-inline my-2 my-lg-0" id="formnavbar" class= "form">
           <input class="form-control mr-sm-2" type="search" placeholder="Busqueda" aria-label="Search">
           <button id= "btnbusqueda" class="btn btn-primary" type="submit"><i  class="fas fa-search"></i></button>
         </form>
         <div class="dropdown">
-          <?php if ( usuarioLogueado() ): ?>
+          <?php if ($auth->usuarioLogueado() ): ?>
             <a class="btn btn-danger" href="logout.php" role="button">Logout</a>
           <?php else: ?>
             <a id= "btnlogin" class="btn btn-primary" href="login.php" role="button">Login</a>
             <a class="btn btn-primary" href="register.php" role="button">Registrate</a>
           <?php endif; ?>
-          <a class="btn btn-primary" href="register.php" role="button"><i id= "micarrito" class="fas fa-shopping-cart"></i></i></a>
+          <a class="btn btn-primary" href="#" role="button"><i id= "micarrito" class="fas fa-shopping-cart"></i></i></a>
         </div>
     </div>
   </nav>

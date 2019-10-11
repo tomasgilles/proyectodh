@@ -1,5 +1,6 @@
 <?php
 require_once "funciones.php";
+require_once "init.php";
 
 // var_dump($_COOKIE);
 
@@ -19,7 +20,6 @@ require_once "funciones.php";
   <head>
     <title></title>
     <?php require_once("configuraciones.php"); ?>
-    <?php require_once("funciones.php") ?>
   </head>
   <body>
 
