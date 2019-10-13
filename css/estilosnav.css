@@ -1,0 +1,37 @@
+*{
+  box-sizing: border-box;
+}
+
+/* NAVBAR */
+@media (min-widht: 1024px) {
+#btnlogin{
+  padding-right: 1em;
+  padding-left: 1em;
+}
+#btnbusqueda{
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  padding-right: 1em;
+  padding-left: 1em;
+  }
+}
+
+@media (min-widht: 1005px){
+  .navbar-expand-lg .navbar-collapse {
+      display: flex!important;
+      flex-basis: auto;
+  }
+  #form-controlbusqueda {
+    display:block;
+    width:auto;
+    margin-bottom: 5px;
+   }
+}
+
+@media (max-width: 575px) {
+#form-controlbusqueda {
+  display:block;
+  width:auto;
+  margin-right: 5px;
+ }
+}
