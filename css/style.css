@@ -376,11 +376,19 @@
     font-weight: bolder;
   }
 }
+@media (min-width:769px){
+ .imagpromo{
+   width: 75%;
+ }
+}
 /* Botines.php */
 #botinestitulo{
   width: fit-content;
   margin: 0 auto;
   font-size: 55px;
+}
+.titulo{
+  background-color: lightgrey;
 }
 #h3nav{
   width: fit-content;

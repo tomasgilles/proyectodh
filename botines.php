@@ -18,8 +18,8 @@ require_once "init.php";
     <?php require_once("navbar.php"); ?>
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item"><a href="#">Botines</a></li>
+        <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+        <li class="breadcrumb-item"><a href="botines.php">Botines</a></li>
         <li class="breadcrumb-item active" aria-current="page">Nike</li>
       </ol>
     </nav>

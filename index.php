@@ -90,9 +90,9 @@ require_once "init.php";
         width:100%;">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
-      <div id="imagenpromo"class="imagen-parrafo" style="width: 70%;
+      <div id="imagenpromo"class="imagen-parrafo" style="width: 50%;
       margin: auto; float: none;">
-      <img src="fotos/promo-barcelona.jpg" alt="" class="img-fluid">
+      <img id="imgpromo"src="fotos/promo-barcelona.jpg" alt="" class="img-fluid">
       </div>
     </div>
   <div class="container my-4">

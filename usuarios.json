@@ -13,6 +13,20 @@
             "apellido": "Gilles",
             "email": "tomasgilles@gmail.com",
             "pass": "$2y$10$2cCbn4wuTEMU0xr259QXd.Z703wQPVo93i03lrxNKheOGFdDzvL.G"
+        },
+        {
+            "id": 3,
+            "nombre": "Ines",
+            "apellido": "Pollitzer",
+            "email": "ines.pollitzer@gmail.com",
+            "pass": "$2y$10$3X3KdmfHEpc\/AAowiZMeA.VF5KieQJKvCHPiv3dbGVmQpOiDj8K8y"
+        },
+        {
+            "id": 4,
+            "nombre": "Ignacio",
+            "apellido": "Vassallo",
+            "email": "ignacio.vassallo@gmail.com",
+            "pass": "$2y$10$ysrrK5eLkSE6QesCw8mUGO3eySjFIhhK.TXyu8rQ88\/mdA9YXOTpm"
         }
     ]
 }
