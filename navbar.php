@@ -13,7 +13,7 @@
           Botines
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Nike</a>
+          <a class="dropdown-item" href="Botines.php">Nike</a>
           <a class="dropdown-item" href="#">Adidas</a>
           <a class="dropdown-item" href="#">Puma</a>
         </div>
@@ -45,8 +45,14 @@
           <div class="mr-5 font-weight-bold"> <?= "Hola, " . $usuario->getNombre();?> </div>
         <?php endif; ?>
         <form class="form-inline my-2 my-lg-0" id="formnavbar" class= "form">
-          <input id="form-controlbusqueda" class="form-control mr-sm-2" type="search" placeholder="Busqueda" aria-label="Search">
-          <button  class="btn btn-primary" type="submit"><i  class="fas fa-search"></i></button>
+          <div class="input-group">
+    <input type="text" class="form-control" placeholder="Busqueda">
+    <div class="input-group-append">
+      <button class="btn btn-primary" type="button">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </div>
         </form>
         <div class="dropdown">
           <?php if ($auth->usuarioLogueado() ): ?>
