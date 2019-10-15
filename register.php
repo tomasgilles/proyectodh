@@ -43,7 +43,7 @@ if ($_POST) {
     <title></title>
   </head>
   <body>
-    <?php require_once("navbar.php") ?>
+    <?php require_once("navbar.php"); ?>
     <div class="techo">
       <h1 id="registerh1">Mi Cuenta</h1>
     </div>

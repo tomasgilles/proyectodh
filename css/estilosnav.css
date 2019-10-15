@@ -1,0 +1,41 @@
+*{
+  box-sizing: border-box;
+}
+
+/* NAVBAR */
+#formnavbar{
+    margin-right: 5px;
+  }
+.dropdown-menu {
+      position: static;
+      float: left;
+  }
+
+@media (min-widht: 1024px) {
+#btnlogin{
+  padding-right: 1em;
+  padding-left: 1em;
+}
+.btnbusqueda{
+  display: inline-block;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  color: primary;
+}
+#busqueda {
+  margin-right: 3px;
+}
+
+}
+
+@media (min-widht: 1005px){
+
+}
+
+@media (max-width: 575px) {
+#form-controlbusqueda {
+  display:block;
+  width:auto;
+  margin-right: 5px;
+ }
+}

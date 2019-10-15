@@ -2,9 +2,6 @@
   box-sizing: border-box;
 }
 
-
-
-
 /* INDEX */
 
 .first {
@@ -86,9 +83,7 @@
     border-right: solid black 1px;
   }
 }
-#formnavbar{
-  margin-right: 8px;
-}
+
 
 /* BORDER PARA CAMISETAS LG */
 @media (min-width: 993px) {
@@ -286,17 +281,7 @@
 .comprar-ahora{
   position: absolute;
   left: 28px;
-}
-
-#btnlogin{
-  padding-right: 1em;
-  padding-left: 1em;
-}
-#btnbusqueda{
-  padding-top: 0.6em;
-  padding-bottom: 0.6em;
-  padding-right: 1em;
-  padding-left: 1em;
+ }
 }
 
 @media (max-width: 764px){
@@ -407,7 +392,6 @@
   border: none;
 }
 .botines{
-  float: left;
   overflow: hidden;
   margin-bottom: 3%;
 }
@@ -422,7 +406,4 @@ a.list-link{
 .list-link:hover{
   text-decoration: none;
   color: black;
-}
-.mt-5, .container-fluid{
-  overflow: hidden;
 }

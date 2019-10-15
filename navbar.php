@@ -8,36 +8,35 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Botines
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Nike</a>
-            <a class="dropdown-item" href="#">Adidas</a>
-            <a class="dropdown-item" href="#">Puma</a>
-          </div>
-        </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Vestimenta
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Remeras</a>
-            <a class="dropdown-item" href="#">Camperas</a>
-            <a class="dropdown-item" href="#">Shorts</a>
-            <a class="dropdown-item" href="#">Medias</a>
-          </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Accesorios
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Pelotas</a>
-              <a class="dropdown-item" href="#">Otros</a>
-            </div>
-          </li>
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Botines
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="Botines.php">Nike</a>
+          <a class="dropdown-item" href="#">Adidas</a>
+          <a class="dropdown-item" href="#">Puma</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Vestimenta
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Remeras</a>
+          <a class="dropdown-item" href="#">Camperas</a>
+          <a class="dropdown-item" href="#">Medias</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Accesorios
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Pelotas</a>
+          <a class="dropdown-item" href="#">Otros</a>
+        </div>
+      </li>
         </ul>
         <?php if($auth->usuarioLogueado()): ?>
           <?php $usuario = $json->buscarUsuarioPorMail($_SESSION["email"]); ?>
@@ -46,8 +45,14 @@
           <div class="mr-5 font-weight-bold"> <?= "Hola, " . $usuario->getNombre();?> </div>
         <?php endif; ?>
         <form class="form-inline my-2 my-lg-0" id="formnavbar" class= "form">
-          <input class="form-control mr-sm-2" type="search" placeholder="Busqueda" aria-label="Search">
-          <button id= "btnbusqueda" class="btn btn-primary" type="submit"><i  class="fas fa-search"></i></button>
+          <div class="input-group">
+    <input type="text" class="form-control" placeholder="Busqueda">
+    <div class="input-group-append">
+      <button class="btn btn-primary" type="button">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </div>
         </form>
         <div class="dropdown">
           <?php if ($auth->usuarioLogueado() ): ?>
