@@ -45,7 +45,7 @@
           <div class="mr-5 font-weight-bold"> <?= "Hola, " . $usuario->getNombre();?> </div>
         <?php endif; ?>
         <form class="form-inline my-2 my-lg-0" id="formnavbar" class= "form">
-          <div class="input-group">
+          <div id="input-group" class="input-group">
     <input type="text" class="form-control" placeholder="Busqueda">
     <div class="input-group-append">
       <button class="btn btn-primary" type="button">

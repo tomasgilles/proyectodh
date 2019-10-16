@@ -33,6 +33,9 @@
 }
 
 @media (max-width: 575px) {
+#input-group {
+  width: auto;
+ }
 #form-controlbusqueda {
   display:block;
   width:auto;
