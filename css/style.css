@@ -220,10 +220,6 @@
     margin-left: 21%;
   }
 }
-@media (min-width: 380px){
-#juventus{
-  margin-left: 15%;
-}
 #juventus:hover {
   color: white;
 }
@@ -237,21 +233,23 @@
 #argentina:hover {
   color: white;
 }
+#ajax:hover {
+  color: white;
+}
+#napoli:hover {
+  color: white;
+}
+
+@media (min-width: 380px){
+#juventus{
+  margin-left: 15%;
+}
 
 #ajax {
   margin-left: 6%;
 }
-
-#ajax:hover {
-  color: white;
-}
-
 #napoli {
    margin-left: 12%;
-}
-
-#napoli:hover {
-  color: white;
 }
 }
 
@@ -406,4 +404,8 @@ a.list-link{
 .list-link:hover{
   text-decoration: none;
   color: black;
+}
+.container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
 }
