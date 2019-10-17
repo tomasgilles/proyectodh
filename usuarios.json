@@ -27,6 +27,13 @@
             "apellido": "Vassallo",
             "email": "ignacio.vassallo@gmail.com",
             "pass": "$2y$10$ysrrK5eLkSE6QesCw8mUGO3eySjFIhhK.TXyu8rQ88\/mdA9YXOTpm"
+        },
+        {
+            "id": 5,
+            "nombre": "Sebastian",
+            "apellido": "Letemendia",
+            "email": "sletemendia@conexia.com",
+            "pass": "$2y$10$hZlwHurRmGZ.A.ing5MDQOYzb\/RBD8Ryx\/5uWOXi6uwYatPwukVtu"
         }
     ]
 }
