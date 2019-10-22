@@ -8,6 +8,7 @@ class Validator
 
   public static function validarRegistro($datos){
     global $json;
+    // global $db;
 
     $errores = [];
 

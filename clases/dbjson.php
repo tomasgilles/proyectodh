@@ -3,7 +3,9 @@
 /**
  *
  */
-class DbJson
+include "db.php";
+
+class DbJson extends Db
 {
   private $json;
 
