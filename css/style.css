@@ -365,10 +365,12 @@
  }
 }
 /* Botines.php */
+.muestraprincipal{
+  overflow: hidden;
+}
 #botinestitulo{
   width: fit-content;
   margin: 0 auto;
-  font-size: 55px;
 }
 .titulo{
   background-color: lightgrey;
@@ -380,8 +382,29 @@
   margin: 0;
   padding-top: 10px;
 }
+@media (min-width:800px){
 .list-group, .list-group-horizontal-sm{
   font-size: 130%;
+  }
+  #h3nav{
+    font-size: 190%;
+  }
+}
+@media (min-width:670px) and (max-width:800px){
+.list-group, .list-group-horizontal-sm{
+  font-size: 80%;
+  }
+ #h3nav{
+   font-size: 125%;
+ }
+}
+@media (min-width:) and (max-width:670px){
+.list-group, .list-group-horizontal-sm{
+  font-size: 80%;
+  }
+  #h3nav{
+    font-size: 125%;
+  }
 }
 .list-group-item{
   text-decoration: none;
@@ -409,3 +432,68 @@ a.list-link{
   padding-left: 0px;
   padding-right: 0px;
 }
+@media (min-width:320px) and (max-width:425px){
+  #botinestitulo{
+    font-size: 200%;
+  }
+}
+@media (min-width:425px) and (max-width:768px){
+  #botinestitulo{
+    font-size: 240%;
+  }
+}
+@media (min-width:768px){
+  #botinestitulo{
+    font-size: 300%;
+  }
+}
+h5.card-title{
+  width: 100%;
+}
+@media (min-width:320px) and (max-width:426px){
+  h5.card-title{
+    font-size: 100%;
+  }
+}
+@media (min-width:426px) and (max-width:1024px){
+  h5.card-title{
+    font-size: 200%;
+  }
+}
+@media(min-width:1024px) and (max-width:1440px){
+  h5.card-title{
+    font-size:280%;
+  }
+}
+@media (min-width:380px) and (max-width:425px){
+    #botoncomprar{
+      width: 30%;
+      height:fit-content;
+      font-size: 77%;
+      padding: 6px;
+  }
+}
+@media (min-width:363px) and (max-width:380px){
+    #botoncomprar{
+      width: 30%;
+      height: fit-content;
+      font-size: 67%;
+      padding: 6px;
+    }
+  }
+@media (min-width:320px) and (max-width:363px){
+      #botoncomprar{
+        width: 30%;
+        height: fit-content;
+        font-size: 55%;
+        padding: 6px;
+      }
+    }
+@media (min-width:1182px) and (max-width:1440px){
+      #botoncomprar{
+        width: 25%;
+        height: fit-content;
+        font-size: 222%;
+        padding: 11px;
+      }
+    }

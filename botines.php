@@ -32,7 +32,7 @@ require_once "init.php";
           <img src="fotos/botines/nike-mercurial1.jpg" class="card-img" alt="...">
           <div class="card-img-overlay">
             <h5 class="card-title">Nuevos Botines Nike Mercurial</h5>
-            <a type="button" class="button-h5 btn btn-outline-dark" href="#">Comprar Ahora</a>
+            <a id="botoncomprar"type="button" class="button-h5 btn btn-outline-dark" href="#">Comprar Ahora</a>
           </div>
         </div>
         <div class="imagenprincipal">
