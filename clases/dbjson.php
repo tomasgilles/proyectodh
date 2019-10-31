@@ -5,7 +5,7 @@
  */
 include "db.php";
 
-class DbJson //extends Db
+class DbJson extends Db
 {
   private $json;
 
@@ -20,7 +20,7 @@ class DbJson //extends Db
   }
 
   // METODOS
-  public function guardarUsuario(Usuario $user,string $file){
+  public function guardarUsuario(Usuario $user,string $file = null){
     $array = json_decode($this->json, true);
 
     $usuario = [
@@ -60,11 +60,6 @@ class DbJson //extends Db
     return $nextId;
   }
 
-
-
-
-
-
-
 }
+
 ?>
