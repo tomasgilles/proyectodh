@@ -378,9 +378,9 @@
 #h3nav{
   width: fit-content;
   float: left;
-  height: 56px;
   margin: 0;
   padding-top: 10px;
+  background-color: white;
 }
 @media (min-width:800px){
 .list-group, .list-group-horizontal-sm{
@@ -497,3 +497,69 @@ h5.card-title{
         padding: 11px;
       }
     }
+.cuerpomitad{
+  background-color: #F9F5F5;
+}
+.orderby{
+  margin-top: 13px;
+  margin-bottom: 13px;
+  background-color: white;
+}
+#card1{
+  margin:10px;
+  border-radius: 20px;
+  padding-top: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#card2{
+  margin:10px;
+  border-radius: 20px;
+  padding-top: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#card3{
+  margin:10px;
+  border-radius: 20px;
+  padding-top: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#card4{
+  margin:10px;
+  margin-bottom: 5px;
+  border-radius: 20px;
+  padding-top: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#card5{
+  margin:10px;
+  margin-bottom: 5px;
+  border-radius: 20px;
+  padding-top: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#card6{
+  margin:10px;
+  margin-bottom: 5px;
+  border-radius: 20px;
+  padding-top: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.card{
+  background-color: #EDEDED;
+}
+.vermasbotin{
+  margin-left:50px;
+}
+.controlescarr{
+background-color: darkgrey;
+border-radius: 9px;
+}
+.cproduct:hover{
+  background-color: darkgrey;
+}
