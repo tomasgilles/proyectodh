@@ -115,7 +115,7 @@ require_once "init.php";
               <div class="row">
 
                 <div class="col-md-4 clearfix d-none d-md-block">
-                  <div class="card mb-2">
+                  <div class="card.index mb-2">
                     <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-juventus1.jpg"
                       alt="Card image cap">
                     <div class="card-body">
@@ -127,7 +127,7 @@ require_once "init.php";
                 </div>
 
                 <div class="col-md-4">
-                  <div class="card mb-2">
+                  <div class="card.index mb-2">
                     <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-barca1.jpg"
                       alt="Card image cap">
                     <div class="card-body">
@@ -139,7 +139,7 @@ require_once "init.php";
                 </div>
 
                 <div class="col-md-4 clearfix d-none d-md-block">
-                  <div class="card mb-2">
+                  <div class="card.index mb-2">
                     <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-real1.jpg"
                       alt="Card image cap">
                     <div class="card-body">
@@ -159,7 +159,7 @@ require_once "init.php";
 
               <div class="row">
                 <div class="col-md-4">
-                  <div class="card mb-2">
+                  <div class="card.index mb-2">
                     <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-argentina1.jpg"
                       alt="Card image cap">
                     <div class="card-body">
@@ -171,7 +171,7 @@ require_once "init.php";
                 </div>
 
                 <div class="col-md-4 clearfix d-none d-md-block">
-                  <div class="card mb-2">
+                  <div class="card.index mb-2">
                     <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-ajax1.jpg"
                       alt="Card image cap">
                     <div class="card-body">
@@ -183,7 +183,7 @@ require_once "init.php";
                 </div>
 
                 <div class="col-md-4 clearfix d-none d-md-block">
-                  <div class="card mb-2">
+                  <div class="card.index mb-2">
                     <img class="card-img-top" src="fotos/camisetas/carousel/camiseta-napoli1.jpg"
                       alt="Card image cap">
                     <div class="card-body">
