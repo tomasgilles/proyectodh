@@ -44,7 +44,7 @@
           <?php //$apellido = $usuario["apellido"]; ?>
           <div class="mr-5 font-weight-bold"> <?= "Hola, " . $usuario->getNombre();?> </div>
         <?php endif; ?>
-        <form class="form-inline my-2 my-lg-0" id="formnavbar" class= "form">
+        <form id="form-inline" class="form-inline my-2 my-lg-0" id="formnavbar" class= "form">
           <div id="input-group" class="input-group">
     <input type="text" class="form-control" placeholder="Busqueda">
     <div class="input-group-append">

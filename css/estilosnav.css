@@ -10,6 +10,18 @@
       position: static;
       float: left;
   }
+  #navbarSupportedContent{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    padding-left: 5px;
+  }
+#form-inline {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-right: 3px;
+}
 
 @media (min-widht: 1024px) {
 #btnlogin{
@@ -41,4 +53,5 @@
   width:auto;
   margin-right: 5px;
  }
+
 }
