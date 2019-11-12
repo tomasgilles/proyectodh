@@ -1,0 +1,57 @@
+*{
+  box-sizing: border-box;
+}
+
+/* NAVBAR */
+#formnavbar{
+    margin-right: 5px;
+  }
+.dropdown-menu {
+      position: static;
+      float: left;
+  }
+  #navbarSupportedContent{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    padding-left: 5px;
+  }
+#form-inline {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-right: 3px;
+}
+
+@media (min-widht: 1024px) {
+#btnlogin{
+  padding-right: 1em;
+  padding-left: 1em;
+}
+.btnbusqueda{
+  display: inline-block;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  color: primary;
+}
+#busqueda {
+  margin-right: 3px;
+}
+
+}
+
+@media (min-widht: 1005px){
+
+}
+
+@media (max-width: 575px) {
+#input-group {
+  width: auto;
+ }
+#form-controlbusqueda {
+  display:block;
+  width:auto;
+  margin-right: 5px;
+ }
+
+}
