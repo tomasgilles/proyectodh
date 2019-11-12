@@ -13,7 +13,7 @@
           Botines
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="Botines.php">Nike</a>
+          <a class="dropdown-item" href="productos.php">Nike</a>
           <a class="dropdown-item" href="#">Adidas</a>
           <a class="dropdown-item" href="#">Puma</a>
         </div>

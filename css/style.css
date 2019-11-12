@@ -552,6 +552,7 @@ h5.card-title{
 }
 .vermasbotin{
   margin-left:50px;
+  margin-bottom: 10px;
 }
 .controlescarr{
 background-color: darkgrey;
@@ -559,4 +560,71 @@ border-radius: 9px;
 }
 .cproduct:hover{
   background-color: darkgrey;
+}
+/*Producto.php*/
+.indicators-carr{
+  overflow:hidden;
+  padding-left: 0;
+  margin: auto;
+}
+.listProducto{
+  float: left;
+  width: max-content;
+  margin-left: 15px;
+}
+.infoProducto{
+  float: left;
+  overflow: hidden;
+}
+.imagenProducto{
+  float: left;
+  overflow: hidden;
+}
+.parteArriba{
+  overflow:hidden;
+  width:80%;
+  margin: auto;
+}
+.precioProducto{
+  font-size: 150%;
+}
+.talleProducto{
+  font-size: 130%;
+}
+.talle{
+  width: 20%;
+  height: 7%;
+  font-size: 141%;
+  float: left;
+}
+.talles{
+  overflow:hidden;
+  height: max-content;
+}
+.radioTalle{
+  background-color: #eee;
+  border-radius: 50%;
+  width: 27px;
+  height: 18px;
+}
+#cantidades{
+  border-style: groove;
+}
+.comparAhora{
+  margin-top: 10%;
+}
+.agregarCarrito{
+ margin-top: 5%;
+}
+#agregarC{
+  width: 100%;
+}
+#comprarAP{
+  width: 100%;
+}
+#producotsG{
+  margin-top: 11%;
+  background-color: #EDEDED;
+  padding-bottom: 2%;
+  padding-top: 1%;
 }

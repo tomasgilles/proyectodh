@@ -76,7 +76,7 @@ require_once "init.php";
                   <div class="card-body">
                     <p class="card-text font-weight-bold">$Precio</p>
                     <p class="card-text">Descripcion del botin</p>
-                    <a href="#" class="btn btn-outline-dark vermasbotin">Ver Mas</a>
+                    <a href="producto.php" class="btn btn-outline-dark vermasbotin">Ver Mas</a>
                   </div>
                 </div>
                 <div id="card2" class="card cproduct">
