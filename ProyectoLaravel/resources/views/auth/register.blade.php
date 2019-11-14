@@ -1,9 +1,11 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('content')
+  <div class="techo">
+    <h1 id="registerh1">Mi Cuenta</h1>
+  </div>
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
+
             <div class="card">
                 <div class="card-header">{{ __('Register') }}</div>
 
@@ -85,7 +87,6 @@
                     </form>
                 </div>
             </div>
-        </div>
-    </div>
+
 </div>
 @endsection
