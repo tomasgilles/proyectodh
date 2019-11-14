@@ -24,12 +24,12 @@ require_once "init.php";
         </ol>
       </nav>
       <div class="parteArriba">
-        <div class="col-md-6 imagenProducto">
+        <div class="col-md-7 imagenProducto">
           <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-interval="false" data-ride="carousel">
             <!--Slides-->
             <div class="carousel-inner" role="listbox">
               <div id="carouselHover" class="carousel-item active">
-                <img class="d-block w-100" src="fotos/botines/mas-botines/nikeE1.jpg"
+                <img class="d-block w-100 imgsProducto" src="fotos/botines/mas-botines/nikeE1.jpg"
                   alt="First slide">
               </div>
               <div class="carousel-item">
@@ -39,6 +39,10 @@ require_once "init.php";
               <div class="carousel-item">
                 <img class="d-block w-100" src="fotos/botines/mas-botines/nikeE3.jpg"
                   alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="fotos/botines/mas-botines/nikeE4.jpg"
+                  alt="Fourth slide">
               </div>
             </div>
             <!--/.Slides-->
@@ -55,13 +59,16 @@ require_once "init.php";
             <div class="carousel-indic">
               <div class="indicators-carr">
                 <div data-target="#carousel-thumb" data-slide-to="0" class="listProducto active">
-                  <img src="fotos/botines/mas-botines/nikeE1.jpg" width="100">
+                  <img class="imgsProducto" src="fotos/botines/mas-botines/nikeE1.jpg" width="100">
                 </div>
                 <div data-target="#carousel-thumb" data-slide-to="1" class="listProducto">
-                  <img src="fotos/botines/mas-botines/nikeE2.jpg" width="100">
+                  <img class="imgsProducto" src="fotos/botines/mas-botines/nikeE2.jpg" width="100">
                 </div>
                 <div data-target="#carousel-thumb" data-slide-to="2" class="listProducto">
-                  <img src="fotos/botines/mas-botines/nikeE3.jpg" width="100">
+                  <img class="imgsProducto" src="fotos/botines/mas-botines/nikeE3.jpg" width="100">
+                </div>
+                <div data-target="#carousel-thumb" data-slide-to="3" class="listProducto">
+                  <img class="imgsProducto" src="fotos/botines/mas-botines/nikeE4.jpg" width="100">
                 </div>
               </div>
             </div>
@@ -104,6 +111,10 @@ require_once "init.php";
               <button id="agregarC" type="submit" class="btn btn-outline-dark">Agregar a Carrito</button>
             </div>
           </form>
+        </div>
+        <div class="col-md-10 descripcionProducto" style="max-width:100%;">
+          <h2>Descripcion Producto</h2>
+          <p>Los X son más que un botín. Son la certeza de que la velocidad es para dejar atrás a los defensores, y no para correr sin objetivo. Si no podés liderar el ataque con tu aceleración explosiva, seguí buscando. Pero si estás listo para superar tus límites, seguí leyendo. Estos botines presentan un exterior de malla ligero y cómodo que te ayuda a conseguir un toque perfecto y mayor velocidad en la cancha. El diseño de corte bajo y el ajuste de sujeción aportan mayor estabilidad durante los movimientos explosivos.</p>
         </div>
       </div>
       <div class="parteAbajo">

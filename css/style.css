@@ -571,6 +571,7 @@ border-radius: 9px;
   float: left;
   width: max-content;
   margin-left: 15px;
+  cursor:pointer;
 }
 .infoProducto{
   float: left;
@@ -627,4 +628,33 @@ border-radius: 9px;
   background-color: #EDEDED;
   padding-bottom: 2%;
   padding-top: 1%;
+}
+.descripcionProducto{
+  overflow: hidden;
+  padding-top: 4%;
+}
+@media (min-width:1067px) {
+  .imgsProducto{
+    width: 100px;
+  }
+}
+@media (min-width:901px) and (max-width:1067px) {
+  .imgsProducto{
+    width: 80px;
+  }
+}
+@media (min-width:768px) and (max-width:901px) {
+  .imgsProducto{
+    width: 65px;
+  }
+}
+@media (min-width:425px) and (max-width:768px) {
+  .imgsProducto{
+    width: 59px;
+  }
+}
+@media (min-width:320px) and (max-width:425px) {
+  .imgsProducto{
+    width: 37px;
+  }
 }

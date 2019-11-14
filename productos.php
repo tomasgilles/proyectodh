@@ -63,6 +63,9 @@ require_once "init.php";
                       <div class="carousel-item">
                         <img class="d-block w-100" src="fotos/botines/mas-botines/nikeE3.jpg" alt="Third slide">
                       </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="fotos/botines/mas-botines/nikeE4.jpg" alt="Fourth slide">
+                      </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon controlescarr" aria-hidden="true"></span>
@@ -91,6 +94,9 @@ require_once "init.php";
                       <div class="carousel-item">
                         <img class="d-block w-100" src="fotos/botines/mas-botines/nikeF3.jpg" alt="Third slide">
                       </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="fotos/botines/mas-botines/nikeF4.jpg" alt="Fourth slide">
+                      </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon controlescarr" aria-hidden="true"></span>
@@ -118,6 +124,9 @@ require_once "init.php";
                       </div>
                       <div class="carousel-item">
                         <img class="d-block w-100" src="fotos/botines/mas-botines/nikeA3.jpg" alt="Third slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="fotos/botines/mas-botines/nikeA4.jpg" alt="Fourth slide">
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
@@ -149,6 +158,9 @@ require_once "init.php";
                       <div class="carousel-item">
                         <img class="d-block w-100" src="fotos/botines/mas-botines/nikeB3.jpg" alt="Third slide">
                       </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="fotos/botines/mas-botines/nikeB4.jpg" alt="Fourth slide">
+                      </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls4" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon controlescarr" aria-hidden="true"></span>
@@ -177,6 +189,9 @@ require_once "init.php";
                       <div class="carousel-item">
                         <img class="d-block w-100" src="fotos/botines/mas-botines/nikeC3.jpg" alt="Third slide">
                       </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="fotos/botines/mas-botines/nikeC4.jpg" alt="Fourth slide">
+                      </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls5" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon controlescarr" aria-hidden="true"></span>
@@ -204,6 +219,9 @@ require_once "init.php";
                       </div>
                       <div class="carousel-item">
                         <img class="d-block w-100" src="fotos/botines/mas-botines/nikeD3.jpg" alt="Third slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="fotos/botines/mas-botines/nikeD4.jpg" alt="Fourth slide">
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls6" role="button" data-slide="prev">
