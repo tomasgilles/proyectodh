@@ -20,7 +20,7 @@ require_once "init.php";
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-              <li class="breadcrumb-item"><a href="botines.php">Botines</a></li>
+              <li class="breadcrumb-item"><a href="productos.php">Botines</a></li>
               <li class="breadcrumb-item active" aria-current="page">Nike</li>
             </ol>
           </nav>
@@ -46,7 +46,7 @@ require_once "init.php";
                 <option><a class="list-link" href="#">Precio de menor a mayor</a></option>
                 <option><a class="list-link" href="#">Precio de mayor a menor</a></option>
                 <option><a class="list-link" href="#">En oferta</a></option>
-                <option><a class="list-link" href="#">Mas vendidos</a></option>
+                <option><a class="list-link" href="#">Mas nuevos</a></option>
               </select>
             </div>
             <div class="botines" style="float:left">
