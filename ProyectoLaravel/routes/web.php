@@ -19,4 +19,6 @@ Route::get('/home', 'HomeController@index');
 
 Auth::routes();
 
+Route::get('/botines/nike', 'ProductController@show');
+
 // Route::get('/home', 'HomeController@index')->name('home');

@@ -46,7 +46,9 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        //
+        $botines = Product::all();
+        // where marca nike
+        return view('botines', compact('botines'));
     }
 
     /**

@@ -68,7 +68,7 @@ if ($_POST) {
               <?php endif ?>
             </div>
             <div class="form-group">
-              <label for="formGroupExampleInput2"></label>
+              <!-- <label for="formGroupExampleInput2"></label> -->
               <?php if(isset($errores["apellido"])): ?>
                 <input type="text" name="apellido" class="form-control" id="formGroupExampleInput2" placeholder="Apellido*" value="" required>
               <?php else : ?>
@@ -76,7 +76,7 @@ if ($_POST) {
               <?php endif ?>
             </div>
             <div class="form-group">
-              <label for="formGroupExampleInput2"></label>
+              <!-- <label for="formGroupExampleInput2"></label> -->
               <?php if(isset($errores["email"])): ?>
                 <input type="email" name="email" class="form-control" id="formGroupExampleInput3" placeholder="Email*" value="" required>
               <?php else: ?>
@@ -84,11 +84,11 @@ if ($_POST) {
               <?php endif ?>
             </div>
             <div class="form-group">
-              <label for="formGroupExampleInput2"></label>
+              <!-- <label for="formGroupExampleInput2"></label> -->
               <input type="password" name="pass" class="form-control" id="formGroupExampleInput4" placeholder= "Password*" required>
             </div>
             <div class="form-group">
-              <label for="formGroupExampleInput2"></label>
+              <!-- <label for="formGroupExampleInput2"></label> -->
               <input type="password" name="pass2" class="form-control" id="formGroupExampleInput5" placeholder="Confirm password*" required>
             </div>
             <button type="submit" class="btn btn-outline-primary btn-lg btn-block">Crear Cuenta</button>
