@@ -51,6 +51,12 @@ class ProductController extends Controller
         return view('botines', compact('botines'));
     }
 
+    public function show2($id)
+    {
+      $botin = Product::find($id);
+      return view('botin', compact('botin'));
+    }
+
     /**
      * Show the form for editing the specified resource.
      *

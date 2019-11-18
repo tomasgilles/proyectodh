@@ -1,18 +1,18 @@
-PROBANDO
+@extends('layouts.master')
+
+@section('content')
 
   @forelse ($botines as $botin)
-    <img src="/storage/products/{{$botin->main_image}}" alt="">
+    <h3>Nombre producto: {{$botin->name}}</h3>
+    <p>Precio: ${{$botin->price}}</p>
+    <a href="/botines/nike/{{$botin->id}}">
+      <img src="/storage/products/{{$botin->main_image}}" alt="">
+    </a>
   @empty
     <p>No hay botines</p>
   @endforelse
 
-
-{{-- @extends('layouts.master')
-
-@section('content')
-
-  EL HTML POSTA
-  <div class="cuerpoentero">
+  {{-- <div class="cuerpoentero">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.php">Home</a></li>
@@ -25,7 +25,7 @@ PROBANDO
     </div>
     <div class="muestraprincipal">
       <div class="card bg-dark text-white">
-        <img src="fotos/botines/nike-mercurial1.jpg" class="card-img" alt="...">
+        <img src="#" class="card-img" alt
         <div class="card-img-overlay">
           <h5 class="card-title">Nuevos Botines Nike Mercurial</h5>
           <a id="botoncomprar"type="button" class="button-h5 btn btn-outline-dark" href="#">Comprar Ahora</a>
@@ -238,6 +238,6 @@ PROBANDO
         </div>
       </div>
     </div>
-  </div>
+  </div> --}}
 
-@endsection --}}
+@endsection
