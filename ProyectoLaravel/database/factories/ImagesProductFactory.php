@@ -11,6 +11,6 @@ $factory->define(ImagesProduct::class, function (Faker $faker) {
 
     return [
         'product_id' => 1,
-        'image' => $faker->image($path, 300, 300, 'sports', false)
+        'image' => $faker->image($path, 580, 580, 'sports', false)
     ];
 });

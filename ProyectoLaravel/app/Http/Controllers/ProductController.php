@@ -46,14 +46,16 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        $botines = Product::all();
+        $botines1 = Product::limit(3)->get();
+        $botines2 = Product::offset(3)->limit(3)->get();
         // where marca nike
-        return view('botines', compact('botines'));
+        return view('botines', compact('botines1', 'botines2'));
     }
 
     public function show2($id)
     {
       $botin = Product::find($id);
+
       return view('botin', compact('botin'));
     }
 
