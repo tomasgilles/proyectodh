@@ -628,3 +628,7 @@ border-radius: 9px;
   padding-bottom: 2%;
   padding-top: 1%;
 }
+.descripcionProducto{
+  overflow: hidden;
+  width: 100%;
+}

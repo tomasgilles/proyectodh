@@ -46,9 +46,16 @@ class ImagesProductController extends Controller
      */
     public function show(ImagesProduct $imagesProduct)
     {
-        //
+      // $images = ImagesProduct::all();
+      // return view('botines', compact('images'));
     }
 
+    public function show2($product_id)
+    {
+      // $product = ImagesProduct::find($product_id);
+      //
+      // return view('botin', compact('product'));
+    }
     /**
      * Show the form for editing the specified resource.
      *
@@ -57,7 +64,7 @@ class ImagesProductController extends Controller
      */
     public function edit(ImagesProduct $imagesProduct)
     {
-        //
+
     }
 
     /**
