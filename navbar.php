@@ -61,7 +61,7 @@
               <a id= "btnlogin" class="btn btn-primary" href="login.php" role="button">Login</a>
               <a class="btn btn-primary" href="register.php" role="button">Registrate</a>
             <?php endif; ?>
-            <a class="btn btn-primary" href="#" role="button"><i id= "micarrito" class="fas fa-shopping-cart"></i></i></a>
+            <a class="btn btn-primary" href="carrito.php" role="button"><i id= "micarrito" class="fas fa-shopping-cart"></i></i></a>
           </div>
         </div>
     </nav>

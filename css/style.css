@@ -637,15 +637,42 @@ border-radius: 9px;
   .imgsProducto{
     width: 100px;
   }
+  .descripcionCarrito{
+    margin-left: 40%;
+  }
+  #precioCarrito{
+    float: right;
+  }
+  #totalCarrito{
+    float: right;
+  }
 }
 @media (min-width:901px) and (max-width:1067px) {
   .imgsProducto{
     width: 80px;
   }
+  .descripcionCarrito{
+    margin-left: 40%;
+  }
+  #precioCarrito{
+    float: right;
+  }
+  #totalCarrito{
+    float: right;
+  }
 }
 @media (min-width:768px) and (max-width:901px) {
   .imgsProducto{
     width: 65px;
+  }
+  .descripcionCarrito{
+    margin-left: 50%;
+  }
+  #precioCarrito{
+    float: right;
+  }
+  #totalCarrito{
+    float: right;
   }
 }
 @media (min-width:425px) and (max-width:768px) {
@@ -657,4 +684,38 @@ border-radius: 9px;
   .imgsProducto{
     width: 37px;
   }
+  .imgsProductoCarrito{
+    width: 230px;
+  }
+  #precioCarrito{
+    margin-left: 29%;
+    float: none;
+  }
+}
+/*Carrito.php*/
+.productoCarrito{
+  overflow: hidden;
+}
+.parteCarrito{
+  overflow: hidden;
+  margin-right: 0;
+  float: left;
+}
+
+@media (min-width:425px){
+  .imgsProductoCarrito{
+    width: 152px;
+  }
+}
+.imgCarrito{
+  width: fit-content;
+  overflow: hidden;
+  margin: 0;
+  float: left;
+}
+#precioCarrito{
+  font-size: 164%;
+}
+@media (min-width:320px) and (max-width:767px){
+
 }
