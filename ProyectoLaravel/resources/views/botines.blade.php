@@ -54,15 +54,11 @@
                   <div class="carousel-item active">
                     <img class="d-block w-100" src="/storage/products/{{$botin->main_image}}" alt="First slide">
                   </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="fotos/botines/mas-botines/nikeE2.jpg" alt="Second slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="fotos/botines/mas-botines/nikeE3.jpg" alt="Third slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="fotos/botines/mas-botines/nikeE4.jpg" alt="Fourth slide">
-                  </div>
+                  @foreach ($botin->images as $image)
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="/storage/products/{{$image->image}}" alt="Second slide">
+                    </div>
+                  @endforeach
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls{{$botin->id}}" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon controlescarr" aria-hidden="true"></span>
@@ -89,15 +85,11 @@
                   <div class="carousel-item active">
                     <img class="d-block w-100" src="/storage/products/{{$botin->main_image}}" alt="First slide">
                   </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="fotos/botines/mas-botines/nikeB2.jpg" alt="Second slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="fotos/botines/mas-botines/nikeB3.jpg" alt="Third slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="fotos/botines/mas-botines/nikeB4.jpg" alt="Fourth slide">
-                  </div>
+                  @foreach ($botin->images as $image)
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="/storage/products/{{$image->image}}" alt="Second slide">
+                    </div>
+                  @endforeach
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls{{$botin->id}}" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon controlescarr" aria-hidden="true"></span>

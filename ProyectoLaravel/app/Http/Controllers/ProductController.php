@@ -45,11 +45,14 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show(Product $product)
+    public function show(Product $product, ImagesProduct $imagesProduct)
     {
         $botines1 = Product::limit(3)->get();
         $botines2 = Product::offset(3)->limit(3)->get();
         // where marca nike
+
+        $images = ImagesProduct::all();
+        
         return view('botines', compact('botines1', 'botines2'));
     }
 

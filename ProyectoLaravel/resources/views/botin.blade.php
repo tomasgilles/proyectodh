@@ -20,18 +20,12 @@
               <img class="d-block w-100 imgsProducto" src="/storage/products/{{$botin->main_image}}"
                 alt="First slide">
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="fotos/botines/mas-botines/nikeE2.jpg"
-                alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="fotos/botines/mas-botines/nikeE3.jpg"
-                alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="fotos/botines/mas-botines/nikeE4.jpg"
-                alt="Fourth slide">
-            </div>
+            @foreach ($botin->images as $image)
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/storage/products/{{$image->image}}"
+                  alt="Second slide">
+              </div>
+            @endforeach
           </div>
           <!--/.Slides-->
           <!--Controls-->
@@ -49,7 +43,14 @@
               <div data-target="#carousel-thumb" data-slide-to="0" class="listProducto active">
                 <img class="imgsProducto" src="/storage/products/{{$botin->main_image}}" width="100">
               </div>
-              <div data-target="#carousel-thumb" data-slide-to="1" class="listProducto">
+              @php $num = 1; @endphp
+              @foreach ($botin->images as $image)
+                <div data-target="#carousel-thumb" data-slide-to="{{$num}}" class="listProducto">
+                  <img class="imgsProducto" src="/storage/products/{{$image->image}}" width="100">
+                </div>
+                @php $num = $num + 1; @endphp
+              @endforeach
+              {{-- <div data-target="#carousel-thumb" data-slide-to="1" class="listProducto">
                 <img class="imgsProducto" src="fotos/botines/mas-botines/nikeE2.jpg" width="100">
               </div>
               <div data-target="#carousel-thumb" data-slide-to="2" class="listProducto">
@@ -57,7 +58,7 @@
               </div>
               <div data-target="#carousel-thumb" data-slide-to="3" class="listProducto">
                 <img class="imgsProducto" src="fotos/botines/mas-botines/nikeE4.jpg" width="100">
-              </div>
+              </div> --}}
             </div>
           </div>
         </div>
@@ -65,19 +66,21 @@
       <div class="col-md-4 infoProducto">
         <h3>{{$botin->name}}</h3>
         <p class='precioProducto'>${{$botin->price}}</p>
-        <form class="" action="index.html" method="post">
+        <form class="" action="/cartadd" method="post">
+          @csrf
+          <input type="hidden" name="id" value="{{$botin->id}}">
           <p class='talleProducto'>Talle:</p>
           <div class="talles">
             <div class="talle">
-              <input type="radio" id="radioTalle1" class="radioTalle" name="drone" value="talle1">
+              <input type="radio" id="radioTalle1" class="radioTalle" name="size" value="41" required>
                 <label for="talle1">41</label>
             </div>
             <div class="talle">
-              <input type="radio" id="radioTalle2" class="radioTalle" name="drone" value="talle2">
+              <input type="radio" id="radioTalle2" class="radioTalle" name="size" value="43">
                 <label for="talle2">43</label>
             </div>
             <div class="talle">
-              <input type="radio" id="radioTalle3" class="radioTalle" name="drone" value="talle3">
+              <input type="radio" id="radioTalle3" class="radioTalle" name="size" value="45">
                 <label for="talle3">45</label>
             </div>
           </div>
@@ -85,12 +88,13 @@
             <div class="input-group-prepend">
               <label class="input-group-text" for="inputGroupSelect01">Cantidad</label>
             </div>
-            <select class="custom-select" id="inputGroupSelect01">
+            <select class="custom-select" id="inputGroupSelect01" required>
+              <option value="">Seleccione una cantidad</option>
               @for ($i=1; $i<$botin->stock; $i++)
                 @if ($i>5)
                   @break
                 @endif
-                <option value="{{$i}}">{{$i}}</option>
+                <option value="{{$i}}" name="quantity">{{$i}}</option>
               @endfor
             </select>
           </div>

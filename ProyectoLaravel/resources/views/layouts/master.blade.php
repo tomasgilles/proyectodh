@@ -55,7 +55,7 @@
               </li>
             </ul>
             @if (Auth::user())
-              {{-- <div class="mr-5 font-weight-bold"> {{Hola, $user->firstname}}</div> --}}
+              <div class="mr-5 font-weight-bold"> Hola, {{Auth::user()->name}}</div>
             @endif
               <form id="form-inline" class="form-inline my-2 my-lg-0" id="formnavbar" class= "form">
                 <div id="input-group" class="input-group">
