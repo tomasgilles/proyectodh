@@ -23,4 +23,6 @@ Route::get('/botines/nike/{id}', 'ProductController@show2');
 
 Route::post('/cartadd', 'CartController@store');
 
+Route::get('/cart', 'CartController@index');
+
 // Route::get('/home', 'HomeController@index')->name('home');

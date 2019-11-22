@@ -50,15 +50,6 @@
                 </div>
                 @php $num = $num + 1; @endphp
               @endforeach
-              {{-- <div data-target="#carousel-thumb" data-slide-to="1" class="listProducto">
-                <img class="imgsProducto" src="fotos/botines/mas-botines/nikeE2.jpg" width="100">
-              </div>
-              <div data-target="#carousel-thumb" data-slide-to="2" class="listProducto">
-                <img class="imgsProducto" src="fotos/botines/mas-botines/nikeE3.jpg" width="100">
-              </div>
-              <div data-target="#carousel-thumb" data-slide-to="3" class="listProducto">
-                <img class="imgsProducto" src="fotos/botines/mas-botines/nikeE4.jpg" width="100">
-              </div> --}}
             </div>
           </div>
         </div>

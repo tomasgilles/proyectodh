@@ -80,7 +80,7 @@
                   <a class="btn btn-primary" href="{{ route('register') }}" role="button">Registrate</a>
                 @endif
 
-                <a class="btn btn-primary" href="#" role="button"><i id= "micarrito" class="fas fa-shopping-cart"></i></i></a>
+                <a class="btn btn-primary" href="/cart" role="button"><i id= "micarrito" class="fas fa-shopping-cart"></i></i></a>
               </div>
             </div>
           </div>

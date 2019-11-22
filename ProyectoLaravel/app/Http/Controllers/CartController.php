@@ -6,6 +6,7 @@ use App\Cart;
 use Illuminate\Http\Request;
 use App\Product;
 use App\User;
+use Auth;
 
 class CartController extends Controller
 {
@@ -14,9 +15,17 @@ class CartController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+     public function __construct()
+     {
+       $this->middleware('auth');
+     }
+
+
     public function index()
     {
-        //
+      $cart = Cart::where("user_id", Auth::user()->id)->where("status",0)->get();
+
+      return view('cart', compact('cart'));
     }
 
     /**
@@ -41,14 +50,15 @@ class CartController extends Controller
 
       $item = New Cart;
       $item->name = $product->name;
-      // $item->user_id = Auth::user()->name;
       $item->size = $request->size;
       $item->price = $product->price;
-      $item->quantity = $request->quantity;
-      // $item->user_id =
+      $item->quantity = 1;
+      $item->user_id = Auth::user()->id;
       $item->main_image = $product->main_image;
+      $item->status = 0; // producto no comprado
 
-      dd($item);
+      $item->save();
+      return redirect('home');
     }
 
     /**
