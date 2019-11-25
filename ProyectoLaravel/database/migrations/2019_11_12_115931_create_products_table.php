@@ -22,6 +22,7 @@ class CreateProductsTable extends Migration
             $table->string('size', 2);
             $table->decimal('price', 8, 2);
             $table->integer('stock');
+            $table->string('brand', 100);
 
             $table->bigInteger('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');

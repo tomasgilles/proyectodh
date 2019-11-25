@@ -17,9 +17,9 @@ Route::get('/home', 'HomeController@index');
 
 Auth::routes();
 
-Route::get('/botines/nike', 'ProductController@show');
+Route::get('/botines/{brand}', 'ProductController@show');
 
-Route::get('/botines/nike/{id}', 'ProductController@show2');
+Route::get('/botines/{brand}/{id}', 'ProductController@show2');
 
 Route::post('/cartadd', 'CartController@store');
 
