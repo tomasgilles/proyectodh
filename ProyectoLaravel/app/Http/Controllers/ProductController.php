@@ -59,8 +59,8 @@ class ProductController extends Controller
     public function show2($id, $brand)
     {
       $botin = Product::find($id);
-      $marca = Product::find($brand);
-      return view('botin', compact('botin'));
+      $marca = $brand;
+      return view('botin', compact('botin', 'marca'));
     }
 
     /**
