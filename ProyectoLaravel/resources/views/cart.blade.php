@@ -8,6 +8,10 @@
         <h2 style="padding-top: 3%;">Mi Carrito:</h2>
         <hr class="my-4">
       </div>
+      @php
+        $precioTotal = 0;
+        $cantidad = 0;
+      @endphp
     @foreach ($cart as $item)
       <div class="productoCarrito">
         <div class="col-md-7 parteCarrito">
@@ -22,7 +26,11 @@
         </div>
         <div class="col-md-3 parteCarrito">
           <div class="">
-            <button style="width:100%;" type="submit" class="btn btn-outline-dark">Eliminar de Carrito</button>
+            <form class="/cartdelete" action="/cartdelete" method="post">
+              @csrf
+              <input type="hidden" name="id" value="{{$item->id}}">
+              <button style="width:100%;" type="submit" class="btn btn-outline-dark">Eliminar de Carrito</button>
+            </form>
           </div>
         </div>
         <div class="col-md-2 parteCarrito">
@@ -30,14 +38,22 @@
         </div>
       </div>
       <hr class="my-4">
+      @php
+        $cantidad += $item->quantity;
+        $precioTotal += $item->price*$item->quantity;
+      @endphp
     @endforeach
       <div id="totalCarrito" class="">
         <div class="">
-          <p>Productos: #</p>
-          <p>Total: #</p>
+          <p>Productos: {{$cantidad}}</p>
+          <p>Total: ${{$precioTotal}}</p>
         </div>
         <div class="">
-          <button style="width:100%;" type="submit" class="btn btn-outline-dark">Comprar Carrito</button>
+          <form class="" action="/cartclose" method="post">
+            @csrf
+            {{-- <input type="hidden" name="" value="{{Auth::user()->id}}"> --}}
+            <button style="width:100%;" type="submit" class="btn btn-outline-dark">Comprar Carrito</button>
+          </form>
         </div>
       </div>
     </div>

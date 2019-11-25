@@ -2,6 +2,12 @@
 
 @section('content')
 
+  @if (session('message'))
+    <div class="">
+      {{session('message')}}
+    </div>
+  @endif
+
   <div class="container-fluid main"> <!-- GENERAL -->
 
      <div class="first container-fluid px-0">  <!-- FOTO ESTADIO + GIF ANIMADO-->

@@ -60,7 +60,7 @@ class CartController extends Controller
       // dd($item);
 
       $item->save();
-      return redirect('home');
+      return redirect('cart');
     }
 
     /**
@@ -94,7 +94,9 @@ class CartController extends Controller
      */
     public function update(Request $request, Cart $cart)
     {
-        //
+        $item = Cart::find($request->id);
+        $item->delete();
+        return redirect('/cart');
     }
 
     /**
@@ -107,4 +109,14 @@ class CartController extends Controller
     {
         //
     }
+
+    public function cartClose(Cart $cart)
+    {
+      $items = Cart::where("user_id", Auth::user()->id)->where("status",0)->get();
+      foreach ($items as $item) {
+        $item->status = 1;
+      }
+      return redirect('home')->with('message', 'Has comprado el carrito');
+    }
+
 }

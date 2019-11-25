@@ -25,4 +25,8 @@ Route::post('/cartadd', 'CartController@store');
 
 Route::get('/cart', 'CartController@index');
 
+Route::post('/cartdelete', 'CartController@update');
+
+Route::post('/cartclose', 'CartController@cartClose');
+
 // Route::get('/home', 'HomeController@index')->name('home');

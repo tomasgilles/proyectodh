@@ -90,7 +90,6 @@
             </select>
           </div>
           <div class="comparAhora">
-            <button id="comprarAP" type="submit" class="btn btn-outline-dark">Comprar Ahora</button>
           </div>
           <div class="agregarCarrito">
             <button id="agregarC" type="submit" class="btn btn-outline-dark">Agregar a Carrito</button>
