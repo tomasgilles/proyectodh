@@ -17,7 +17,7 @@
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.php">Home</a></li>
         <li class="breadcrumb-item"><a href="productos.php">Botines</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Nike</li>
+        <li class="breadcrumb-item active" aria-current="page">{{$marca}}</li>
       </ol>
     </nav>
     <div class="titulo">

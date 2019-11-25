@@ -17,6 +17,7 @@ $factory->define(Product::class, function (Faker $faker) {
       'price' => $faker->randomFloat(2, 2, 8),
       'stock' => $faker->numberBetween(0, 50),
       'user_id' => 1,
-      'main_image' => $faker->image($path, 580, 580, 'sports', false)
-    ];
+      'main_image' => $faker->image($path, 580, 580, 'sports', false),
+      'brand' => $faker->sentence(1)
+        ];
 });

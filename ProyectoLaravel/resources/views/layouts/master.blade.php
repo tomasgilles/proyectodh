@@ -30,8 +30,8 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="/botines/nike">Nike</a>
-                  <a class="dropdown-item" href="#">Adidas</a>
-                  <a class="dropdown-item" href="#">Puma</a>
+                  <a class="dropdown-item" href="/botines/adidas">Adidas</a>
+                  <a class="dropdown-item" href="/botines/puma">Puma</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
