@@ -550,16 +550,18 @@ h5.card-title{
 .card{
   background-color: #EDEDED;
 }
-.vermasbotin{
-  margin-left:50px;
-  margin-bottom: 10px;
-}
 .controlescarr{
 background-color: darkgrey;
 border-radius: 9px;
 }
 .cproduct:hover{
   background-color: darkgrey;
+}
+.verProducto{
+  overflow: hidden;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 11%;
 }
 /*Producto.php*/
 .indicators-carr{

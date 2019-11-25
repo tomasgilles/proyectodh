@@ -70,9 +70,11 @@
                 </a>
               </div>
               <div class="card-body">
-                <p class="card-text font-weight-bold">$Precio</p>
-                <p class="card-text">Descripcion del botin</p>
-                <a href="/botines/nike/{{$botin->id}}" class="btn btn-outline-dark vermasbotin">Ver Mas</a>
+                <p class="card-text">{{$botin->name}}</p>
+                <p class="card-text font-weight-bold">${{$botin->price}}</p>
+                <div class="verProducto">
+                  <a href="/botines/nike/{{$botin->id}}" class="btn btn-outline-dark vermasbotin">Ver Mas</a>
+                </div>
               </div>
             </div>
           @endforeach
@@ -101,9 +103,11 @@
                 </a>
               </div>
               <div class="card-body">
-                <p class="card-text font-weight-bold">$Precio</p>
-                <p class="card-text">Descripcion del botin</p>
-                <a href="/botines/nike/{{$botin->id}}" class="btn btn-outline-dark vermasbotin">Ver Mas</a>
+                <p class="card-text">{{$botin->name}}</p>
+                <p class="card-text font-weight-bold">${{$botin->price}}</p>
+                <div class="verProducto">
+                  <a href="/botines/nike/{{$botin->id}}" class="btn btn-outline-dark vermasbotin">Ver Mas</a>
+                </div>
               </div>
             </div>
           @endforeach

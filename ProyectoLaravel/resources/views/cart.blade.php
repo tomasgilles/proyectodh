@@ -21,9 +21,6 @@
           </div>
         </div>
         <div class="col-md-3 parteCarrito">
-          <div style="margin-bottom:4%;" class="">
-            <button style="width:100%;" type="submit" class="btn btn-outline-dark">Comprar Ahora</button>
-          </div>
           <div class="">
             <button style="width:100%;" type="submit" class="btn btn-outline-dark">Eliminar de Carrito</button>
           </div>
