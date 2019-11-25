@@ -46,12 +46,11 @@
       <div id="totalCarrito" class="">
         <div class="">
           <p>Productos: {{$cantidad}}</p>
-          <p>Total: ${{$precioTotal}}</p>
+          <p>Total a pagar: ${{$precioTotal}}</p>
         </div>
         <div class="">
           <form class="" action="/cartclose" method="post">
             @csrf
-            {{-- <input type="hidden" name="" value="{{Auth::user()->id}}"> --}}
             <button style="width:100%;" type="submit" class="btn btn-outline-dark">Comprar Carrito</button>
           </form>
         </div>

@@ -17,7 +17,7 @@
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.php">Home</a></li>
         <li class="breadcrumb-item"><a href="productos.php">Botines</a></li>
-        <li class="breadcrumb-item active" aria-current="page">{{$marca}}</li>
+        <li class="breadcrumb-item active" aria-current="page" style="text-transform: capitalize;">{{$marca}}</li>
       </ol>
     </nav>
     <div class="titulo">
@@ -27,7 +27,7 @@
       <div class="card bg-dark text-white">
         <img src="#" class="card-img" alt
         <div class="card-img-overlay">
-          <h5 class="card-title">Nuevos Botines Nike Mercurial</h5>
+          <h5 class="card-title" style="text-transform: capitalize;">Nuevos Botines {{$marca}}</h5>
           <a id="botoncomprar"type="button" class="button-h5 btn btn-outline-dark" href="#">Comprar Ahora</a>
         </div>
       </div>
