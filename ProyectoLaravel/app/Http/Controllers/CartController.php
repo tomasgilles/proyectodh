@@ -52,10 +52,12 @@ class CartController extends Controller
       $item->name = $product->name;
       $item->size = $request->size;
       $item->price = $product->price;
-      $item->quantity = 1;
+      $item->quantity = $request->quantity;
       $item->user_id = Auth::user()->id;
       $item->main_image = $product->main_image;
       $item->status = 0; // producto no comprado
+      // dd($product);
+      // dd($item);
 
       $item->save();
       return redirect('home');

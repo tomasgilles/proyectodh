@@ -79,13 +79,13 @@
             <div class="input-group-prepend">
               <label class="input-group-text" for="inputGroupSelect01">Cantidad</label>
             </div>
-            <select class="custom-select" id="inputGroupSelect01" required>
+            <select class="custom-select" id="inputGroupSelect01" name="quantity" required>
               <option value="">Seleccione una cantidad</option>
               @for ($i=1; $i<$botin->stock; $i++)
                 @if ($i>5)
                   @break
                 @endif
-                <option value="{{$i}}" name="quantity">{{$i}}</option>
+                <option value="{{$i}}">{{$i}}</option>
               @endfor
             </select>
           </div>
