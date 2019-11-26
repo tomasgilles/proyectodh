@@ -1,6 +1,6 @@
-1. Cambiar status de carrito cuando compro
-3. Order by Productos
-4. Subir productos
-5. Hacer vistas para vestimenta y accesorios
+1. Order by Productos
+2. Conseguir todas las fotos de los productos con tamañao 580*580
+3. Subir productos (cada uno)
+4. Hacer vistas para vestimenta y accesorios
 
 `Extra: tabla intermedia talles
