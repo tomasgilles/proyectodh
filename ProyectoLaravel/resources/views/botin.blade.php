@@ -64,7 +64,7 @@
             <div class="input-group-prepend">
               <label class="input-group-text" for="inputGroupSelect01">Talle</label>
             </div>
-            <select class="custom-select" id="inputGroupSelect01" name="quantity" required>
+            <select class="custom-select" id="inputGroupSelect01" name="size" required>
               <option value="">Seleccione un talle</option>
               @for ($i=38; $i < 46; $i++)
                 <option value="{{$i}}">{{$i}}</option>
