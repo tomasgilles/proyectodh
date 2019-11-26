@@ -60,20 +60,16 @@
         <form class="" action="/cartadd" method="post">
           @csrf
           <input type="hidden" name="id" value="{{$botin->id}}">
-          <p class='talleProducto'>Talle:</p>
-          <div class="talles">
-            <div class="talle">
-              <input type="radio" id="radioTalle1" class="radioTalle" name="size" value="41" required>
-                <label for="talle1">41</label>
+          <div id="cantidades" class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Talle</label>
             </div>
-            <div class="talle">
-              <input type="radio" id="radioTalle2" class="radioTalle" name="size" value="43">
-                <label for="talle2">43</label>
-            </div>
-            <div class="talle">
-              <input type="radio" id="radioTalle3" class="radioTalle" name="size" value="45">
-                <label for="talle3">45</label>
-            </div>
+            <select class="custom-select" id="inputGroupSelect01" name="quantity" required>
+              <option value="">Seleccione un talle</option>
+              @for ($i=38; $i < 46; $i++)
+                <option value="{{$i}}">{{$i}}</option>
+              @endfor
+            </select>
           </div>
           <div id="cantidades" class="input-group mb-3">
             <div class="input-group-prepend">

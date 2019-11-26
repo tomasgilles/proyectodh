@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Product;
 use App\ImagesProduct;
 use Illuminate\Http\Request;
+use Auth;
 
 class ProductController extends Controller
 {
@@ -34,9 +35,49 @@ class ProductController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+    public function agregarProducto()
+    {
+      return view('formulario1');
+    }
+
+    public function agregarFotos()
+    {
+      $ultimoProducto = Product::all()->last();
+      return view('formulario2', compact('ultimoProducto'));
+    }
+
     public function store(Request $request)
     {
-        //
+        $this->validate($request,
+          [
+            'name' => ['max:200'],
+            'main_image' =>['file', 'image'],
+          ],
+          [
+            'required' => 'Este campo es obligatorio',
+            'image' => 'Formato de imágen inválido'
+          ]
+        );
+
+        $newProduct = new Product;
+
+        $newProduct->user_id = Auth::user()->id;
+        $newProduct->name = $request->name;
+        $newProduct->description = $request->description;
+        $newProduct->size = $request->size;
+        $newProduct->price = $request->price;
+        $newProduct->stock = $request->stock;
+        $newProduct->brand = $request->brand;
+        $newProduct->product_type = $request->product_type;
+
+        $ruta = $request->file('main_image')->store('public/products');
+        $nombreArchivo = basename($ruta);
+        $newProduct->main_image = $nombreArchivo;
+
+        $newProduct->save();
+
+        return redirect ('/formulario2');
     }
 
     /**

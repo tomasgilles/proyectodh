@@ -29,4 +29,12 @@ Route::post('/cartdelete', 'CartController@update');
 
 Route::post('/cartclose', 'CartController@cartClose');
 
+Route::get('/formulario1', 'ProductController@agregarProducto');
+
+Route::get('/formulario2', 'ProductController@agregarFotos');
+
+Route::post('/productadd', 'ProductController@store');
+
+Route::post('/imagesadd', 'ImagesProductController@store');
+
 // Route::get('/home', 'HomeController@index')->name('home');

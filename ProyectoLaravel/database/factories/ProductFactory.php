@@ -18,6 +18,7 @@ $factory->define(Product::class, function (Faker $faker) {
       'stock' => $faker->numberBetween(0, 50),
       'user_id' => 1,
       'main_image' => $faker->image($path, 580, 580, 'sports', false),
-      'brand' => $faker->sentence(1)
+      'brand' => 'nike',
+      'product_type' => 'botines'
         ];
 });

@@ -114,9 +114,12 @@ class CartController extends Controller
     public function cartClose(Cart $cart)
     {
       $items = Cart::where("user_id", Auth::user()->id)->where("status",0)->get();
+      var_dump($items);
       foreach ($items as $item) {
         $item->status = 1;
+        $item->save();
       }
+
       return redirect('home')->with('message', 'Has comprado el carrito');
     }
 
