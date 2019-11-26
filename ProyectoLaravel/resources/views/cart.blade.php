@@ -44,14 +44,14 @@
       @endphp
     @endforeach
       <div id="totalCarrito" class="">
-        <div class="">
+        <div class="carritoTotal">
           <p>Productos: {{$cantidad}}</p>
           <p>Total a pagar: ${{$precioTotal}}</p>
         </div>
         <div class="">
           <form class="" action="/cartclose" method="post">
             @csrf
-            <button style="width:100%;" type="submit" class="btn btn-outline-dark">Comprar Carrito</button>
+            <button style="width:100%; font-size:200%;" type="submit" class="btn btn-outline-dark">Comprar Carrito</button>
           </form>
         </div>
       </div>

@@ -502,51 +502,6 @@ h5.card-title{
   margin-bottom: 13px;
   background-color: white;
 }
-#card1{
-  margin:10px;
-  border-radius: 20px;
-  padding-top: 21px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-#card2{
-  margin:10px;
-  border-radius: 20px;
-  padding-top: 21px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-#card3{
-  margin:10px;
-  border-radius: 20px;
-  padding-top: 21px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-#card4{
-  margin:10px;
-  margin-bottom: 5px;
-  border-radius: 20px;
-  padding-top: 21px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-#card5{
-  margin:10px;
-  margin-bottom: 5px;
-  border-radius: 20px;
-  padding-top: 21px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-#card6{
-  margin:10px;
-  margin-bottom: 5px;
-  border-radius: 20px;
-  padding-top: 21px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
 .card{
   background-color: #EDEDED;
 }
@@ -717,4 +672,7 @@ border-radius: 9px;
 }
 #precioCarrito{
   font-size: 164%;
+}
+.carritoTotal{
+  font-size: 160%;
 }

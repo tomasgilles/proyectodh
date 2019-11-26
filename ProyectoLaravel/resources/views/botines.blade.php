@@ -48,7 +48,11 @@
       <div class="botines" style="float:left">
         <div class="card-group">
           @foreach ($botines1 as $botin)
-            <div id="card{{$botin->id}}" class="card cproduct">
+            <div id="card{{$botin->id}}" class="col-md-4 card cproduct" style="margin:10px;
+            border-radius: 20px;
+            padding-top: 21px;
+            padding-left: 10px;
+            padding-right: 10px;">
               <div id="carouselExampleControls{{$botin->id}}" class="carousel slide" data-interval="false" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -81,7 +85,11 @@
         </div>
         <div class="card-group">
           @foreach ($botines2 as $botin)
-            <div id="card{{$botin->id}}" class="card cproduct">
+            <div id="card{{$botin->id}}" class="col-md-4 card cproduct" style="margin:10px;
+            border-radius: 20px;
+            padding-top: 21px;
+            padding-left: 10px;
+            padding-right: 10px;">
               <div id="carouselExampleControls{{$botin->id}}" class="carousel slide" data-interval="false" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">

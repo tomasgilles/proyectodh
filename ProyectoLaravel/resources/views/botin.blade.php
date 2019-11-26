@@ -5,10 +5,10 @@
   <div class="cuerpoentero">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-        <li class="breadcrumb-item"><a href="productos.php">Botines</a></li>
-        <li class="breadcrumb-item"><a href="productos.php">{{$marca}}</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Producto</li>
+        <li class="breadcrumb-item"><a href="home.blade.php">Home</a></li>
+        <li class="breadcrumb-item"><a href="botines.blade.php">Botines</a></li>
+        <li class="breadcrumb-item" style="text-transform: capitalize;"><a href="botines.blade.php">{{$marca}}</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{$botin->name}}</li>
       </ol>
     </nav>
     <div class="parteArriba">
