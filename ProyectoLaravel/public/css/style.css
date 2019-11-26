@@ -518,6 +518,9 @@ border-radius: 9px;
   margin: auto;
   margin-bottom: 11%;
 }
+.botines{
+  width: 100%;
+}
 /*Producto.php*/
 .indicators-carr{
   overflow:hidden;

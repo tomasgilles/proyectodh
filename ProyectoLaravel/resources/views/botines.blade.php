@@ -119,68 +119,6 @@
               </div>
             </div>
           @endforeach
-          {{-- <div id="card5" class="card cproduct">
-            <div id="carouselExampleControls5" class="carousel slide" data-interval="false" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="d-block w-100" src="fotos/botines/mas-botines/nikeC1.jpg" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="fotos/botines/mas-botines/nikeC2.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="fotos/botines/mas-botines/nikeC3.jpg" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="fotos/botines/mas-botines/nikeC4.jpg" alt="Fourth slide">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls5" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon controlescarr" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleControls5" role="button" data-slide="next">
-                <span class="carousel-control-next-icon controlescarr" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-            <div class="card-body">
-              <p class="card-text font-weight-bold">$Precio</p>
-              <p class="card-text">Descripcion del botin</p>
-              <a href="#" class="btn btn-outline-dark vermasbotin">Ver Mas</a>
-            </div>
-          </div>
-          <div id="card6" class="card cproduct">
-            <div id="carouselExampleControls6" class="carousel slide"  data-interval="false" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="d-block w-100" src="fotos/botines/mas-botines/nikeD1.jpg" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="fotos/botines/mas-botines/nikeD2.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="fotos/botines/mas-botines/nikeD3.jpg" alt="Third slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="fotos/botines/mas-botines/nikeD4.jpg" alt="Fourth slide">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls6" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon controlescarr" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleControls6" role="button" data-slide="next">
-                <span class="carousel-control-next-icon controlescarr" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-            <div class="card-body">
-              <p class="card-text font-weight-bold">$Precio</p>
-              <p class="card-text">Descripcion del botin</p>
-              <a href="#" class="btn btn-outline-dark vermasbotin">Ver Mas</a>
-            </div>
-          </div> --}}
         </div>
       </div>
     </div>
