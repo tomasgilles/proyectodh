@@ -35,7 +35,7 @@
             <img src="img/adidas-nemeziz1.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5 class="h5-carousel" id="nemeziz">Botines Adidas New Generation Nemeziz</h5>
-              <a type="button" class="button-h5 btn btn-outline-dark" href="/botines/nike/New Generation Nemeziz">Ver Mas</a>
+              <a type="button" class="button-h5 btn btn-outline-dark" href="/botines/nike/5">Ver Mas</a>
             </div>
           </div>
           <div class="carousel-item">

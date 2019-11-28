@@ -54,7 +54,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4 infoProducto">
+      <div class="col-md-5 infoProducto">
         <h3>{{$botin->name}}</h3>
         <p class='precioProducto'>${{$botin->price}}</p>
         <form class="" action="/cartadd" method="post">
@@ -94,7 +94,7 @@
       </div>
       <div class="col-md-10 descripcionProducto" style="max-width:100%;">
         <h2>Descripcion Producto</h2>
-        <p>{{$botin->description}}</p>
+        <p style="font-size:80%;>{{$botin->description}}</p>
       </div>
     </div>
     <div class="parteAbajo">
