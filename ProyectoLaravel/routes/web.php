@@ -39,4 +39,8 @@ Route::post('/imagesadd', 'ImagesProductController@store');
 
 Route::post('/busqueda', 'ProductController@busqueda');
 
+Route::get('/productdelete', 'ProductController@borrarProducto');
+
+Route::post('/productdelete', 'ProductController@destroy');
+
 // Route::get('/home', 'HomeController@index')->name('home');

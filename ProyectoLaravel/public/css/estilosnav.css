@@ -53,5 +53,10 @@
   width:auto;
   margin-right: 5px;
  }
+/*estilo para foto de busqueda*/
 
+@media (min-width: 800px){
+.card-group {
+flex-flow: row wrap;
+}
 }

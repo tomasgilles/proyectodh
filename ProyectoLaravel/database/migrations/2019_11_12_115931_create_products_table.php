@@ -28,6 +28,8 @@ class CreateProductsTable extends Migration
             $table->string('brand', 100);
             $table->string('product_type', 100);
             $table->string('main_image', 300);
+
+            $table->softDeletes();
         });
     }
 
