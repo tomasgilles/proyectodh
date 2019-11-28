@@ -137,4 +137,10 @@ class ProductController extends Controller
     {
         //
     }
+    public function busqueda(Request $request){
+    $products = Product::where('name', 'like', '%' . $request->busqueda . '%')->get();
+
+    return view("busqueda", compact('products'));
+    }
+        
 }

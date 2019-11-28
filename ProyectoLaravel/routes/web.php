@@ -37,4 +37,6 @@ Route::post('/productadd', 'ProductController@store');
 
 Route::post('/imagesadd', 'ImagesProductController@store');
 
+Route::post('/busqueda', 'ProductController@busqueda');
+
 // Route::get('/home', 'HomeController@index')->name('home');

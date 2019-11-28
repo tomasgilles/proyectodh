@@ -57,16 +57,19 @@
             @if (Auth::user())
               <div class="mr-5 font-weight-bold"> Hola, {{Auth::user()->name}}</div>
             @endif
-              <form id="form-inline" class="form-inline my-2 my-lg-0" id="formnavbar" class= "form">
-                <div id="input-group" class="input-group">
-                  <input type="text" class="form-control" placeholder="Busqueda">
-                  <div class="input-group-append">
-                    <button class="btn btn-primary" type="button">
-                      <i class="fa fa-search"></i>
-                    </button>
-                  </div>
+            <form id="form-inline" class="form-inline my-2 my-lg-0" id="formnavbar" class="form" name="busqueda" method="post" action="/busqueda">
+
+              @csrf
+              <div id="input-group" class="input-group">
+                <input type="text" class="form-control" placeholder="Busqueda">
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="submit" name="busqueda" method="post" action="/busqueda">
+                    <i class="fa fa-search"></i>
+                  </button>
                 </div>
-              </form>
+              </div>
+            </form>
+
               <div class="dropdown">
                 @if(Auth::user())
                   <a class="btn btn-secondary" href="/formulario1">Agregar Productos</a>
