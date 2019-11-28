@@ -39,9 +39,9 @@
                   Vestimenta
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Remeras</a>
-                  <a class="dropdown-item" href="#">Camperas</a>
-                  <a class="dropdown-item" href="#">Medias</a>
+                  <a class="dropdown-item" href="/vestimenta/remeras">Remeras</a>
+                  <a class="dropdown-item" href="/vestimenta/camperas">Camperas</a>
+                  <a class="dropdown-item" href="/vestimenta/medias">Medias</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
@@ -49,8 +49,8 @@
                   Accesorios
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Pelotas</a>
-                  <a class="dropdown-item" href="#">Otros</a>
+                  <a class="dropdown-item" href="/accesorios/pelotas">Pelotas</a>
+                  <a class="dropdown-item" href="/accesorios/otros">Otros</a>
                 </div>
               </li>
             </ul>

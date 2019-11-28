@@ -5,16 +5,15 @@
   <div class="cuerpoentero">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="home.blade.php">Home</a></li>
-        <li class="breadcrumb-item"><a href="botines.blade.php">Botines</a></li>
-        <li class="breadcrumb-item" style="text-transform: capitalize;"><a href="botines.blade.php">{{$marca}}</a></li>
+        <li class="breadcrumb-item"><a href="/home">Home</a></li>
+        <li class="breadcrumb-item"><a href="/{{$tipoProducto}}/{{$marca}}">{{$tipoProducto}}</a></li>
+        <li class="breadcrumb-item" style="text-transform: capitalize;"><a href="/{{$tipoProducto}}/{{$marca}}">{{$marca}}</a></li>
         <li class="breadcrumb-item active" aria-current="page">{{$botin->name}}</li>
       </ol>
     </nav>
     <div class="parteArriba">
       <div class="col-md-7 imagenProducto">
         <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-interval="false" data-ride="carousel">
-          <!--Slides-->
           <div class="carousel-inner" role="listbox">
             <div id="carouselHover" class="carousel-item active">
               <img class="d-block w-100 imgsProducto" src="/storage/products/{{$botin->main_image}}"
@@ -101,53 +100,50 @@
       <div class="otrosProductos">
         <h2 id="productosG">Otros productos que quizas te gusten</h2>
         <div class="container my-4">
-
               <hr class="my-4">
-
               <!--Carousel Wrapper-->
-              <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-
-                <!--Controls-->
-
-                <!--/.Controls-->
-
+              <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel" data-interval="false">
                 <!--Slides-->
                 <div class="carousel-inner" role="listbox">
-
                   <!--First slide-->
                   <div class="carousel-item active">
-
                     <div class="row">
-
                       <div class="col-md-4 clearfix d-none d-md-block">
                         <div class="card.index mb-2">
-                          <img class="card-img-top" src="/img/carousel/camiseta-juventus1.jpg" alt="Card image cap">
+                          <img class="card-img-top" src="/storage/products/{{$botinRand1->main_image}}" alt="Card image cap">
                           <div class="card-body">
-                            <h4 class="card-title" style="height: 54px;" >Camiseta Juventus</h4>
-                            <p class="card-text">$Precio</p>
-                            <a id="juventus" class="btn btn-outline-dark">Comprar ahora</a>
+                            <h4 class="card-title" style="height: 54px;" >{{$botinRand1->name}}</h4>
+                            <p class="card-text">${{$botinRand1->price}}</p>
+                            <div class="verMasC">
+                              <a class="btn btn-outline-dark" href="/botines/{{$botinRand1->brand}}/{{$botinRand1->id}}">Ver Mas</a>
+                            </div>
+
                           </div>
                         </div>
                       </div>
 
                       <div class="col-md-4">
                         <div class="card.index mb-2">
-                          <img class="card-img-top" src="/img/carousel/camiseta-barca1.jpg" alt="Card image cap">
+                          <img class="card-img-top" src="/storage/products/{{$botinRand2->main_image}}" alt="Card image cap">
                           <div class="card-body">
-                            <h4 class="card-title correccion" style="height: 54px;" >Camiseta Barcelona</h4>
-                            <p class="card-text correccion2">$Precio</p>
-                            <a id="barcelona" class="btn btn-outline-dark">Comprar ahora</a>
+                            <h4 class="card-title correccion" style="height: 54px;">{{$botinRand2->name}}</h4>
+                            <p class="card-text correccion2">${{$botinRand2->price}}</p>
+                            <div class="verMasC">
+                              <a class="btn btn-outline-dark" href="/botines/{{$botinRand2->brand}}/{{$botinRand2->id}}">Ver Mas</a>
+                            </div>
                           </div>
                         </div>
                       </div>
 
                       <div class="col-md-4 clearfix d-none d-md-block">
                         <div class="card.index mb-2">
-                          <img class="card-img-top" src="/img/carousel/camiseta-real1.jpg" alt="Card image cap">
+                          <img class="card-img-top" src="/storage/products/{{$botinRand3->main_image}}" alt="Card image cap">
                           <div class="card-body">
-                            <h4 id="realmadridcorreccion"class="card-title" style="height: 54px;" >Camiseta Real Madrid</h4>
-                            <p class="card-text correccion2">$Precio</p>
-                            <a id="realmadrid" class="btn btn-outline-dark">Comprar ahora</a>
+                            <h4 class="card-title" style="height: 54px;" >{{$botinRand3->name}}</h4>
+                            <p class="card-text correccion2">${{$botinRand3->price}}</p>
+                            <div class="verMasC">
+                              <a class="btn btn-outline-dark" href="/botines/{{$botinRand3->brand}}/{{$botinRand3->id}}">Ver Mas</a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -162,33 +158,39 @@
                     <div class="row">
                       <div class="col-md-4">
                         <div class="card.index mb-2">
-                          <img class="card-img-top" src="/img/carousel/camiseta-argentina1.jpg" alt="Card image cap">
+                          <img class="card-img-top" src="/storage/products/{{$botinRand4->main_image}}" alt="Card image cap">
                           <div class="card-body">
-                            <h4 class="card-title correccion" style="height: 54px;" >Camiseta Argentina</h4>
-                            <p class="card-text correccion2">$Precio</p>
-                            <a id="argentina" class="btn btn-outline-dark">Comprar ahora</a>
+                            <h4 class="card-title correccion" style="height: 54px;" >{{$botinRand4->name}}</h4>
+                            <p class="card-text correccion2">${{$botinRand4->price}}</p>
+                            <div class="verMasC">
+                              <a class="btn btn-outline-dark" href="/botines/{{$botinRand4->brand}}/{{$botinRand4->id}}">Ver Mas</a>
+                            </div>
                           </div>
                         </div>
                       </div>
 
                       <div class="col-md-4 clearfix d-none d-md-block">
                         <div class="card.index mb-2">
-                          <img class="card-img-top" src="/img/carousel/camiseta-ajax1.jpg" alt="Card image cap">
+                          <img class="card-img-top" src="/storage/products/{{$botinRand5->main_image}}" alt="Card image cap">
                           <div class="card-body">
-                            <h4 class="card-title" style="height: 54px;">Camiseta Ajax</h4>
-                            <p class="card-text">$Precio</p>
-                            <a id="ajax" class="btn btn-outline-dark">Comprar ahora</a>
+                            <h4 class="card-title" style="height: 54px;">{{$botinRand5->name}}</h4>
+                            <p class="card-text">${{$botinRand5->price}}</p>
+                            <div class="verMasC">
+                              <a class="btn btn-outline-dark" href="/botines/{{$botinRand5->brand}}/{{$botinRand5->id}}">Ver Mas</a>
+                            </div>
                           </div>
                         </div>
                       </div>
 
                       <div class="col-md-4 clearfix d-none d-md-block">
                         <div class="card.index mb-2">
-                          <img class="card-img-top" src="/img/carousel/camiseta-napoli1.jpg" alt="Card image cap">
+                          <img class="card-img-top" src="/storage/products/{{$botinRand6->main_image}}" alt="Card image cap">
                           <div class="card-body">
-                            <h4 class="card-title" style="height: 54px;" >Camiseta Napoli</h4>
-                            <p class="card-text">$Precio</p>
-                            <a id="napoli" class="btn btn-outline-dark">Comprar ahora</a>
+                            <h4 class="card-title" style="height: 54px;" >{{$botinRand6->name}}</h4>
+                            <p class="card-text">${{$botinRand6->price}}</p>
+                            <div class="verMasC">
+                              <a class="btn btn-outline-dark" href="/botines/{{$botinRand6->brand}}/{{$botinRand6->id}}">Ver Mas</a>
+                            </div>
                           </div>
                         </div>
                       </div>
