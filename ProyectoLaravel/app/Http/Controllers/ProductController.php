@@ -86,22 +86,34 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show(Product $product, ImagesProduct $imagesProduct, $brand)
+    public function show(Product $product, ImagesProduct $imagesProduct, $tipo, $brand)
     {
-        $botines1 = Product::where('brand', $brand)->limit(3)->get();
-        $botines2 = Product::where('brand', $brand)->offset(3)->limit(3)->get();
+        $botines1 = Product::where('brand', $brand)->where('product_type', $tipo)->limit(3)->get();
+        $botines2 = Product::where('brand', $brand)->where('product_type', $tipo)->offset(3)->limit(3)->get();
+        $botines3 = Product::where('brand', $brand)->where('product_type', $tipo)->offset(6)->limit(3)->get();
         $marca = $brand;
+        $tipoProducto = $tipo;
 
         $images = ImagesProduct::all();
 
-        return view('botines', compact('botines1', 'botines2', 'marca'));
+        return view('botines', compact('botines1', 'botines2', 'botines3', 'marca', 'tipoProducto'));
     }
 
-    public function show2($brand, $id, Product $product, ImagesProduct $imagesProduct)
+    public function show2($tipo, $brand, $id, Product $product, ImagesProduct $imagesProduct)
     {
       $botin = Product::find($id);
+
+
+      $botinRand1 = Product::where('id', rand(1, 8))->where('product_type', $tipo)->get()->first();
+      $botinRand2 = Product::where('id', rand(1, 8))->where('product_type', $tipo)->get()->first();
+      $botinRand3 = Product::where('id', rand(1, 8))->where('product_type', $tipo)->get()->first();
+      $botinRand4 = Product::where('id', rand(1, 8))->where('product_type', $tipo)->get()->first();
+      $botinRand5 = Product::where('id', rand(1, 8))->where('product_type', $tipo)->get()->first();
+      $botinRand6 = Product::where('id', rand(1, 8))->where('product_type', $tipo)->get()->first();
       $marca = $brand;
-      return view('botin', compact('botin', 'marca'));
+      $tipoProducto = $tipo;
+
+      return view('botin', compact('botin', 'marca', 'tipoProducto', 'botinRand1', 'botinRand2', 'botinRand3', 'botinRand4', 'botinRand5', 'botinRand6'));
     }
 
     /**
@@ -133,7 +145,6 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Product $product)
     public function destroy(Product $product, Request $request)
     {
         $nombreProducto = '%' . $request->name . '%';
