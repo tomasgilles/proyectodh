@@ -72,7 +72,10 @@
 
               <div class="dropdown">
                 @if(Auth::user())
-                  <a class="btn btn-secondary" href="/formulario1">Agregar Productos</a>
+                  @if (Auth::user()->rol == 100)
+                    <a class="btn btn-secondary" href="/formulario1">+</a>
+                    <a class="btn btn-danger" href="/productdelete">-</a>
+                  @endif
                   <a class="btn btn-primary" href="/cart" role="button"><i id= "micarrito" class="fas fa-shopping-cart"></i></i></a>
 
                   <a class="btn btn-danger" href="{{ route('logout') }}" role="button" onclick="event.preventDefault();

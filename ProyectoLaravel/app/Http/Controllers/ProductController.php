@@ -145,10 +145,27 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Product $product)
+    public function destroy(Product $product, Request $request)
     {
-        //
+        $nombreProducto = '%' . $request->name . '%';
+        $item = Product::where('name', 'like', $nombreProducto)->get();
+        // dd($item);
+        if ($item) {
+          $item[0]->delete();
+          $id = $item[0]->id;
+          $images = ImagesProduct::where('product_id', '=', $id)->get();
+        }
+        foreach ($images as $image) {
+          $image->delete();
+        }
+        return redirect ('/home');
     }
+
+    public function borrarProducto()
+    {
+      return view('eliminarpelicula');
+    }
+
     public function busqueda(Request $request){
     $products = Product::where('name', 'like', '%' . $request->busqueda . '%')->get();
 
