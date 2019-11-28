@@ -94,7 +94,7 @@
       </div>
       <div class="col-md-10 descripcionProducto" style="max-width:100%;">
         <h2>Descripcion Producto</h2>
-        <p style="font-size:80%;>{{$botin->description}}</p>
+        <p style="font-size:80%";>{{$botin->description}}</p>
       </div>
     </div>
     <div class="parteAbajo">
