@@ -1,5 +1,4 @@
-1. Order by Productos
-2. Conseguir todas las fotos de los productos con tamañao 580*580
-3. Subir productos (cada uno)
+1. Como hacemo carousel en la home???
+2. CUANDO NO HAY NINGUN PRODUCTO SUBIDO EN ALGUNA CATEGORIA --> `ROMPE EL CODIGO`
+3. Hacer el host y subir los productos
 4. Hacer vistas para vestimenta y accesorios
-6. Que solo puedan agregar y borrar los admins

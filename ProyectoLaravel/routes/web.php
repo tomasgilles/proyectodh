@@ -19,6 +19,8 @@ Auth::routes();
 
 Route::get('/{tipo}/{brand}', 'ProductController@show');
 
+Route::post('/{tipo}/{brand}', 'ProductController@filter');
+
 Route::get('/{tipo}/{brand}/{id}', 'ProductController@show2');
 
 Route::post('/cartadd', 'CartController@store');

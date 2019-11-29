@@ -11,7 +11,7 @@
       </ol>
     </nav>
     <div class="titulo">
-      <h1 id="botinestitulo">{{$tipoProducto}}</h1>
+      <h1 id="botinestitulo" style="text-transform: capitalize;">{{$tipoProducto}}</h1>
     </div>
     <div class="muestraprincipal">
       <div class="card bg-dark text-white">
@@ -28,12 +28,16 @@
     <div class="cuerpomitad px-3" style="overflow:hidden;">
       <div class="orderby">
         <h3 id="h3nav" >Ordenar por:</h3>
-        <select class="form-control form-control-lg" placeholder="Ordenar Por:">
-          <option><a class="list-link" href="#">Precio de menor a mayor</a></option>
-          <option><a class="list-link" href="#">Precio de mayor a menor</a></option>
-          <option><a class="list-link" href="#">En oferta</a></option>
-          <option><a class="list-link" href="#">Mas nuevos</a></option>
-        </select>
+        <form class="" action="/{{$botines1[0]->product_type}}/{{$botines1[0]->brand}}" method="post">
+          @csrf
+          <select class="form-control form-control-lg" name="orderby" placeholder="Ordenar Por:">
+            <option value="p_men_a_may">Precio de menor a mayor</option>
+            <option value="p_may_a_men">Precio de mayor a menor</option>
+            <option value="nuevos">Agregados recientemente</option>
+            <option value="viejos">Proctos más viejos</option>
+          </select>
+          <button type="submit" name="button">Ordenar</button>
+        </form>
       </div>
       <div class="botines" style="float:left">
         <div class="card-group">
