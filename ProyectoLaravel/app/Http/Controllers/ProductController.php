@@ -86,7 +86,7 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show(Product $product, ImagesProduct $imagesProduct, $tipo, $brand)
+    public function show($tipo, $brand)
     {
         $botines1 = Product::where('brand', $brand)->where('product_type', $tipo)->limit(3)->get();
         $botines2 = Product::where('brand', $brand)->where('product_type', $tipo)->offset(3)->limit(3)->get();
@@ -99,17 +99,53 @@ class ProductController extends Controller
         return view('botines', compact('botines1', 'botines2', 'botines3', 'marca', 'tipoProducto'));
     }
 
+    public function filter($tipo, $brand, Request $request)
+    {
+
+        if ($request->orderby == 'p_men_a_may') {
+          $botines1 = Product::where('brand', $brand)->where('product_type', $tipo)->limit(3)->orderBy('price')->get();
+          $botines2 = Product::where('brand', $brand)->where('product_type', $tipo)->offset(3)->limit(3)->orderBy('price')->get();
+          $botines3 = Product::where('brand', $brand)->where('product_type', $tipo)->offset(6)->limit(3)->orderBy('price')->get();
+        }
+
+        if ($request->orderby == 'p_may_a_men') {
+          $botines1 = Product::where('brand', $brand)->where('product_type', $tipo)->limit(3)->orderBy('price', 'DESC')->get();
+          $botines2 = Product::where('brand', $brand)->where('product_type', $tipo)->offset(3)->limit(3)->orderBy('price', 'DESC')->get();
+          $botines3 = Product::where('brand', $brand)->where('product_type', $tipo)->offset(6)->limit(3)->orderBy('price', 'DESC')->get();
+        }
+
+        if ($request->orderby == 'nuevos') {
+          $botines1 = Product::where('brand', $brand)->where('product_type', $tipo)->limit(3)->orderBy('created_at')->get();
+          $botines2 = Product::where('brand', $brand)->where('product_type', $tipo)->offset(3)->limit(3)->orderBy('created_at')->get();
+          $botines3 = Product::where('brand', $brand)->where('product_type', $tipo)->offset(6)->limit(3)->orderBy('created_at')->get();
+        }
+
+        if ($request->orderby == 'viejos') {
+          $botines1 = Product::where('brand', $brand)->where('product_type', $tipo)->limit(3)->orderBy('created_at', 'DESC')->get();
+          $botines2 = Product::where('brand', $brand)->where('product_type', $tipo)->offset(3)->limit(3)->orderBy('created_at', 'DESC')->get();
+          $botines3 = Product::where('brand', $brand)->where('product_type', $tipo)->offset(6)->limit(3)->orderBy('created_at', 'DESC')->get();
+        }
+
+        $marca = $brand;
+        $tipoProducto = $tipo;
+
+        $images = ImagesProduct::all();
+
+        return view('botines', compact('botines1', 'botines2', 'botines3', 'marca', 'tipoProducto'));
+    }
+
     public function show2($tipo, $brand, $id, Product $product, ImagesProduct $imagesProduct)
     {
       $botin = Product::find($id);
 
+      $botinRand11 = Product::where('deleted_at', NULL)->get();
 
-      $botinRand1 = Product::where('id', rand(1, 3))->where('product_type', $tipo)->get()->first();
-      $botinRand2 = Product::where('id', rand(1, 3))->where('product_type', $tipo)->get()->first();
-      $botinRand3 = Product::where('id', rand(1, 3))->where('product_type', $tipo)->get()->first();
-      $botinRand4 = Product::where('id', rand(1, 3))->where('product_type', $tipo)->get()->first();
-      $botinRand5 = Product::where('id', rand(1, 3))->where('product_type', $tipo)->get()->first();
-      $botinRand6 = Product::where('id', rand(1, 3))->where('product_type', $tipo)->get()->first();
+      $botinRand1 = $botinRand11[rand(0, (count($botinRand11) - 1))];
+      $botinRand2 = $botinRand11[rand(0, (count($botinRand11) - 1))];
+      $botinRand3 = $botinRand11[rand(0, (count($botinRand11) - 1))];
+      $botinRand4 = $botinRand11[rand(0, (count($botinRand11) - 1))];
+      $botinRand5 = $botinRand11[rand(0, (count($botinRand11) - 1))];
+      $botinRand6 = $botinRand11[rand(0, (count($botinRand11) - 1))];
       $marca = $brand;
       $tipoProducto = $tipo;
 

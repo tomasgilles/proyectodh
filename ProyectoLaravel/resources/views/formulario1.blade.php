@@ -10,6 +10,12 @@
     <option value="nike">Nike</option>
     <option value="adidas">Adidas</option>
     <option value="puma">Puma</option>
+    <option value="remeras">Remeras</option>
+    <option value="camperas">Camperas</option>
+    <option value="medias">Medias</option>
+    <option value="pelotas">Pelotas</option>
+    <option value="otros">Otros</option>
+
   </select>
   <select class="" name="product_type" required>
     <option value="botines">Botines</option>

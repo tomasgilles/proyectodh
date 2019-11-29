@@ -1,5 +1,5 @@
 <?php
-
+|
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use App\Product;
@@ -8,7 +8,6 @@ use Faker\Generator as Faker;
 $factory->define(Product::class, function (Faker $faker) {
 
   $path = storage_path('app/public/products'); //crear carpeta de destino
-  $talles = [38, 39, 40, 41, 42, 43, 44, 45];
 
     return [
       'name' => $faker->sentence(2),
