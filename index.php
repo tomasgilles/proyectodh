@@ -57,9 +57,9 @@ require_once "init.php";
               </div>
             </div>
             <div class="carousel-item">
-              <img src="fotos/botines/adidas-adizero1.jpg" class="d-block w-100" alt="...">
+              <img src="fotos/botines/puma-carrousel.jpg" class="d-block w-100" alt="...">
               <div id="carousel-adizero"class="carousel-caption d-none d-md-block">
-                <h5 class="h5-carousel" id="adizero">Botines Adidas Adizero</h5>
+                <h5 class="h5-carousel" id="adizero">Botines Puma Future</h5>
                 <a type="button" class="button-h5 btn btn-outline-dark" href="#">Comprar Ahora</a>
               </div>
             </div>

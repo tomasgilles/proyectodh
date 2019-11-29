@@ -104,12 +104,12 @@ class ProductController extends Controller
       $botin = Product::find($id);
 
 
-      $botinRand1 = Product::where('id', rand(1, 8))->where('product_type', $tipo)->get()->first();
-      $botinRand2 = Product::where('id', rand(1, 8))->where('product_type', $tipo)->get()->first();
-      $botinRand3 = Product::where('id', rand(1, 8))->where('product_type', $tipo)->get()->first();
-      $botinRand4 = Product::where('id', rand(1, 8))->where('product_type', $tipo)->get()->first();
-      $botinRand5 = Product::where('id', rand(1, 8))->where('product_type', $tipo)->get()->first();
-      $botinRand6 = Product::where('id', rand(1, 8))->where('product_type', $tipo)->get()->first();
+      $botinRand1 = Product::where('id', rand(1, 3))->where('product_type', $tipo)->get()->first();
+      $botinRand2 = Product::where('id', rand(1, 3))->where('product_type', $tipo)->get()->first();
+      $botinRand3 = Product::where('id', rand(1, 3))->where('product_type', $tipo)->get()->first();
+      $botinRand4 = Product::where('id', rand(1, 3))->where('product_type', $tipo)->get()->first();
+      $botinRand5 = Product::where('id', rand(1, 3))->where('product_type', $tipo)->get()->first();
+      $botinRand6 = Product::where('id', rand(1, 3))->where('product_type', $tipo)->get()->first();
       $marca = $brand;
       $tipoProducto = $tipo;
 

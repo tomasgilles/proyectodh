@@ -12,7 +12,7 @@ $factory->define(Product::class, function (Faker $faker) {
 
     return [
       'name' => $faker->sentence(2),
-      'description' => $faker->paragraph(200),
+      'description' => $faker->paragraph(50),
       'size' => $faker->numberBetween(38,45),
       'price' => $faker->randomFloat(2, 2, 8),
       'stock' => $faker->numberBetween(0, 50),

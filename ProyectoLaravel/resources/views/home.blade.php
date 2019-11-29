@@ -39,9 +39,9 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img/adidas-adizero1.jpg" class="d-block w-100" alt="...">
+            <img src="img/puma-carrousel.jpg" class="d-block w-100" alt="...">
             <div id="carousel-adizero"class="carousel-caption d-none d-md-block">
-              <h5 class="h5-carousel" id="adizero">Botines Adidas Adizero</h5>
+              <h5 class="h5-carousel" id="adizero">Botines Puma Adizero</h5>
               <a type="button" class="button-h5 btn btn-outline-dark" href="/botines/nike/Adizero">Ver Mas</a>
             </div>
           </div>

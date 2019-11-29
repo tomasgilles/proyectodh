@@ -29,11 +29,7 @@ require_once "init.php";
           </div>
           <div class="muestraprincipal">
             <div class="card bg-dark text-white">
-              <img src="fotos/botines/nike-mercurial1.jpg" class="card-img" alt="...">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Nuevos Botines Nike Mercurial</h5>
-                <a id="botoncomprar"type="button" class="button-h5 btn btn-outline-dark" href="#">Comprar Ahora</a>
-              </div>
+              <img src="fotos/foto-fondo2.jpg" class="card-img" alt="...">
             </div>
             <div class="imagenprincipal">
               <img src="" alt="">
