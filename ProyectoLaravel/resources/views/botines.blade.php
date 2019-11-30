@@ -15,7 +15,15 @@
     </div>
     <div class="muestraprincipal">
       <div class="card bg-dark text-white">
-        <img src="img/nike-mercurial1.jpg" class="d-block w-100" alt="...">
+        @if ($marca = 'nike')
+          <img src="/img/nike-mercurial1.jpg" class="card-img">
+        @endif
+        @if ($marca = 'adidas')
+          <img src="/img/ADIDAS" class="card-img">
+        @endif
+        @if ($marca = 'puma')
+          <img src="/img/puma-carrousel.jpg" class="card-img">
+        @endif
         <div class="card-img-overlay">
           <h5 class="card-title" style="text-transform: capitalize;">Nuevos Botines {{$marca}}</h5>
           <a id="botoncomprar"type="button" class="button-h5 btn btn-outline-dark" href="#">Comprar Ahora</a>
