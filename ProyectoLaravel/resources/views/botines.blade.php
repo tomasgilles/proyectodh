@@ -6,7 +6,7 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/home">Home</a></li>
-        <li class="breadcrumb-item"><a href="/{{$tipoProducto}}/{{$marca}}">{{$tipoProducto}}</a></li>
+        <li class="breadcrumb-item"><a style="text-transform: capitalize;" href="/{{$tipoProducto}}/{{$marca}}">{{$tipoProducto}}</a></li>
         <li class="breadcrumb-item active" aria-current="page" style="text-transform: capitalize;">{{$marca}}</li>
       </ol>
     </nav>
@@ -15,14 +15,13 @@
     </div>
     <div class="muestraprincipal">
       <div class="card bg-dark text-white">
-        <img src="#" class="card-img" alt
+        <img src="img/nike-mercurial1.jpg" class="d-block w-100" alt="...">
         <div class="card-img-overlay">
           <h5 class="card-title" style="text-transform: capitalize;">Nuevos Botines {{$marca}}</h5>
           <a id="botoncomprar"type="button" class="button-h5 btn btn-outline-dark" href="#">Comprar Ahora</a>
         </div>
       </div>
       <div class="imagenprincipal">
-        <img src="" alt="">
       </div>
     </div>
     <div class="cuerpomitad px-3" style="overflow:hidden;">
