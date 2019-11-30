@@ -5,9 +5,9 @@
   <div class="cuerpoentero">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/home">Home</a></li>
-        <li class="breadcrumb-item"><a href="/{{$tipoProducto}}/{{$marca}}">{{$tipoProducto}}</a></li>
-        <li class="breadcrumb-item" style="text-transform: capitalize;"><a href="/{{$tipoProducto}}/{{$marca}}">{{$marca}}</a></li>
+        <li class="breadcrumb-item breadC"><a style="color: black;" href="/home">Home</a></li>
+        <li class="breadcrumb-item breadC"><a style="color: black;" href="/{{$tipoProducto}}/{{$marca}}">{{$tipoProducto}}</a></li>
+        <li class="breadcrumb-item breadC"><a style="color: black;" href="/{{$tipoProducto}}/{{$marca}}">{{$marca}}</a></li>
         <li class="breadcrumb-item active" aria-current="page">{{$botin->name}}</li>
       </ol>
     </nav>

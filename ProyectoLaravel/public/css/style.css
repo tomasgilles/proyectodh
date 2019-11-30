@@ -526,6 +526,11 @@ border-radius: 9px;
     max-width:31.5%;
   }
 }
+.breadC{
+  font-weight: bold;
+  color: black;
+  text-transform: capitalize;
+}
 /*Producto.php*/
 .indicators-carr{
   overflow:hidden;

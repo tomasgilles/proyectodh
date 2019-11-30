@@ -94,9 +94,26 @@ class ProductController extends Controller
         $marca = $brand;
         $tipoProducto = $tipo;
 
+          if($brand == 'nike'){
+            $fotoG = "/img/nike-mercurial1.jpg";
+          }
+          if ($brand == 'adidas'){
+            $fotoG = "/img/adidas-nemeziz1.jpg";
+          }
+          if ($brand == 'puma'){
+            $fotoG = "/img/puma-carrousel.jpg";
+          }
+          if ($brand == 'remera' || $brand == 'campera' || $brand == 'media' || $brand == 'short'){
+            $fotoG = "/img/foto-fondo2.jpg";
+          }
+          if ($brand == 'pelota' || $brand == 'otro') {
+            $fotoG = "/img/bannerweb1.jpg";
+          }
+
+
         $images = ImagesProduct::all();
 
-        return view('botines', compact('botines1', 'botines2', 'botines3', 'marca', 'tipoProducto'));
+        return view('botines', compact('botines1', 'botines2', 'botines3', 'marca', 'tipoProducto', 'fotoG'));
     }
 
     public function filter($tipo, $brand, Request $request)
