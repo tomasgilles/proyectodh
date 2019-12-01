@@ -23,6 +23,8 @@ Route::post('/{tipo}/{brand}', 'ProductController@filter');
 
 Route::get('/{tipo}/{brand}/{id}', 'ProductController@show2');
 
+Route::get('/botines/kit/3', 'ProductController@show3');
+
 Route::post('/cartadd', 'CartController@store');
 
 Route::get('/cart', 'CartController@index');

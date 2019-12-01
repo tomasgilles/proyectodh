@@ -169,6 +169,22 @@ class ProductController extends Controller
       return view('botin', compact('botin', 'marca', 'tipoProducto', 'botinRand1', 'botinRand2', 'botinRand3', 'botinRand4', 'botinRand5', 'botinRand6'));
     }
 
+    public function show3( Product $product, ImagesProduct $imagesProduct){
+
+      $botin = Product::where('brand', 'kit')->get();
+
+      $botinRand11 = Product::where('deleted_at', NULL)->get();
+
+      $botinRand1 = $botinRand11[rand(0, (count($botinRand11) - 1))];
+      $botinRand2 = $botinRand11[rand(0, (count($botinRand11) - 1))];
+      $botinRand3 = $botinRand11[rand(0, (count($botinRand11) - 1))];
+      $botinRand4 = $botinRand11[rand(0, (count($botinRand11) - 1))];
+      $botinRand5 = $botinRand11[rand(0, (count($botinRand11) - 1))];
+      $botinRand6 = $botinRand11[rand(0, (count($botinRand11) - 1))];
+
+      return view('promo-kit', compact('botinRand1', 'botinRand2', 'botinRand3', 'botinRand4', 'botinRand5', 'botinRand6'));
+    }
+
     /**
      * Show the form for editing the specified resource.
      *

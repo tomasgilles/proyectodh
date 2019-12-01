@@ -19,7 +19,7 @@
             <img class="imgsProductoCarrito" src="/storage/products/{{$item->main_image}}" alt="">
           </div>
           <div class="descripcionCarrito">
-            <h3>{{$item->name}}</h3>
+            <h3 style="width:fit-content; overflow:hidden;">{{$item->name}}</h3>
             <p>Talle: {{$item->size}}</p>
             <p>Cantidad: {{$item->quantity}}</p>
           </div>

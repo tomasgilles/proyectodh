@@ -89,6 +89,7 @@ require_once "init.php";
       <div class="parrafopromo" style="margin: auto;
         width:100%;">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <a type="button" class="button-h5 btn btn-outline-dark" href="promoKit.php">Ver Mas</a>
       </div>
       <div id="imagenpromo"class="imagen-parrafo" style="width: 50%;
       margin: auto; float: none;">
