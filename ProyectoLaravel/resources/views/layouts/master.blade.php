@@ -160,11 +160,9 @@
               <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
 
                 <!-- Content -->
-                <h6 class="text-uppercase font-weight-bold">Nombre Compañia</h6>
+                <h6 class="text-uppercase font-weight-bold">FYNM (FUTBOL Y NADA MAS)</h6>
                 <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                  consectetur
-                  adipisicing elit.</p>
+                <p>Estamos obsesionados por ofrecer la mejor experiencia de compra en internet. Siempre con la constancia en innovaciones y adaptarnos de forma rápida a los cambios en el mercado o de nuestros clientes. </p>
 
               </div>
               <!-- Grid column -->
@@ -185,7 +183,7 @@
                   <a class="dark-grey-text" href="#!">Accesorios</a>
                 </p>
                 <p>
-                  <a class="dark-grey-text" href="#!">Novedades</a>
+                  <a class="dark-grey-text" href="/home">Novedades</a>
                 </p>
 
               </div>
@@ -198,16 +196,16 @@
                 <h6 class="text-uppercase font-weight-bold">Links Utiles</h6>
                 <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                 <p>
-                  <a class="dark-grey-text" href="#!">Logueate</a>
+                  <a class="dark-grey-text" href="{{ route('login') }}">Logueate</a>
                 </p>
                 <p>
-                  <a class="dark-grey-text" href="#!">Registrate</a>
+                  <a class="dark-grey-text" href="{{ route('register') }}">Registrate</a>
                 </p>
                 <p>
-                  <a class="dark-grey-text" href="#!">Mapa De Sitio</a>
+                  <a class="dark-grey-text" href="/home">Mapa De Sitio</a>
                 </p>
                 <p>
-                  <a class="dark-grey-text" href="#!">Ayuda</a>
+                  <a class="dark-grey-text" href="/home">Ayuda</a>
                 </p>
 
               </div>
@@ -222,7 +220,7 @@
                 <p>
                   <i class="fas fa-home mr-3"></i> Buenos Aries, BA 10012, AR</p>
                 <p>
-                  <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                  <i class="fas fa-envelope mr-3"></i> fynm@example.com</p>
                 <p>
                   <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
                 <p>
@@ -239,7 +237,7 @@
 
           <!-- Copyright -->
           <div class="footer-copyright text-center text-black-50 py-3">© 2019 Copyright:
-            <a class="dark-grey-text" href="https://mdbootstrap.com/education/bootstrap/"> nuestrositio.com</a>
+            <a class="dark-grey-text" href="https://mdbootstrap.com/education/bootstrap/"> fynm.com</a>
           </div>
           <!-- Copyright -->
 
