@@ -103,10 +103,22 @@ class ProductController extends Controller
           if ($brand == 'puma'){
             $fotoG = "/img/puma-carrousel.jpg";
           }
-          if ($brand == 'remera' || $brand == 'campera' || $brand == 'media' || $brand == 'short'){
+          if ($brand == 'remeras'){
             $fotoG = "/img/foto-fondo2.jpg";
           }
-          if ($brand == 'pelota' || $brand == 'otro') {
+          if ($brand == 'camperas'){
+            $fotoG = "/img/foto-fondo2.jpg";
+          }
+          if ($brand == 'medias'){
+            $fotoG = "/img/foto-fondo2.jpg";
+          }
+          if ($brand == 'shorts'){
+            $fotoG = "/img/foto-fondo2.jpg";
+          }
+          if ($brand == 'pelotas') {
+            $fotoG = "/img/bannerweb1.jpg";
+          }
+          if ($brand == 'otros') {
             $fotoG = "/img/bannerweb1.jpg";
           }
 
