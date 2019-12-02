@@ -120,8 +120,8 @@
                       <div class="col-md-4 clearfix d-none d-md-block">
                         <div class="card.index mb-2">
                           <img class="card-img-top" src="/storage/products/{{$botinRand1->main_image}}" alt="Card image cap">
-                          <div class="card-body">
-                            <h4 class="card-title" style="height: 54px;" >{{$botinRand1->name}}</h4>
+                          <div class="card-body"  style="overflow:hidden;">
+                            <h4 class="card-title" style="height: 54px; width: fit-content;" >{{$botinRand1->name}}</h4>
                             <p class="card-text">${{$botinRand1->price}}</p>
                             <div class="verMasC">
                               <a class="btn btn-outline-dark" href="/botines/{{$botinRand1->brand}}/{{$botinRand1->id}}">Ver Mas</a>
@@ -134,8 +134,8 @@
                       <div class="col-md-4">
                         <div class="card.index mb-2">
                           <img class="card-img-top" src="/storage/products/{{$botinRand2->main_image}}" alt="Card image cap">
-                          <div class="card-body">
-                            <h4 class="card-title correccion" style="height: 54px;">{{$botinRand2->name}}</h4>
+                          <div class="card-body"  style="overflow:hidden;">
+                            <h4 class="card-title correccion" style="height: 54px; width: fit-content;">{{$botinRand2->name}}</h4>
                             <p class="card-text correccion2">${{$botinRand2->price}}</p>
                             <div class="verMasC">
                               <a class="btn btn-outline-dark" href="/botines/{{$botinRand2->brand}}/{{$botinRand2->id}}">Ver Mas</a>
@@ -147,8 +147,8 @@
                       <div class="col-md-4 clearfix d-none d-md-block">
                         <div class="card.index mb-2">
                           <img class="card-img-top" src="/storage/products/{{$botinRand3->main_image}}" alt="Card image cap">
-                          <div class="card-body">
-                            <h4 class="card-title" style="height: 54px;" >{{$botinRand3->name}}</h4>
+                          <div class="card-body"  style="overflow:hidden;">
+                            <h4 class="card-title" style="height: 54px; width: fit-content;" >{{$botinRand3->name}}</h4>
                             <p class="card-text correccion2">${{$botinRand3->price}}</p>
                             <div class="verMasC">
                               <a class="btn btn-outline-dark" href="/botines/{{$botinRand3->brand}}/{{$botinRand3->id}}">Ver Mas</a>
@@ -168,8 +168,8 @@
                       <div class="col-md-4">
                         <div class="card.index mb-2">
                           <img class="card-img-top" src="/storage/products/{{$botinRand4->main_image}}" alt="Card image cap">
-                          <div class="card-body">
-                            <h4 class="card-title correccion" style="height: 54px;" >{{$botinRand4->name}}</h4>
+                          <div class="card-body"  style="overflow:hidden;">
+                            <h4 class="card-title correccion" style="height: 54px;  width: fit-content;" >{{$botinRand4->name}}</h4>
                             <p class="card-text correccion2">${{$botinRand4->price}}</p>
                             <div class="verMasC">
                               <a class="btn btn-outline-dark" href="/botines/{{$botinRand4->brand}}/{{$botinRand4->id}}">Ver Mas</a>
@@ -181,8 +181,8 @@
                       <div class="col-md-4 clearfix d-none d-md-block">
                         <div class="card.index mb-2">
                           <img class="card-img-top" src="/storage/products/{{$botinRand5->main_image}}" alt="Card image cap">
-                          <div class="card-body">
-                            <h4 class="card-title" style="height: 54px;">{{$botinRand5->name}}</h4>
+                          <div class="card-body"  style="overflow:hidden;">
+                            <h4 class="card-title" style="height: 54px;  width: fit-content;">{{$botinRand5->name}}</h4>
                             <p class="card-text">${{$botinRand5->price}}</p>
                             <div class="verMasC">
                               <a class="btn btn-outline-dark" href="/botines/{{$botinRand5->brand}}/{{$botinRand5->id}}">Ver Mas</a>
@@ -194,8 +194,8 @@
                       <div class="col-md-4 clearfix d-none d-md-block">
                         <div class="card.index mb-2">
                           <img class="card-img-top" src="/storage/products/{{$botinRand6->main_image}}" alt="Card image cap">
-                          <div class="card-body">
-                            <h4 class="card-title" style="height: 54px;" >{{$botinRand6->name}}</h4>
+                          <div class="card-body" style="overflow:hidden;">
+                            <h4 class="card-title" style="height: 54px;  width: fit-content;" >{{$botinRand6->name}}</h4>
                             <p class="card-text">${{$botinRand6->price}}</p>
                             <div class="verMasC">
                               <a class="btn btn-outline-dark" href="/botines/{{$botinRand6->brand}}/{{$botinRand6->id}}">Ver Mas</a>

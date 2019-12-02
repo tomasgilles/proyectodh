@@ -32,24 +32,25 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/adidas-nemeziz1.jpg" class="d-block w-100" alt="...">
+            <a href="/botines/adidas/id-botin"><img src="img/adidas-nemeziz1.jpg" class="d-block w-100" alt="..."></a>
             <div class="carousel-caption d-none d-md-block">
               <h5 class="h5-carousel" id="nemeziz">Botines Adidas New Generation Nemeziz</h5>
-              <a type="button" class="button-h5 btn btn-outline-dark" href="/botines/adidas/5">Ver Mas</a>
+              <a type="button" class="button-h5 btn btn-outline-dark" href="/botines/adidas/id-botin">Ver Mas</a>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img/puma-carrousel.jpg" class="d-block w-100" alt="...">
+            <a href="/botines/puma/id-botin"><img src="img/puma-carrousel.jpg" class="d-block w-100" alt="..."></a>
             <div id="carousel-adizero"class="carousel-caption d-none d-md-block">
               <h5 class="h5-carousel" id="adizero">Botines Puma Adizero</h5>
-              <a type="button" class="button-h5 btn btn-outline-dark" href="/botines/nike/Adizero">Ver Mas</a>
+              <a type="button" class="button-h5 btn btn-outline-dark" href="/botines/puma/id-botin">Ver Mas</a>
             </div>
           </div>
           <div class="carousel-item">
+            <a href="/botines/nike/id-botin"></a>
             <img src="img/nike-mercurial1.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5 class="h5-carousel" id="mercurial">Nuevos Botines Nike Mercurial</h5>
-              <a type="button" class="button-h5 btn btn-outline-dark" href="/botines/nike/Mercurial">Ver Mas</a>
+              <a type="button" class="button-h5 btn btn-outline-dark" href="/botines/nike/id-botin">Ver Mas</a>
             </div>
           </div>
         </div>
@@ -71,11 +72,13 @@
     <div class="parrafopromo" style="margin: auto;
       width:100%;">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <a type="button" class="button-h5 btn btn-outline-dark" href="/botines/kit/3">Ver Mas</a>
     </div>
     <div id="imagenpromo"class="imagen-parrafo" style="width: 50%;
     margin: auto; float: none;">
     <img id="imgpromo"src="img/promo-barcelona.jpg" alt="" class="img-fluid">
+    </div>
+    <div style="overflow:hidden; width:fit-content; margin:auto"class="">
+      <a type="button" class="button-h5 btn btn-outline-dark" href="/botines/kit/3">Ver Mas</a>
     </div>
   </div>
   <div class="container my-4">

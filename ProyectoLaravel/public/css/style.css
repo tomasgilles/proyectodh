@@ -288,7 +288,6 @@
 @media (min-width: 320px) and (max-width: 375px){
   .card-title{
   margin: 0 auto;
-  width: 108px;
   }
   .card-text{
     margin-top: 10px;
