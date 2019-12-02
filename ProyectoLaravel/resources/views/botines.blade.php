@@ -11,11 +11,11 @@
       </ol>
     </nav>
     <div class="titulo">
-      <h1 id="botinestitulo" style="text-transform: capitalize;">{{$tipoProducto}}</h1>
+      <h1 id="botinestitulo" style="text-transform: capitalize;">{{$marca}}</h1>
     </div>
     <div class="muestraprincipal">
       <div class="card bg-dark text-white">
-          <img src={{$fotoG}} class="card-img">
+        <img src={{$fotoG}} class="card-img">
       </div>
       <div class="imagenprincipal">
       </div>

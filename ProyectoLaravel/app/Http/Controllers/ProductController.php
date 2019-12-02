@@ -38,11 +38,19 @@ class ProductController extends Controller
 
     public function agregarProducto()
     {
+      if (Auth::user()->rol != 100) {
+        return back();
+      }
+
       return view('formulario1');
     }
 
     public function agregarFotos()
     {
+      if (Auth::user()->rol != 100) {
+        return back();
+      }
+
       $ultimoProducto = Product::all()->last();
       return view('formulario2', compact('ultimoProducto'));
     }
@@ -122,7 +130,6 @@ class ProductController extends Controller
             $fotoG = "/img/bannerweb1.jpg";
           }
 
-
         $images = ImagesProduct::all();
 
         return view('botines', compact('botines1', 'botines2', 'botines3', 'marca', 'tipoProducto', 'fotoG'));
@@ -158,9 +165,37 @@ class ProductController extends Controller
         $marca = $brand;
         $tipoProducto = $tipo;
 
+        if($brand == 'nike'){
+          $fotoG = "/img/nike-mercurial1.jpg";
+        }
+        if ($brand == 'adidas'){
+          $fotoG = "/img/adidas-nemeziz1.jpg";
+        }
+        if ($brand == 'puma'){
+          $fotoG = "/img/puma-carrousel.jpg";
+        }
+        if ($brand == 'remeras'){
+          $fotoG = "/img/foto-fondo2.jpg";
+        }
+        if ($brand == 'camperas'){
+          $fotoG = "/img/foto-fondo2.jpg";
+        }
+        if ($brand == 'medias'){
+          $fotoG = "/img/foto-fondo2.jpg";
+        }
+        if ($brand == 'shorts'){
+          $fotoG = "/img/foto-fondo2.jpg";
+        }
+        if ($brand == 'pelotas') {
+          $fotoG = "/img/bannerweb1.jpg";
+        }
+        if ($brand == 'otros') {
+          $fotoG = "/img/bannerweb1.jpg";
+        }
+
         $images = ImagesProduct::all();
 
-        return view('botines', compact('botines1', 'botines2', 'botines3', 'marca', 'tipoProducto'));
+        return view('botines', compact('botines1', 'botines2', 'botines3', 'marca', 'tipoProducto', 'fotoG'));
     }
 
     public function show2($tipo, $brand, $id, Product $product, ImagesProduct $imagesProduct)
@@ -244,6 +279,10 @@ class ProductController extends Controller
 
     public function borrarProducto()
     {
+      if (Auth::user()->rol != 100) {
+        return back();
+      }
+
       return view('eliminarpelicula');
     }
 
