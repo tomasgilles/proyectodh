@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Product;
 
 class HomeController extends Controller
 {
@@ -24,6 +25,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $camiseta1 = Product::where('name', 'like', 'juventus')->get()->first();
+        $camiseta2 = Product::where('name', 'like', 'barcelona')->get()->first();
+        $camiseta3 = Product::where('name', 'like', 'ajax')->get()->first();
+        $camiseta4 = Product::where('name', 'like', 'napoli')->get()->first();
+        $camiseta5 = Product::where('name', 'like', 'real madrid')->get()->first();
+        $camiseta6 = Product::where('name', 'like', 'juventus')->get()->first();
+        return view('home', compact('camiseta1', 'camiseta2', 'camiseta3', 'camiseta4', 'camiseta5', 'camiseta6'));
     }
 }

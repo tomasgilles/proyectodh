@@ -65,18 +65,24 @@
             </div>
             <select class="custom-select" id="inputGroupSelect01" name="size" required>
               <option value="">Seleccione un talle</option>
-              @if ($tipoProducto = 'botines'){
+              @if ($tipoProducto == 'botines')
                 @for ($i=38; $i < 46; $i++)
                   <option value="{{$i}}">{{$i}}</option>
                 @endfor
-              } @else {
+              @endif
+
+              @if($tipoProducto == 'vestimenta')
                 <option value="XS">XS</option>
                 <option value="S">S</option>
                 <option value="M">M</option>
                 <option value="L">L</option>
                 <option value="XL">XL</option>
-              }
               @endif
+
+              @if($tipoProducto == 'accesorios')
+                <option value="1">Talle único</option>
+              @endif
+              
             </select>
           </div>
           <div id="cantidades" class="input-group mb-3">
