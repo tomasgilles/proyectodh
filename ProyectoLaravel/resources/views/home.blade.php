@@ -117,7 +117,7 @@
                       <div class="card-body">
                         <h4 class="card-title" style="height: 54px;" >Camiseta Juventus</h4>
                         <p class="card-text">$1000</p>
-                        <a id="juventus" class="btn btn-outline-dark">Comprar ahora</a>
+                        <a id="juventus" class="btn btn-outline-dark" href="/vestimenta/remeras">Comprar ahora</a>
                       </div>
                     </div>
                   </div>
@@ -143,7 +143,7 @@
                       <div class="card-body">
                         <h4 class="card-title correccion" style="height: 54px;" >Camiseta Barcelona</h4>
                         <p class="card-text correccion2">$1000</p>
-                        <a id="barcelona" class="btn btn-outline-dark">Comprar ahora</a>
+                        <a id="barcelona" class="btn btn-outline-dark" href="/vestimenta/remeras">Comprar ahora</a>
                       </div>
                     </div>
                   </div>
@@ -169,7 +169,7 @@
                       <div class="card-body">
                         <h4 id="realmadridcorreccion"class="card-title" style="height: 54px;" >Camiseta Real Madrid</h4>
                         <p class="card-text correccion2">$1000</p>
-                        <a id="realmadrid" class="btn btn-outline-dark">Comprar ahora</a>
+                        <a id="realmadrid" class="btn btn-outline-dark" href="/vestimenta/remeras">Comprar ahora</a>
                       </div>
                     </div>
                   </div>
@@ -184,83 +184,83 @@
 
               <div class="row">
 
-              @if($camiseta4)
-                <div class="col-md-4">
-                  <div class="card.index mb-2">
-                    <img class="card-img-top" src="/storage/products/{{$camiseta4->main_image}}"
-                      alt="Card image cap">
-                    <div class="card-body">
-                      <h4 class="card-title correccion" style="height: 54px;">{{$camiseta4->name}}</h4>
-                      <p class="card-text correccion2">${{$camiseta4->price}}</p>
-                      <a id="argentina" class="btn btn-outline-dark" href="/botines/{{$camiseta4->brand}}/{{$camiseta4->id}}">Comprar ahora</a>
+                @if($camiseta4)
+                  <div class="col-md-4">
+                    <div class="card.index mb-2">
+                      <img class="card-img-top" src="/storage/products/{{$camiseta4->main_image}}"
+                        alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title correccion" style="height: 54px;">{{$camiseta4->name}}</h4>
+                        <p class="card-text correccion2">${{$camiseta4->price}}</p>
+                        <a id="argentina" class="btn btn-outline-dark" href="/botines/{{$camiseta4->brand}}/{{$camiseta4->id}}">Comprar ahora</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-              @else
-                <div class="col-md-4">
-                  <div class="card.index mb-2">
-                    <img class="card-img-top" src="img/carousel/camiseta-argentina1.jpg"
-                      alt="Card image cap">
-                    <div class="card-body">
-                      <h4 class="card-title correccion" style="height: 54px;" >Camiseta Argentina</h4>
-                      <p class="card-text correccion2">$1000</p>
-                      <a id="argentina" class="btn btn-outline-dark">Comprar ahora</a>
+                @else
+                  <div class="col-md-4">
+                    <div class="card.index mb-2">
+                      <img class="card-img-top" src="img/carousel/camiseta-argentina1.jpg"
+                        alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title correccion" style="height: 54px;" >Camiseta Argentina</h4>
+                        <p class="card-text correccion2">$1000</p>
+                        <a id="argentina" class="btn btn-outline-dark" href="/vestimenta/remeras">Comprar ahora</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-              @endif
+                @endif
 
-              @if($camiseta5)
-                <div class="col-md-4 clearfix d-none d-md-block">
-                  <div class="card.index mb-2">
-                    <img class="card-img-top" src="/storage/products/{{$camiseta5->main_image}}"
-                      alt="Card image cap">
-                    <div class="card-body">
-                      <h4 class="card-title" style="height: 54px;">{{$camiseta5->name}}</h4>
-                      <p class="card-text">${{$camiseta5->price}}</p>
-                      <a id="ajax" class="btn btn-outline-dark" href="/botines/{{$camiseta5->brand}}/{{$camiseta5->id}}">Comprar ahora</a>
+                @if($camiseta5)
+                  <div class="col-md-4 clearfix d-none d-md-block">
+                    <div class="card.index mb-2">
+                      <img class="card-img-top" src="/storage/products/{{$camiseta5->main_image}}"
+                        alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title" style="height: 54px;">{{$camiseta5->name}}</h4>
+                        <p class="card-text">${{$camiseta5->price}}</p>
+                        <a id="ajax" class="btn btn-outline-dark" href="/botines/{{$camiseta5->brand}}/{{$camiseta5->id}}">Comprar ahora</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-              @else
-                <div class="col-md-4 clearfix d-none d-md-block">
-                  <div class="card.index mb-2">
-                    <img class="card-img-top" src="img/carousel/camiseta-ajax1.jpg"
-                      alt="Card image cap">
-                    <div class="card-body">
-                      <h4 class="card-title" style="height: 54px;">Camiseta Ajax</h4>
-                      <p class="card-text">$1000</p>
-                      <a id="ajax" class="btn btn-outline-dark">Comprar ahora</a>
+                @else
+                  <div class="col-md-4 clearfix d-none d-md-block">
+                    <div class="card.index mb-2">
+                      <img class="card-img-top" src="img/carousel/camiseta-ajax1.jpg"
+                        alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title" style="height: 54px;">Camiseta Ajax</h4>
+                        <p class="card-text">$1000</p>
+                        <a id="ajax" class="btn btn-outline-dark" href="/vestimenta/remeras">Comprar ahora</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-              @endif
+                @endif
 
-              @if($camiseta6)
-                <div class="col-md-4 clearfix d-none d-md-block">
-                  <div class="card.index mb-2">
-                    <img class="card-img-top" src="/storage/products/{{$camiseta6->main_image}}"
-                      alt="Card image cap">
-                    <div class="card-body">
-                      <h4 class="card-title" style="height: 54px;">{{$camiseta6->name}}</h4>
-                      <p class="card-text">${{$camiseta6->price}}</p>
-                      <a id="napoli" class="btn btn-outline-dark" href="/botines/{{$camiseta6->brand}}/{{$camiseta6->id}}">Comprar ahora</a>
+                @if($camiseta6)
+                  <div class="col-md-4 clearfix d-none d-md-block">
+                    <div class="card.index mb-2">
+                      <img class="card-img-top" src="/storage/products/{{$camiseta6->main_image}}"
+                        alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title" style="height: 54px;">{{$camiseta6->name}}</h4>
+                        <p class="card-text">${{$camiseta6->price}}</p>
+                        <a id="napoli" class="btn btn-outline-dark" href="/botines/{{$camiseta6->brand}}/{{$camiseta6->id}}">Comprar ahora</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-              @else
-                <div class="col-md-4 clearfix d-none d-md-block">
-                  <div class="card.index mb-2">
-                    <img class="card-img-top" src="img/carousel/camiseta-napoli1.jpg"
-                      alt="Card image cap">
-                    <div class="card-body">
-                      <h4 class="card-title" style="height: 54px;" >Camiseta Napoli</h4>
-                      <p class="card-text">$1000</p>
-                      <a id="napoli" class="btn btn-outline-dark">Comprar ahora</a>
+                @else
+                  <div class="col-md-4 clearfix d-none d-md-block">
+                    <div class="card.index mb-2">
+                      <img class="card-img-top" src="img/carousel/camiseta-napoli1.jpg"
+                        alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title" style="height: 54px;" >Camiseta Napoli</h4>
+                        <p class="card-text">$1000</p>
+                        <a id="napoli" class="btn btn-outline-dark" href="/vestimenta/remeras">Comprar ahora</a>
+                      </div>
                     </div>
                   </div>
-                </div>
-              @endif
+                @endif
               </div>
 
             </div>
