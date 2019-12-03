@@ -30,7 +30,10 @@ class HomeController extends Controller
         $camiseta3 = Product::where('name', 'like', 'ajax')->get()->first();
         $camiseta4 = Product::where('name', 'like', 'napoli')->get()->first();
         $camiseta5 = Product::where('name', 'like', 'real madrid')->get()->first();
-        $camiseta6 = Product::where('name', 'like', 'argentina')->get()->first();
-        return view('home', compact('camiseta1', 'camiseta2', 'camiseta3', 'camiseta4', 'camiseta5', 'camiseta6'));
+        $camiseta6 = Product::where('name', 'like', 'juventus')->get()->first();
+
+        $kit = Product::where('brand', 'kit')->get()->first();
+
+        return view('home', compact('camiseta1', 'camiseta2', 'camiseta3', 'camiseta4', 'camiseta5', 'camiseta6', 'kit'));
     }
 }
