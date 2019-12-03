@@ -107,7 +107,7 @@
           <div class="carousel-inner" role="listbox">
 
             <!--First slide-->
-            <div class="carousel-item active">
+            <div class="carousel-item active" data-interval="false">
 
               <div class="row">
                 @if($camiseta1)
@@ -116,9 +116,9 @@
                       <img class="card-img-top" src="/storage/products/{{$camiseta1->main_image}}"
                         alt="Card image cap">
                       <div class="card-body">
-                        <h4 class="card-title" style="height: 54px;">{{$camiseta1->name}}</h4>
+                        <h4 class="card-title" style="height: 54px; width: fit-content; margin: auto;">{{$camiseta1->name}}</h4>
                         <p class="card-text">${{$camiseta1->price}}</p>
-                        <a id="juventus" class="btn btn-outline-dark" href="/{{$camiseta1->product_type}}/{{$camiseta1->brand}}/{{$camiseta1->id}}">Comprar ahora</a>
+                        <a class="btn btn-outline-dark" href="/{{$camiseta1->product_type}}/{{$camiseta1->brand}}/{{$camiseta1->id}}">Comprar ahora</a>
                       </div>
                     </div>
                   </div>
@@ -141,9 +141,11 @@
                       <img class="card-img-top" src="/storage/products/{{$camiseta2->main_image}}"
                         alt="Card image cap">
                       <div class="card-body">
-                        <h4 class="card-title correccion" style="height: 54px;">{{$camiseta2->name}}</h4>
+                        <h4 class="card-title correccion" style="height: 54px; width: fit-content; margin: auto;">{{$camiseta2->name}}</h4>
                         <p class="card-text correccion2">${{$camiseta2->price}}</p>
-                        <a id="barcelona" class="btn btn-outline-dark" href="/{{$camiseta2->product_type}}/{{$camiseta2->brand}}/{{$camiseta2->id}}">Comprar ahora</a>
+                        <div class="">
+                          <a class="btn btn-outline-dark" href="/botines/{{$camiseta2->brand}}/{{$camiseta2->id}}">Comprar ahora</a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -166,9 +168,11 @@
                       <img class="card-img-top" src="/storage/products/{{$camiseta3->main_image}}"
                         alt="Card image cap">
                       <div class="card-body">
-                        <h4 id="realmadridcorreccion"class="card-title" style="height: 54px;">{{$camiseta3->name}}</h4>
+                        <h4 class="card-title" style="height: 54px; width: fit-content; margin: auto;">{{$camiseta3->name}}</h4>
                         <p class="card-text correccion2">${{$camiseta3->price}}</p>
-                        <a id="realmadrid" class="btn btn-outline-dark" href="/{{$camiseta3->product_type}}/{{$camiseta3->brand}}/{{$camiseta3->id}}">Comprar ahora</a>
+                        <div class="">
+                          <a class="btn btn-outline-dark" href="/botines/{{$camiseta3->brand}}/{{$camiseta3->id}}">Comprar ahora</a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -200,9 +204,11 @@
                       <img class="card-img-top" src="/storage/products/{{$camiseta4->main_image}}"
                         alt="Card image cap">
                       <div class="card-body">
-                        <h4 class="card-title correccion" style="height: 54px;">{{$camiseta4->name}}</h4>
+                        <h4 class="card-title correccion" style="height: 54px; width:fit-content; margin: auto;">{{$camiseta4->name}}</h4>
                         <p class="card-text correccion2">${{$camiseta4->price}}</p>
-                        <a id="argentina" class="btn btn-outline-dark" href="/{{$camiseta4->product_type}}/{{$camiseta4->brand}}/{{$camiseta4->id}}">Comprar ahora</a>
+                        <div class="">
+                          <a class="btn btn-outline-dark" href="/botines/{{$camiseta4->brand}}/{{$camiseta4->id}}">Comprar ahora</a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -225,9 +231,11 @@
                       <img class="card-img-top" src="/storage/products/{{$camiseta5->main_image}}"
                         alt="Card image cap">
                       <div class="card-body">
-                        <h4 class="card-title" style="height: 54px;">{{$camiseta5->name}}</h4>
+                        <h4 class="card-title" style="height: 54px; width:fit-content; margin: auto;">{{$camiseta5->name}}</h4>
                         <p class="card-text">${{$camiseta5->price}}</p>
-                        <a id="ajax" class="btn btn-outline-dark" href="/{{$camiseta5->product_type}}/{{$camiseta5->brand}}/{{$camiseta5->id}}">Comprar ahora</a>
+                        <div class="">
+                          <a class="btn btn-outline-dark" href="/botines/{{$camiseta5->brand}}/{{$camiseta5->id}}">Comprar ahora</a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -250,9 +258,11 @@
                       <img class="card-img-top" src="/storage/products/{{$camiseta6->main_image}}"
                         alt="Card image cap">
                       <div class="card-body">
-                        <h4 class="card-title" style="height: 54px;">{{$camiseta6->name}}</h4>
+                        <h4 class="card-title" style="height: 54px; width: fit-content; margin: auto;">{{$camiseta6->name}}</h4>
                         <p class="card-text">${{$camiseta6->price}}</p>
-                        <a id="napoli" class="btn btn-outline-dark" href="/{{$camiseta6->product_type}}/{{$camiseta6->brand}}/{{$camiseta6->id}}">Comprar ahora</a>
+                        <div class="">
+                          <a class="btn btn-outline-dark" href="/botines/{{$camiseta6->brand}}/{{$camiseta6->id}}">Comprar ahora</a>
+                        </div>
                       </div>
                     </div>
                   </div>
