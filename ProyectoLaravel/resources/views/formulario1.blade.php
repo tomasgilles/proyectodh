@@ -15,6 +15,7 @@
     <option value="medias">Medias</option>
     <option value="pelotas">Pelotas</option>
     <option value="otros">Otros</option>
+    <option value="kit">Kit</option>
 
   </select>
   <select class="" name="product_type" required>

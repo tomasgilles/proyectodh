@@ -23,60 +23,73 @@
     </div>
 
     <div class="carousel">
-    <div class="bd-example">
-      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="/botines/adidas/id-botin"><img src="img/adidas-nemeziz1.jpg" class="d-block w-100" alt="..."></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="h5-carousel" id="nemeziz">Botines Adidas New Generation Nemeziz</h5>
-              <a type="button" class="button-h5 btn btn-outline-dark" href="/botines/adidas">Ver Mas</a>
+      <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="/botines/adidas/id-botin"><img src="img/adidas-nemeziz1.jpg" class="d-block w-100" alt="..."></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="h5-carousel" id="nemeziz">Botines Adidas New Generation Nemeziz</h5>
+                <a type="button" class="button-h5 btn btn-outline-dark" href="/botines/adidas">Ver Mas</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="/botines/puma/id-botin"><img src="img/puma-carrousel.jpg" class="d-block w-100" alt="..."></a>
+              <div id="carousel-adizero"class="carousel-caption d-none d-md-block">
+                <h5 class="h5-carousel" id="adizero">Botines Puma Adizero</h5>
+                <a type="button" class="button-h5 btn btn-outline-dark" href="/botines/puma">Ver Mas</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="/botines/nike/id-botin"><img src="img/nike-mercurial1.jpg" class="d-block w-100" alt="..."></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="h5-carousel" id="mercurial">Nuevos Botines Nike Mercurial</h5>
+                <a type="button" class="button-h5 btn btn-outline-dark" href="/botines/nike">Ver Mas</a>
+              </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <a href="/botines/puma/id-botin"><img src="img/puma-carrousel.jpg" class="d-block w-100" alt="..."></a>
-            <div id="carousel-adizero"class="carousel-caption d-none d-md-block">
-              <h5 class="h5-carousel" id="adizero">Botines Puma Adizero</h5>
-              <a type="button" class="button-h5 btn btn-outline-dark" href="/botines/puma">Ver Mas</a>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <a href="/botines/nike/id-botin"><img src="img/nike-mercurial1.jpg" class="d-block w-100" alt="..."></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="h5-carousel" id="mercurial">Nuevos Botines Nike Mercurial</h5>
-              <a type="button" class="button-h5 btn btn-outline-dark" href="/botines/nike">Ver Mas</a>
-            </div>
-          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
     </div>
-  </div>
 
   <div class="promo container-fluid mt-3"> <!-- PROMO KIT BARCELONA -->
-    <h1 class="text-center pt-2">PROMO KIT BARCELONA</h1>
+    @if($kit)
+      <h1 class="text-center pt-2">{{$kit->name}}</h1>
+    @else
+      <h1 class="text-center pt-2">PROMO KIT BARCELONA</h1>
+    @endif
     <hr id="borderpromo"class="mt-0 border border-dark">
     <div class="parrafopromo" style="margin: auto;
       width:100%;">
+      <p></p>
     </div>
     <div id="imagenpromo"class="imagen-parrafo" style="width: 50%;
     margin: auto; float: none;">
-    <img id="imgpromo"src="img/promo-barcelona.jpg" alt="" class="img-fluid">
+      @if($kit)
+        <img id="imgpromo"src="/storage/products/{{$kit->main_image}}" alt="" class="img-fluid">
+      @else
+        <img id="imgpromo"src="img/promo-barcelona.jpg" alt="" class="img-fluid">
+      @endif
     </div>
     <div style="overflow:hidden; width:fit-content; margin:auto"class="">
-      <a type="button" class="button-h5 btn btn-outline-dark" href="/botines/kit/3">Ver Mas</a>
+      @if($kit)
+        <a type="button" class="button-h5 btn btn-outline-dark" href="/{{$kit->product_type}}/{{$kit->brand}}/{{$kit->id}}">Ver Mas</a>
+      @else
+        <a type="button" class="button-h5 btn btn-outline-dark btn-danger">SOLD OUT</a>
+      @endif
     </div>
   </div>
   <div class="container my-4">
@@ -105,7 +118,7 @@
                       <div class="card-body">
                         <h4 class="card-title" style="height: 54px;">{{$camiseta1->name}}</h4>
                         <p class="card-text">${{$camiseta1->price}}</p>
-                        <a id="juventus" class="btn btn-outline-dark" href="/botines/{{$camiseta1->brand}}/{{$camiseta1->id}}">Comprar ahora</a>
+                        <a id="juventus" class="btn btn-outline-dark" href="/{{$camiseta1->product_type}}/{{$camiseta1->brand}}/{{$camiseta1->id}}">Comprar ahora</a>
                       </div>
                     </div>
                   </div>
@@ -116,7 +129,6 @@
                         alt="Card image cap">
                       <div class="card-body">
                         <h4 class="card-title" style="height: 54px;" >Camiseta Juventus</h4>
-                        <p class="card-text">$1000</p>
                         <a id="juventus" class="btn btn-outline-dark" href="/vestimenta/remeras">Comprar ahora</a>
                       </div>
                     </div>
@@ -131,7 +143,7 @@
                       <div class="card-body">
                         <h4 class="card-title correccion" style="height: 54px;">{{$camiseta2->name}}</h4>
                         <p class="card-text correccion2">${{$camiseta2->price}}</p>
-                        <a id="barcelona" class="btn btn-outline-dark" href="/botines/{{$camiseta2->brand}}/{{$camiseta2->id}}">Comprar ahora</a>
+                        <a id="barcelona" class="btn btn-outline-dark" href="/{{$camiseta2->product_type}}/{{$camiseta2->brand}}/{{$camiseta2->id}}">Comprar ahora</a>
                       </div>
                     </div>
                   </div>
@@ -142,7 +154,6 @@
                         alt="Card image cap">
                       <div class="card-body">
                         <h4 class="card-title correccion" style="height: 54px;" >Camiseta Barcelona</h4>
-                        <p class="card-text correccion2">$1000</p>
                         <a id="barcelona" class="btn btn-outline-dark" href="/vestimenta/remeras">Comprar ahora</a>
                       </div>
                     </div>
@@ -157,7 +168,7 @@
                       <div class="card-body">
                         <h4 id="realmadridcorreccion"class="card-title" style="height: 54px;">{{$camiseta3->name}}</h4>
                         <p class="card-text correccion2">${{$camiseta3->price}}</p>
-                        <a id="realmadrid" class="btn btn-outline-dark" href="/botines/{{$camiseta3->brand}}/{{$camiseta3->id}}">Comprar ahora</a>
+                        <a id="realmadrid" class="btn btn-outline-dark" href="/{{$camiseta3->product_type}}/{{$camiseta3->brand}}/{{$camiseta3->id}}">Comprar ahora</a>
                       </div>
                     </div>
                   </div>
@@ -168,7 +179,6 @@
                         alt="Card image cap">
                       <div class="card-body">
                         <h4 id="realmadridcorreccion"class="card-title" style="height: 54px;" >Camiseta Real Madrid</h4>
-                        <p class="card-text correccion2">$1000</p>
                         <a id="realmadrid" class="btn btn-outline-dark" href="/vestimenta/remeras">Comprar ahora</a>
                       </div>
                     </div>
@@ -192,7 +202,7 @@
                       <div class="card-body">
                         <h4 class="card-title correccion" style="height: 54px;">{{$camiseta4->name}}</h4>
                         <p class="card-text correccion2">${{$camiseta4->price}}</p>
-                        <a id="argentina" class="btn btn-outline-dark" href="/botines/{{$camiseta4->brand}}/{{$camiseta4->id}}">Comprar ahora</a>
+                        <a id="argentina" class="btn btn-outline-dark" href="/{{$camiseta4->product_type}}/{{$camiseta4->brand}}/{{$camiseta4->id}}">Comprar ahora</a>
                       </div>
                     </div>
                   </div>
@@ -203,7 +213,6 @@
                         alt="Card image cap">
                       <div class="card-body">
                         <h4 class="card-title correccion" style="height: 54px;" >Camiseta Argentina</h4>
-                        <p class="card-text correccion2">$1000</p>
                         <a id="argentina" class="btn btn-outline-dark" href="/vestimenta/remeras">Comprar ahora</a>
                       </div>
                     </div>
@@ -218,7 +227,7 @@
                       <div class="card-body">
                         <h4 class="card-title" style="height: 54px;">{{$camiseta5->name}}</h4>
                         <p class="card-text">${{$camiseta5->price}}</p>
-                        <a id="ajax" class="btn btn-outline-dark" href="/botines/{{$camiseta5->brand}}/{{$camiseta5->id}}">Comprar ahora</a>
+                        <a id="ajax" class="btn btn-outline-dark" href="/{{$camiseta5->product_type}}/{{$camiseta5->brand}}/{{$camiseta5->id}}">Comprar ahora</a>
                       </div>
                     </div>
                   </div>
@@ -229,7 +238,6 @@
                         alt="Card image cap">
                       <div class="card-body">
                         <h4 class="card-title" style="height: 54px;">Camiseta Ajax</h4>
-                        <p class="card-text">$1000</p>
                         <a id="ajax" class="btn btn-outline-dark" href="/vestimenta/remeras">Comprar ahora</a>
                       </div>
                     </div>
@@ -244,7 +252,7 @@
                       <div class="card-body">
                         <h4 class="card-title" style="height: 54px;">{{$camiseta6->name}}</h4>
                         <p class="card-text">${{$camiseta6->price}}</p>
-                        <a id="napoli" class="btn btn-outline-dark" href="/botines/{{$camiseta6->brand}}/{{$camiseta6->id}}">Comprar ahora</a>
+                        <a id="napoli" class="btn btn-outline-dark" href="/{{$camiseta6->product_type}}/{{$camiseta6->brand}}/{{$camiseta6->id}}">Comprar ahora</a>
                       </div>
                     </div>
                   </div>
@@ -255,7 +263,6 @@
                         alt="Card image cap">
                       <div class="card-body">
                         <h4 class="card-title" style="height: 54px;" >Camiseta Napoli</h4>
-                        <p class="card-text">$1000</p>
                         <a id="napoli" class="btn btn-outline-dark" href="/vestimenta/remeras">Comprar ahora</a>
                       </div>
                     </div>
