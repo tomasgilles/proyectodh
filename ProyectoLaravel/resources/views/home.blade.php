@@ -46,8 +46,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <a href="/botines/nike/id-botin"></a>
-            <img src="img/nike-mercurial1.jpg" class="d-block w-100" alt="...">
+            <a href="/botines/nike/id-botin"><img src="img/nike-mercurial1.jpg" class="d-block w-100" alt="..."></a>
             <div class="carousel-caption d-none d-md-block">
               <h5 class="h5-carousel" id="mercurial">Nuevos Botines Nike Mercurial</h5>
               <a type="button" class="button-h5 btn btn-outline-dark" href="/botines/nike/id-botin">Ver Mas</a>
