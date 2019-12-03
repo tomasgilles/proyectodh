@@ -32,21 +32,21 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <a href="/botines/adidas/id-botin"><img src="img/adidas-nemeziz1.jpg" class="d-block w-100" alt="..."></a>
+            <a href="/botines/adidas"><img src="img/adidas-nemeziz1.jpg" class="d-block w-100" alt="..."></a>
             <div class="carousel-caption d-none d-md-block">
               <h5 class="h5-carousel" id="nemeziz">Botines Adidas New Generation Nemeziz</h5>
               <a type="button" class="button-h5 btn btn-outline-dark" href="/botines/adidas">Ver Mas</a>
             </div>
           </div>
           <div class="carousel-item">
-            <a href="/botines/puma/id-botin"><img src="img/puma-carrousel.jpg" class="d-block w-100" alt="..."></a>
+            <a href="/botines/puma"><img src="img/puma-carrousel.jpg" class="d-block w-100" alt="..."></a>
             <div id="carousel-adizero"class="carousel-caption d-none d-md-block">
               <h5 class="h5-carousel" id="adizero">Botines Puma Adizero</h5>
               <a type="button" class="button-h5 btn btn-outline-dark" href="/botines/puma">Ver Mas</a>
             </div>
           </div>
           <div class="carousel-item">
-            <a href="/botines/nike/id-botin"><img src="img/nike-mercurial1.jpg" class="d-block w-100" alt="..."></a>
+            <a href="/botines/nike"><img src="img/nike-mercurial1.jpg" class="d-block w-100" alt="..."></a>
             <div class="carousel-caption d-none d-md-block">
               <h5 class="h5-carousel" id="mercurial">Nuevos Botines Nike Mercurial</h5>
               <a type="button" class="button-h5 btn btn-outline-dark" href="/botines/nike">Ver Mas</a>
