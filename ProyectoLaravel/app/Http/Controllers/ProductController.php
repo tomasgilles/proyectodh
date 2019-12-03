@@ -6,6 +6,7 @@ use App\Product;
 use App\ImagesProduct;
 use Illuminate\Http\Request;
 use Auth;
+use Illuminate\Support\Facades\Input;
 
 class ProductController extends Controller
 {
@@ -287,7 +288,9 @@ class ProductController extends Controller
     }
 
     public function busqueda(Request $request){
-    $products = Product::where('name', 'like', '%' . $request->busqueda . '%')->get();
+    //  dd($request->busqueda);
+    $products = Product::where('name', 'like', '%' . $request->busqueda . '%')->orderBy('name', 'desc')->paginate(3);
+    $products->appends(Input::except('page'));
 
     return view("busqueda", compact('products'));
     }

@@ -57,13 +57,13 @@
             @if (Auth::user())
               <div class="mr-5 font-weight-bold"> Hola, {{Auth::user()->name}}</div>
             @endif
-            <form id="form-inline" class="form-inline my-2 my-lg-0" id="formnavbar" class="form" name="busqueda" method="post" action="/busqueda">
+            <form id="form-inline" class="form-inline my-2 my-lg-0" id="formnavbar" class="form" name="formuarioDeBusqueda" method="post" action="/busqueda">
 
               @csrf
               <div id="input-group" class="input-group">
-                <input type="text" class="form-control" placeholder="Busqueda">
+                <input type="text" class="form-control" placeholder="Busqueda" name="busqueda">
                 <div class="input-group-append">
-                  <button class="btn btn-primary" type="submit" name="busqueda" method="post" action="/busqueda">
+                  <button class="btn btn-primary" type="submit" name="">
                     <i class="fa fa-search"></i>
                   </button>
                 </div>

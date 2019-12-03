@@ -42,6 +42,7 @@ Route::post('/productadd', 'ProductController@store');
 Route::post('/imagesadd', 'ImagesProductController@store');
 
 Route::post('/busqueda', 'ProductController@busqueda');
+Route::get('/busqueda', 'ProductController@busqueda');
 
 Route::get('/productdelete', 'ProductController@borrarProducto');
 
