@@ -7,6 +7,7 @@
       {{session('message')}}
     </div>
   @endif
+{{-- <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJMa1byM21vJURDgncGhSJLXU&key=AIzaSyCY0KzFYvgYINyRS90SS-uApYDJnnQSnbc" allowfullscreen></iframe> --}}
 
   <div class="container-fluid main"> <!-- GENERAL -->
 
